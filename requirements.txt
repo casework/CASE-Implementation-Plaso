@@ -1,0 +1,8 @@
+plaso >= 1.5
+rdflib
+
+# Plaso and DFVFS annoyingly doesn't specify their dependencies in their
+# setup.py script. Therefore, we need to manually specify the dependencies
+# here.
+-r plaso_requirements.txt
+-r dfvfs_requirements.txt
