@@ -1,5 +1,8 @@
 plaso >= 1.5
+dfvfs >= 20160803
 rdflib
+rdflib-jsonld
+pypiwin32
 
 # Plaso and DFVFS annoyingly doesn't specify their dependencies in their
 # setup.py script. Therefore, we need to manually specify the dependencies
