@@ -26,6 +26,7 @@ if __name__ == '__main__':
 
     document = case.Document()
     exporter = plaso_exporter.PlasoExporter(document)
+    print 'Exporting storage file...'
     exporter.export_storage_file(options.storage_file)
-
+    print 'Serializing graph...'
     document.serialize(format='json-ld', destination='test.json')

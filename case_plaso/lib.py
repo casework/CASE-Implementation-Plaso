@@ -1,4 +1,17 @@
 
+import rdflib
+from plaso.lib import timelib
+import pytz
+
+
+def convert_timestamp(timestamp):
+    """Converts a plaso timestamp into a valid rdflib Literal."""
+    # TODO: Extract timezone from knowledge base in plaso storage file. Assuming UTC for now.
+    # TODO: Create binding for XSD.dateTimeStamp. It's unavailable in rdflib.
+    #  - Binding should allow direct conversion from Iso format.
+    timestamp = timelib.Timestamp.CopyToDatetime(timestamp, timezone=pytz.UTC)
+    return rdflib.Literal(timestamp, datatype=rdflib.XSD.dateTime)
+
 
 def hash_dict(dictionary):
     # NOTE: If we have a recursive dictionary, we have bigger problems.

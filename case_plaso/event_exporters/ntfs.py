@@ -1,7 +1,7 @@
 
 from plaso.lib.eventdata import EventTimestamp
 
-from case_plaso import event_exporter
+from case_plaso import event_exporter, lib
 
 
 @event_exporter.register
@@ -28,7 +28,7 @@ class NTFSExporter(event_exporter.EventExporter):
 
     def export_timestamp(self, event, pb):
         try:
-            pb.add(self.TIMESTAMP_MAP[event.timestamp_desc], event.timestamp)
+            pb.add(self.TIMESTAMP_MAP[event.timestamp_desc], lib.convert_timestamp(event.timestamp))
         except KeyError:
             # TODO: Log this or something.
             pass

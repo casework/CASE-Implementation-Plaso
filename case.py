@@ -1,7 +1,8 @@
 """An API to the CASE ontology."""
 
 import rdflib
-from rdflib import RDF
+from rdflib import RDF, XSD
+import rdflib.term
 
 CASE = rdflib.Namespace('http://case.example.org/core#')
 

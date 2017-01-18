@@ -1,5 +1,5 @@
 
-from case_plaso import event_exporter
+from case_plaso import event_exporter, lib
 
 
 @event_exporter.register
@@ -15,7 +15,6 @@ class AndroidCallExporter(event_exporter.EventExporter):
     def __init__(self, document):
         super(AndroidCallExporter, self).__init__(document)
         self._contacts = {}
-        self._phone_calls = {}
 
     def export_event_data(self, event):
         phone_call_pb = self.document.create_trace().create_property_bundle(
@@ -43,6 +42,6 @@ class AndroidCallExporter(event_exporter.EventExporter):
 
     def export_timestamp(self, event, pb):
         try:
-            pb.add(self.TIMESTAMP_MAP[event.timestamp_desc], event.timestamp)
+            pb.add(self.TIMESTAMP_MAP[event.timestamp_desc], lib.convert_timestamp(event.timestamp))
         except KeyError:
             pass
