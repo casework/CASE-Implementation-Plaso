@@ -5,10 +5,9 @@ document following the CASE ontology.
 
 import argparse
 import os
-import rdflib
 
 import case
-from case_plaso import plaso_exporter, CASE
+from case_plaso import plaso_exporter
 
 
 if __name__ == '__main__':
@@ -29,4 +28,4 @@ if __name__ == '__main__':
     exporter = plaso_exporter.PlasoExporter(document)
     exporter.export_storage_file(options.storage_file)
 
-    print document.serialize(format='turtle', destination='test.ttl')
+    document.serialize(format='json-ld', destination='test.json')
