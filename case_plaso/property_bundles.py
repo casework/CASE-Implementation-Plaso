@@ -15,69 +15,60 @@ def register(identifier):
     return func_wrapper
 
 
-def construct(identifier, graph, *args):
-    """Constructs a property bundle based on the given identifier.
+def construct(identifier, uco_object, *args):
+    """Constructs property bundles based on the given identifier.
 
     Args:
         identifier: The unique identifier to associate to a property bundle to create.
-        graph: The graph to create the property bundle.
+        uco_object: The uco_object to place the property bundles in.
         *args: Extra arguments used by the given property bundle constructor.
-
-    Returns:
-        rdflib.URIRef if successful or None if a constructor is not available.
     """
     if identifier in registry:
-        return registry[identifier](graph, *args)
-    else:
-        return None
+        registry[identifier](uco_object, *args)
 
 
 @register(dfvfs_definitions.TYPE_INDICATOR_DATA_RANGE)
-def DataRange(graph, path_spec):
-    pb = BNode()
-    graph.add((pb, RDF.type, CASE.DataRange))
-    graph.add((pb, CASE.rangeOffset, Literal(path_spec.range_offset)))
-    graph.add((pb, CASE.rangeSize, Literal(path_spec.range_size)))
-    return pb
+def DataRange(uco_object, path_spec):
+    uco_object.create_property_bundle(
+        'DataRange',
+        rangeOffset=path_spec.range_offset,
+        rangeSize=path_spec.range_size)
 
 
 @register(dfvfs_definitions.TYPE_INDICATOR_ENCODED_STREAM)
-def Encoding(graph, path_spec):
-    pb = BNode()
-    graph.add((pb, RDF.type, CASE.Encoding))
-    encoding_method = mappings.EncodingMethod.get(
-        path_spec.encoding_method, path_spec.encoding_method)
-    graph.add((pb, CASE.encodingMethod, encoding_method))
-    return pb
+def Encoding(uco_object, path_spec):
+    uco_object.create_property_bundle(
+        'Encoding',
+        encodingMethod=mappings.EncodingMethod[path_spec.encoding_method])
 
 
 @register(dfvfs_definitions.TYPE_INDICATOR_ENCRYPTED_STREAM)
-def Encryption(graph, path_spec):
-    pb = BNode()
-    graph.add((pb, RDF.type, CASE.Encryption))
-    graph.add((pb, CASE.encryptionIV, Literal(path_spec.initialization_vector)))
-    graph.add((pb, CASE.encryptionKey, Literal(path_spec.key)))
-    encryption_mode = mappings.EncryptionMode.get(path_spec.cipher_mode)
-    if encryption_mode:
-        graph.add((pb, CASE.encryptionMode, encryption_mode))
-    else:
-        raise RuntimeError('Unknown encryption mode.')
-    encryption_method = mappings.EncryptionMethod.get(path_spec.encryption_method)
-    if encryption_method:
-        graph.add((pb, CASE.encryptionMethod, encryption_method))
-    else:
-        raise RuntimeError('Unknown encryption method.')
-    return pb
+def Encryption(uco_object, path_spec):
+    uco_object.create_property_bundle(
+        'Encryption',
+        encryptionIV=path_spec.initialization_vector,
+        encryptionKey=path_spec.key,
+        encryptionMode=mappings.EncryptionMode[path_spec.cipher_mode],
+        encryptionMethod=mappings.EncryptionMethod[path_spec.encryption_method])
 
 
 @register(dfvfs_definitions.TYPE_INDICATOR_SQLITE_BLOB)
-def SQLiteBlob(graph, path_spec):
-    pb = BNode()
-    graph.add((pb, CASE.columnName, Literal(path_spec.column_name)))
-    graph.add((pb, CASE.tableName, Literal(path_spec.table_name)))
+def SQLiteBlob(uco_object, path_spec):
+    pb = uco_object.create_property_bundle(
+        'SQLiteBlob',
+        columnName=path_spec.column_name,
+        tableName=path_spec.table_name)
     if hasattr(path_spec, 'row_index'):
-        graph.add((pb, CASE.rowIndex, Literal(path_spec.row_index)))
+        pb.add('rowIndex', path_spec.row_index)
     elif hasattr(path_spec, 'row_condition'):
-        graph.add((pb, CASE.rowCondition, Literal(path_spec.row_condition)))
-    return pb
+        pb.add('rowCondition', ' '.join(path_spec.row_condition))
+
+
+@register('fs:stat:ntfs')
+def MftRecord(uco_object, event):
+    uco_object.create_property_bundle(
+        'MftRecord',
+        mftFileID=getattr(event, 'file_reference', None),
+        mftFlags=getattr(event, 'file_attribute_flags', None),
+        mftParentID=getattr(event, 'parent_file_reference', None))
 
