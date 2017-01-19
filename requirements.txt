@@ -4,8 +4,7 @@ rdflib
 rdflib-jsonld
 pypiwin32
 
-# Plaso and DFVFS annoyingly doesn't specify their dependencies in their
-# setup.py script. Therefore, we need to manually specify the dependencies
-# here.
+# TODO: Since we are not actually running plaso's tools, not all of plaso's
+# dependencies may be necessary.
 -r plaso_requirements.txt
 -r dfvfs_requirements.txt
