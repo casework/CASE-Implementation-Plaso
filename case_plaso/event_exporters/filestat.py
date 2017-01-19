@@ -19,6 +19,8 @@ class FileStatExporter(event_exporter.EventExporter):
     def __init__(self, document):
         super(FileStatExporter, self).__init__(document)
         self._path_spec_traces = {}
+        self._content_data_pbs = {}
+        self._processed_hashes = set()
 
     def export_path_spec(self, path_spec):
         """Exports the given DFVFS path spec into the graph.
@@ -88,3 +90,18 @@ class FileStatExporter(event_exporter.EventExporter):
             trace.create_property_bundle(
                 'ExtInode',
                 extDeletionTime=lib.convert_timestamp(event.timestamp))
+
+        # Add hash data into content_data property bundle.
+        # NOTE: This is were we could technically add the dataPayload of the
+        # file as well... although that would make the file HUGE!
+        if event.pathspec not in self._content_data_pbs:
+            self._content_data_pbs[event.pathspec] = trace.create_property_bundle('ContentData')
+        content_data = self._content_data_pbs[event.pathspec]
+        for name, value in event.GetAttributes():
+            if name in mappings.HashMethod and (content_data, name, value) not in self._processed_hashes:
+                # Keep trace of processed hashes, so we don't add the same hash twice.
+                # TODO: Refactor this out when github.com/log2timeline/plaso/issues/910 is solved.
+                self._processed_hashes.add((content_data, name, value))
+                hash = self.document.create_hash(
+                    hashMethod=mappings.HashMethod[name], hashValue=value)
+                content_data.add('hash', hash)

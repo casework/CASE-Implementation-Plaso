@@ -37,6 +37,11 @@ class Document(object):
         """Creates and returns a Relationship object."""
         return Relationship(self.graph, **properties)
 
+    # Manually specify properties to help inforce both properties are supplied.
+    def create_hash(self, hashMethod, hashValue):
+        return Node(
+            self.graph, rdf_type=CASE.Hash, hashMethod=hashMethod, hashValue=hashValue)
+
     # We are going to default to json-ld instead of rdflib's default of xml.
     def serialize(self, format='json-ld', **kwargs):
         """Serializes the document's graph to a destination.
@@ -142,4 +147,3 @@ class Relationship(UcoObject):
 
 class PropertyBundle(Node):
     RDF_TYPE = CASE.PropertyBundle
-

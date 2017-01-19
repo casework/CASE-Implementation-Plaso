@@ -1,11 +1,8 @@
 
-import os
 from dfvfs.lib import definitions as dfvfs_definitions
 from plaso.storage import zip_file
 
-import case
-from case import CASE
-from case_plaso import PLASO, mappings, property_bundles
+from case_plaso import PLASO
 from case_plaso.event_exporter import EventExporter
 
 # Import event exporters to get them registered.

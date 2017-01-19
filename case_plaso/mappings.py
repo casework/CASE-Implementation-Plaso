@@ -64,28 +64,3 @@ HashMethod = {
     'sha256_hash': CASE.SHA256,
     'md5_hash': CASE.MD5
 }
-
-
-# special_case_properties = {
-#     dfvfs_definitions.TYPE_INDICATOR_SQLITE_BLOB: {
-#         'row_condition': lambda x:
-#     }
-# }
-
-
-path_spec_properties = {
-    dfvfs_definitions.TYPE_INDICATOR_DATA_RANGE: {
-        'range_offset': CASE.rangeOffset,
-        'range_size': CASE.rangeSize},
-    dfvfs_definitions.TYPE_INDICATOR_SQLITE_BLOB: {
-        'column_name': CASE.columnName,
-        'row_condition': CASE.rowCondition,  # TODO: Special case
-        'row_index': CASE.rowIndex,
-        'table_name': CASE.tableName},
-    dfvfs_definitions.TYPE_INDICATOR_ENCRYPTED_STREAM: {
-        'cipher_mode': CASE.encryptionMode,          # TODO: Special case
-        'encryption_method': CASE.encryptionMethod,  # TODO: Special case
-        'initialization_vector': CASE.encryptionIV,
-        'key': CASE.encryptionKey}
-}
-
