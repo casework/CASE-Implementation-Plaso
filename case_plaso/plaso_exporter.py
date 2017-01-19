@@ -1,7 +1,5 @@
 
 import os
-import rdflib
-from rdflib import RDF, OWL, BNode, Literal
 from dfvfs.lib import definitions as dfvfs_definitions
 from plaso.storage import zip_file
 
@@ -26,13 +24,10 @@ class PlasoExporter(object):
         self.document = document
         # Add 'plaso' prefix used by custom property bundles to internal graph.
         self.document.graph.namespace_manager.bind('plaso', PLASO)
-        self._path_spec_traces = {}
-        self._event_traces = {}
         self._event_exporters = {}
 
-    def get_event_exporter(self, event):
-        """Retrieves event exporter for given event."""
-        data_type = event.data_type
+    def get_event_exporter(self, data_type):
+        """Retrieves event exporter for given event data_type."""
         if data_type not in self._event_exporters:
             self._event_exporters[data_type] = EventExporter.from_data_type(
                 data_type, self.document)
@@ -43,43 +38,10 @@ class PlasoExporter(object):
 
         Returns: tuple containing URIRefs for Trace and File property bundle.
         """
-        comparable = path_spec.comparable
-        if comparable in self._path_spec_traces:
-            # TODO: When filestat events call this, it will want to add more timestamps to the file pb.
-            return self._path_spec_traces[comparable]
-
-        trace = self.document.create_trace()
-        file_pb = trace.create_property_bundle('File')
-
-        self._path_spec_traces[comparable] = (trace, file_pb)
-
-        # Add file path information.
-        location = getattr(path_spec, 'location', None)
-        if location:
-            file_pb.add('filePath', location)
-            file_name, extension = os.path.splitext(os.path.basename(location))
-            file_pb.add('fileName', file_name)
-            file_pb.add('extension', extension)
-
-        file_pb.add(
-            'fileSystemType', mappings.FileSystemType.get(path_spec.type_indicator, None))
-
-        # If path spec has a parent, create the parent then create a relationship
-        # object pointing to its parent.
-        if path_spec.HasParent():
-            parent_trace, _ = self.export_path_spec(path_spec.parent)
-            relationship = self.document.create_relationship(
-                source=trace,
-                target=parent_trace,
-                kindOfRelationship=mappings.kindOfRelationship.get(
-                    path_spec.type_indicator, mappings.kindOfRelationship['_default']),
-                # TODO: Not exactly sure what isDirectional means..
-                isDirectional=True)
-
-            # Add a property bundle to relationship if available.
-            property_bundles.construct(path_spec.type_indicator, relationship)
-
-        return trace, file_pb
+        # The event exporter for 'fs:stat' contains functionality to export
+        # path_specs.
+        file_stat_exporter = self.get_event_exporter('fs:stat')
+        return file_stat_exporter.export_path_spec(path_spec)
 
     def export_event_source(self, event_source):
         if event_source.file_entry_type == dfvfs_definitions.FILE_ENTRY_TYPE_DEVICE:
@@ -96,20 +58,9 @@ class PlasoExporter(object):
             pass
 
     def export_event(self, event):
-        # Append extra file stat information to the "File" property bundle.
-        if event.data_type == 'fs:stat':
-            trace, file_pb = self.export_path_spec(event.pathspec)
-            file_pb.add(
-                'fileSystemType', mappings.FileSystemType.get(event.file_system_type, None))
-            file_pb.add('isAllocated', event.is_allocated)
-            file_pb.add('fileSize', getattr(event, 'file_size', None))
-
-            # # Add extra file system specific property bundles. (eg. MFtRecord, Inode)
-            # property_bundles.construct(event.data_type, trace, event)
-
-        else:
-            event_exporter = self.get_event_exporter(event)
-            event_exporter.export_event(event)
+        """Exports the given plaso EventObject into the graph."""
+        event_exporter = self.get_event_exporter(event.data_type)
+        event_exporter.export_event(event)
 
     def export_storage_file(self, storage_file):
         """Extracts and exports plaso event data and sources into the graph."""

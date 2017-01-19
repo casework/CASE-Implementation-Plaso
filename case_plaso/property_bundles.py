@@ -1,9 +1,8 @@
 """Contains constructors for converting dfvfs and plaso entities into CASE property bundles."""
 
-from rdflib import RDF, Literal, BNode
 from dfvfs.lib import definitions as dfvfs_definitions
 
-from case_plaso import CASE, mappings
+from case_plaso import mappings
 
 
 # Register functions based on indicators.
@@ -62,13 +61,3 @@ def SQLiteBlob(uco_object, path_spec):
         pb.add('rowIndex', path_spec.row_index)
     elif hasattr(path_spec, 'row_condition'):
         pb.add('rowCondition', ' '.join(path_spec.row_condition))
-
-
-@register('fs:stat:ntfs')
-def MftRecord(uco_object, event):
-    uco_object.create_property_bundle(
-        'MftRecord',
-        mftFileID=getattr(event, 'file_reference', None),
-        mftFlags=getattr(event, 'file_attribute_flags', None),
-        mftParentID=getattr(event, 'parent_file_reference', None))
-

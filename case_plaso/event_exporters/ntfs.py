@@ -1,6 +1,7 @@
 
 from plaso.lib.eventdata import EventTimestamp
 
+from case import CASE
 from case_plaso import event_exporter, lib
 
 
@@ -16,8 +17,9 @@ class NTFSExporter(event_exporter.EventExporter):
         EventTimestamp.ENTRY_MODIFICATION_TIME: 'mftFileNameRecordChangeTime'}
 
     def export_event_data(self, event):
-        # TODO: Figure out how to associate MftRecord pb with the accosiated
+        # TODO: Figure out how to associate MftRecord pb with the associated
         # File pb so we don't have to make separate traces.
+        # (The path spec points to the $Mft file.)
         trace = self.document.create_trace()
         pb = trace.create_property_bundle(
             'MftRecord',
@@ -28,7 +30,9 @@ class NTFSExporter(event_exporter.EventExporter):
 
     def export_timestamp(self, event, pb):
         try:
-            pb.add(self.TIMESTAMP_MAP[event.timestamp_desc], lib.convert_timestamp(event.timestamp))
+            pb.add(
+                self.TIMESTAMP_MAP[event.timestamp_desc],
+                lib.convert_timestamp(event.timestamp))
         except KeyError:
             # TODO: Log this or something.
             pass

@@ -2,7 +2,7 @@
 
 from dfvfs.lib import definitions as dfvfs_definitions
 
-from case_plaso import CASE
+from case import CASE
 
 # Maps dfvfs compression methods to CASE CompressionMethod
 CompressionMethod = {
