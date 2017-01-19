@@ -52,7 +52,8 @@ class FileStatExporter(event_exporter.EventExporter):
         # object pointing to its parent.
         if path_spec.HasParent():
             parent_trace, _ = self.export_path_spec(path_spec.parent)
-            relationship = self.document.create_relationship(
+            relationship = self.document.create_uco_object(
+                'Relationship',
                 source=trace,
                 target=parent_trace,
                 kindOfRelationship=mappings.kindOfRelationship.get(
@@ -99,7 +100,7 @@ class FileStatExporter(event_exporter.EventExporter):
         content_data = self._content_data_pbs[event.pathspec]
         for name, value in event.GetAttributes():
             if name in mappings.HashMethod and (content_data, name, value) not in self._processed_hashes:
-                # Keep trace of processed hashes, so we don't add the same hash twice.
+                # Keep track of processed hashes, so we don't add the same hash twice.
                 # TODO: Refactor this out when github.com/log2timeline/plaso/issues/910 is solved.
                 self._processed_hashes.add((content_data, name, value))
                 hash = self.document.create_hash(

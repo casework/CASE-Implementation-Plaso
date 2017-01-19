@@ -1,8 +1,9 @@
 
 from dfvfs.lib import definitions as dfvfs_definitions
+from plaso.engine.knowledge_base import KnowledgeBase
 from plaso.storage import zip_file
 
-from case_plaso import PLASO
+from case_plaso import PLASO, lib
 from case_plaso.event_exporter import EventExporter
 
 # Import event exporters to get them registered.
@@ -11,6 +12,18 @@ from case_plaso import event_exporters as _
 
 class PlasoExporter(object):
     """Exports plaso data into a RDF graph using the CASE ontology."""
+
+    # Configuration attributes stored in a plaso Session object.
+    _CONFIGURATION_ATTRIBUTES = [
+        'identifier',
+        'command_line_arguments',
+        'debug_mode',
+        'enabled_parser_names',
+        'filter_expression',
+        'filter_file',
+        'parser_filter_expression',
+        'preferred_encoding',
+        'preferred_year']
 
     def __init__(self, document):
         """Initializes PlasoExporter.
@@ -59,12 +72,55 @@ class PlasoExporter(object):
         event_exporter = self.get_event_exporter(event.data_type)
         event_exporter.export_event(event)
 
+    def export_session(self, session):
+        """Exports the given plaso storage Session into the graph."""
+        instrument = self.document.create_uco_object(
+            'Tool',
+            name=session.product_name,
+            version=session.product_version,
+            toolType='parser?',
+            creator='Joachim Metz')
+        config = instrument.create_property_bundle('ToolConfiguration')
+        for attribute in self._CONFIGURATION_ATTRIBUTES:
+            if hasattr(session, attribute):
+                value = getattr(session, attribute)
+                if value is None:
+                    # None is technically a configuration, but we don't want to print "None".
+                    value = ''
+                value = str(value)
+                setting = self.document.create_node(
+                    'ConfigurationSetting', itemName=attribute, itemValue=value)
+                config.add('configurationSetting', setting)
+
+        # TODO: How do we know who performed the Plaso action? That information
+        # is not in the plaso storage file...
+        performer = self.document.create_uco_object('Identity')
+        performer.create_property_bundle(
+            'SimpleName',
+            givenName='John',
+            familyName='Doe')
+
+        action = self.document.create_uco_object(
+            'ForensicAction',
+            startTime=lib.convert_timestamp(session.start_time),
+            endTime=lib.convert_timestamp(session.completion_time))
+        action.create_property_bundle(
+            'ActionReferences',
+            performer=performer,
+            instrument=instrument,
+            result=None,   # TODO: We can't fill this in because we don't know what session created what event objects...
+            location=None)  # TODO: How am I supposed to be able to get this information?
+
     def export_storage_file(self, storage_file):
         """Extracts and exports plaso event data and sources into the graph."""
         with zip_file.ZIPStorageFileReader(storage_file) as storage_reader:
-            # TODO: Do stuff with metadata
+            knowledge_base = KnowledgeBase()
+            storage_reader.ReadPreprocessingInformation(knowledge_base)
+            # TODO: Export knowledge base.
 
-            # Convert path specs into CASE Traces containgin file-type property bundles.
+            for session in storage_reader._storage_file.GetSessions():
+                self.export_session(session)
+
             for source in storage_reader.GetEventSources():
                 self.export_event_source(source)
 
