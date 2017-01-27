@@ -1,8 +1,10 @@
 
 import os
 
+from dfvfs.lib import definitions as dfvfs_definitions
+
 from case import CASE
-from case_plaso import event_exporter, lib, mappings, property_bundles
+from case_plaso import event_exporter, lib, mappings, file_relationships
 
 
 @event_exporter.register
@@ -16,12 +18,18 @@ class FileStatExporter(event_exporter.EventExporter):
         'crtime': 'createdTime',
         'mtime': 'modifiedTime'}
 
+    # List of dfvfs type indicators that should have their location attribute ignored
+    # when trying to create a PathRelation property bundle.
+    # TODO: Populate this.
+    _IGNORE_PATH_TYPE_INDICATORS = [dfvfs_definitions.TYPE_INDICATOR_LVM]
+
     def __init__(self, document):
         super(FileStatExporter, self).__init__(document)
         self._path_spec_traces = {}
         self._content_data_pbs = {}
         self._processed_hashes = set()
 
+    # TODO: Clean up this function.
     def export_path_spec(self, path_spec):
         """Exports the given DFVFS path spec into the graph.
 
@@ -31,10 +39,22 @@ class FileStatExporter(event_exporter.EventExporter):
         if comparable in self._path_spec_traces:
             return self._path_spec_traces[comparable]
 
+        # If we have an Image file type flatten it into the parent.
+        if path_spec.type_indicator in dfvfs_definitions.STORAGE_MEDIA_IMAGE_TYPE_INDICATORS:
+            assert path_spec.HasParent()
+            parent_trace, parent_file_pb = self.export_path_spec(path_spec.parent)
+            parent_trace.create_property_bundle(
+                'Image',
+                imageType=mappings.ImageType[path_spec.type_indicator])
+            self._path_spec_traces[comparable] = (parent_trace, parent_file_pb)
+            return parent_trace, parent_file_pb
+
         trace = self.document.create_trace()
         file_pb = trace.create_property_bundle('File')
-
         self._path_spec_traces[comparable] = (trace, file_pb)
+
+        file_pb.add(
+            'fileSystemType', mappings.FileSystemType.get(path_spec.type_indicator, None))
 
         # Add file path information.
         location = getattr(path_spec, 'location', None)
@@ -45,11 +65,9 @@ class FileStatExporter(event_exporter.EventExporter):
             if extension:
                 file_pb.add('extension', extension)
 
-        file_pb.add(
-            'fileSystemType', mappings.FileSystemType.get(path_spec.type_indicator, None))
-
         # If path spec has a parent, create the parent then create a relationship
         # object pointing to its parent.
+        # TODO: CASE should rethink the approach of putting this information in Relationships.
         if path_spec.HasParent():
             parent_trace, _ = self.export_path_spec(path_spec.parent)
             relationship = self.document.create_uco_object(
@@ -58,11 +76,19 @@ class FileStatExporter(event_exporter.EventExporter):
                 target=parent_trace,
                 kindOfRelationship=mappings.kindOfRelationship.get(
                     path_spec.type_indicator, mappings.kindOfRelationship['_default']),
-                # TODO: Not exactly sure what isDirectional means..
                 isDirectional=True)
 
-            # Add a property bundle to relationship if available.
-            property_bundles.construct(path_spec.type_indicator, relationship)
+            if location and path_spec.type_indicator not in self._IGNORE_PATH_TYPE_INDICATORS:
+                relationship.create_property_bundle('PathRelation', path=location)
+
+            # Add an extra property bundle to relationship if available.
+            file_relationships.construct(path_spec.type_indicator, relationship, path_spec)
+
+        # We then want to REPEAT the same information in the trace, because reasons.
+        # However, I guess we don't have to do it for all types, but I'm not sure which ones
+        # to not do it for, so I'm going to do it for all of them.
+        # TODO: We should not be repeating the information like this. We should rethink this.
+        file_relationships.construct(path_spec.type_indicator, trace, path_spec)
 
         return trace, file_pb
 

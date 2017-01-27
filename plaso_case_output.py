@@ -19,6 +19,14 @@ if __name__ == '__main__':
         'storage_file',
         help='A plaso storage file. (The resulting file from running '
                     'log2timeline.)')
+    parser.add_argument(
+        'output_file',
+        help='File path to export the resulting serialized file.')
+    # TODO: Add specific choices
+    parser.add_argument(
+        '--format',
+        default='json-ld',
+        help='The serialization format.')
     options = parser.parse_args()
 
     if not os.path.exists(options.storage_file):
@@ -29,4 +37,4 @@ if __name__ == '__main__':
     print 'Exporting storage file...'
     exporter.export_storage_file(options.storage_file)
     print 'Serializing graph...'
-    document.serialize(format='json-ld', destination='test.json')
+    document.serialize(format=options.format, destination=options.output_file)
