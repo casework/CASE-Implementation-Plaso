@@ -1,0 +1,102 @@
+@prefix case: <http://case.example.org/core#> .
+@prefix plaso: <http://plaso.example.org/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:28:15.294000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:PhoneCall ;
+            case:callType "MISSED" ;
+            case:duration 0 ;
+            case:from _:N69968a6cbae347508fec528ef39b1e4f ;
+            case:startTime "2013-11-06T21:17:16.690000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:28:15.310000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:PhoneCall ;
+            case:callType "INCOMING" ;
+            case:duration 639 ;
+            case:endTime "2013-11-07T00:14:15.690000+00:00"^^xsd:dateTime ;
+            case:from _:N69968a6cbae347508fec528ef39b1e4f ;
+            case:startTime "2013-11-07T00:03:36.690000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:28:15.310000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:File ;
+            case:accessedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
+            case:extension ".db" ;
+            case:fileName "contacts2" ;
+            case:filePath "D:\\dev\\plaso\\test_data\\contacts2.db" ;
+            case:fileSize 33792 ;
+            case:isAllocated true ;
+            case:metadataChangedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
+            case:modifiedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ],
+        [ a case:ContentData ;
+            case:hash [ a case:Hash ;
+                    case:hashMethod case:SHA256 ;
+                    case:hashValue "b37699f86515cff66f71a1a8d9b48c7392a83fc6f9fab35c6abd8f5435221591" ] ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:28:15.310000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:PhoneCall ;
+            case:callType "OUTGOING" ;
+            case:duration 126 ;
+            case:endTime "2013-11-06T21:20:59.283000+00:00"^^xsd:dateTime ;
+            case:startTime "2013-11-06T21:18:53.283000+00:00"^^xsd:dateTime ;
+            case:to _:N69968a6cbae347508fec528ef39b1e4f ] .
+
+[] a case:ForensicAction ;
+    case:createdTime "2017-01-30T10:28:15.294000"^^xsd:dateTime ;
+    case:endTime "2017-01-30T15:27:47.616000+00:00"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ActionReferences ;
+            case:instrument [ a case:Tool ;
+                    case:createdTime "2017-01-30T10:28:15.294000"^^xsd:dateTime ;
+                    case:creator "Joachim Metz" ;
+                    case:name "plaso" ;
+                    case:propertyBundle [ a case:ToolConfiguration ;
+                            case:configurationSetting [ a case:ConfigurationSetting ;
+                                    case:itemName "enabled_parser_names" ;
+                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_year" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_encoding" ;
+                                    case:itemValue "cp1252" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_expression" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "debug_mode" ;
+                                    case:itemValue "False" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "identifier" ;
+                                    case:itemValue "08f217034c164f9c8ca08abbfbc1ba2c" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_file" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "command_line_arguments" ;
+                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_calls.plaso D:/dev/plaso/test_data/contacts2.db" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "parser_filter_expression" ;
+                                    case:itemValue "" ] ] ;
+                    case:toolType "parser?" ;
+                    case:version "1.5.2_20161031" ] ;
+            case:performer [ a case:Identity ;
+                    case:createdTime "2017-01-30T10:28:15.294000"^^xsd:dateTime ;
+                    case:propertyBundle [ a case:SimpleName ;
+                            case:familyName "Doe" ;
+                            case:givenName "John" ] ] ] ;
+    case:startTime "2017-01-30T15:27:47.554000+00:00"^^xsd:dateTime .
+
+_:Nfa681f333fce4cd88c1bddf2b82b031a a case:Contact ;
+    case:contactName "Barney" ;
+    case:phoneNumber "5404561685" .
+
+_:N69968a6cbae347508fec528ef39b1e4f a case:Trace ;
+    case:createdTime "2017-01-30T10:28:15.294000"^^xsd:dateTime ;
+    case:propertyBundle _:Nfa681f333fce4cd88c1bddf2b82b031a .
+

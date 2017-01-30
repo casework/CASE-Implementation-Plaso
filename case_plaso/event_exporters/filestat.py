@@ -21,7 +21,9 @@ class FileStatExporter(event_exporter.EventExporter):
     # List of dfvfs type indicators that should have their location attribute ignored
     # when trying to create a PathRelation property bundle.
     # TODO: Populate this.
-    _IGNORE_PATH_TYPE_INDICATORS = [dfvfs_definitions.TYPE_INDICATOR_LVM]
+    _IGNORE_PATH_TYPE_INDICATORS = [
+        dfvfs_definitions.TYPE_INDICATOR_LVM,
+        dfvfs_definitions.TYPE_INDICATOR_TSK_PARTITION]
 
     def __init__(self, document):
         super(FileStatExporter, self).__init__(document)
@@ -121,6 +123,7 @@ class FileStatExporter(event_exporter.EventExporter):
         # Add hash data into content_data property bundle.
         # NOTE: This is were we could technically add the dataPayload of the
         # file as well... although that would make the file HUGE!
+        # TODO: Don't add ContentData if hash is missing.
         if event.pathspec not in self._content_data_pbs:
             self._content_data_pbs[event.pathspec] = trace.create_property_bundle('ContentData')
         content_data = self._content_data_pbs[event.pathspec]

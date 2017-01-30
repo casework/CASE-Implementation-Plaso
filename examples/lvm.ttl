@@ -1,0 +1,263 @@
+@prefix case: <http://case.example.org/core#> .
+@prefix plaso: <http://plaso.example.org/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:PathRelation ;
+            case:path "/a_directory/another_file" ],
+        [ a plaso:TSK ;
+            case:inode 14 ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a case:ContentData ;
+                    case:hash [ a case:Hash ;
+                            case:hashMethod case:SHA256 ;
+                            case:hashValue "c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16" ] ],
+                [ a plaso:TSK ;
+                    case:inode 14 ],
+                [ a case:File ;
+                    case:accessedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:fileName "another_file" ;
+                    case:filePath "/a_directory/another_file" ;
+                    case:fileSize 22 ;
+                    case:isAllocated true ;
+                    case:isDirectory false ;
+                    case:metadataChangedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ] ] ;
+    case:target _:N0ec727d3cdae4abba527148db61805d6 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a plaso:TSK ;
+            case:inode 11 ],
+        [ a case:PathRelation ;
+            case:path "/lost+found" ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a case:File ;
+                    case:accessedTime "2016-01-09T22:50:47+00:00"^^xsd:dateTime ;
+                    case:fileName "lost+found" ;
+                    case:filePath "/lost+found" ;
+                    case:fileSize 12288 ;
+                    case:isAllocated true ;
+                    case:isDirectory true ;
+                    case:metadataChangedTime "2016-01-09T22:50:47+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:50:47+00:00"^^xsd:dateTime ],
+                [ a plaso:TSK ;
+                    case:inode 11 ],
+                [ a case:ContentData ] ] ;
+    case:target _:Ned675706bd9a47c6a409d0eadff5ced4 .
+
+[] a case:ForensicAction ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:endTime "2017-01-30T16:33:04.542000+00:00"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ActionReferences ;
+            case:instrument [ a case:Tool ;
+                    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+                    case:creator "Joachim Metz" ;
+                    case:name "plaso" ;
+                    case:propertyBundle [ a case:ToolConfiguration ;
+                            case:configurationSetting [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_encoding" ;
+                                    case:itemValue "cp1252" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "debug_mode" ;
+                                    case:itemValue "False" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "parser_filter_expression" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_file" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "enabled_parser_names" ;
+                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_expression" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "command_line_arguments" ;
+                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "identifier" ;
+                                    case:itemValue "8849afcdba3745e5b6103ba8038c9262" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_year" ;
+                                    case:itemValue "" ] ] ;
+                    case:toolType "parser?" ;
+                    case:version "1.5.2_20161031" ] ;
+            case:performer [ a case:Identity ;
+                    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+                    case:propertyBundle [ a case:SimpleName ;
+                            case:familyName "Doe" ;
+                            case:givenName "John" ] ] ] ;
+    case:startTime "2017-01-30T16:32:57.288000+00:00"^^xsd:dateTime .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:LVMVolume ;
+            case:volumeIndex 1 ] ;
+    case:source _:Ned675706bd9a47c6a409d0eadff5ced4 ;
+    case:target _:N3609c7d8becd4c968951905f007eb902 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:PathRelation ;
+            case:path "/passwords.txt" ],
+        [ a plaso:TSK ;
+            case:inode 15 ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a case:ContentData ;
+                    case:hash [ a case:Hash ;
+                            case:hashMethod case:SHA256 ;
+                            case:hashValue "02a2a6af2f1ecf4720d7d49d640f0d0a269a7ec733e41973bdd34f09dad0e252" ] ],
+                [ a plaso:TSK ;
+                    case:inode 15 ],
+                [ a case:File ;
+                    case:accessedTime "2016-01-09T22:53:20+00:00"^^xsd:dateTime ;
+                    case:extension ".txt" ;
+                    case:fileName "passwords" ;
+                    case:filePath "/passwords.txt" ;
+                    case:fileSize 116 ;
+                    case:isAllocated true ;
+                    case:isDirectory false ;
+                    case:metadataChangedTime "2016-01-09T22:53:20+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:53:20+00:00"^^xsd:dateTime ] ] ;
+    case:target _:N0ec727d3cdae4abba527148db61805d6 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:LVMVolume ;
+            case:volumeIndex 0 ] ;
+    case:source _:N0ec727d3cdae4abba527148db61805d6 ;
+    case:target _:N3609c7d8becd4c968951905f007eb902 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:PathRelation ;
+            case:path "/a_directory" ],
+        [ a plaso:TSK ;
+            case:inode 12 ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a case:ContentData ],
+                [ a case:File ;
+                    case:accessedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:fileName "a_directory" ;
+                    case:filePath "/a_directory" ;
+                    case:fileSize 1024 ;
+                    case:isAllocated true ;
+                    case:isDirectory true ;
+                    case:metadataChangedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ],
+                [ a plaso:TSK ;
+                    case:inode 12 ] ] ;
+    case:target _:N0ec727d3cdae4abba527148db61805d6 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a case:PathRelation ;
+            case:path "/a_directory/a_file" ],
+        [ a plaso:TSK ;
+            case:inode 13 ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a plaso:TSK ;
+                    case:inode 13 ],
+                [ a case:File ;
+                    case:accessedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:fileName "a_file" ;
+                    case:filePath "/a_directory/a_file" ;
+                    case:fileSize 53 ;
+                    case:isAllocated true ;
+                    case:isDirectory false ;
+                    case:metadataChangedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:53:14+00:00"^^xsd:dateTime ],
+                [ a case:ContentData ;
+                    case:hash [ a case:Hash ;
+                            case:hashMethod case:SHA256 ;
+                            case:hashValue "4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d" ] ] ] ;
+    case:target _:N0ec727d3cdae4abba527148db61805d6 .
+
+[] a case:Relationship ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:isDirectional true ;
+    case:kindOfRelationship "contained-within" ;
+    case:propertyBundle [ a plaso:TSK ;
+            case:inode 11 ],
+        [ a case:PathRelation ;
+            case:path "/lost+found" ] ;
+    case:source [ a case:Trace ;
+            case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+            case:propertyBundle [ a case:ContentData ],
+                [ a case:File ;
+                    case:accessedTime "2016-01-09T22:50:43+00:00"^^xsd:dateTime ;
+                    case:fileName "lost+found" ;
+                    case:filePath "/lost+found" ;
+                    case:fileSize 12288 ;
+                    case:isAllocated true ;
+                    case:isDirectory true ;
+                    case:metadataChangedTime "2016-01-09T22:50:43+00:00"^^xsd:dateTime ;
+                    case:modifiedTime "2016-01-09T22:50:43+00:00"^^xsd:dateTime ],
+                [ a plaso:TSK ;
+                    case:inode 11 ] ] ;
+    case:target _:N0ec727d3cdae4abba527148db61805d6 .
+
+_:N0b9aa8a1ff56456a99e78ae9bffa37f9 a case:File ;
+    case:fileName "lvm2" ;
+    case:filePath "/lvm2" ;
+    case:fileSystemType case:LVM .
+
+_:N5bf5b4ab06ca4e43b6c4fa73d4e844f4 a case:File ;
+    case:extension ".qcow2" ;
+    case:fileName "lvmtest" ;
+    case:filePath "D:\\dev\\dfvfs\\test_data\\lvmtest.qcow2" .
+
+_:Na9cb79382f0041e68d4b57b004309e44 a case:LVMVolume ;
+    case:volumeIndex 1 .
+
+_:Nc79d880c7cbd46359d978399e8785ef3 a case:LVMVolume ;
+    case:volumeIndex 0 .
+
+_:Nd66bf2ad21e042f48470ccf96fd62b91 a case:File ;
+    case:fileName "lvm1" ;
+    case:filePath "/lvm1" ;
+    case:fileSystemType case:LVM .
+
+_:Nfcdcd9ce6eb04b35ab372ce5717bc095 a case:Image ;
+    case:imageType case:QCOW .
+
+_:N3609c7d8becd4c968951905f007eb902 a case:Trace ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:propertyBundle _:N5bf5b4ab06ca4e43b6c4fa73d4e844f4,
+        _:Nfcdcd9ce6eb04b35ab372ce5717bc095 .
+
+_:Ned675706bd9a47c6a409d0eadff5ced4 a case:Trace ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:propertyBundle _:N0b9aa8a1ff56456a99e78ae9bffa37f9,
+        _:Na9cb79382f0041e68d4b57b004309e44 .
+
+_:N0ec727d3cdae4abba527148db61805d6 a case:Trace ;
+    case:createdTime "2017-01-30T11:33:47.431000"^^xsd:dateTime ;
+    case:propertyBundle _:Nc79d880c7cbd46359d978399e8785ef3,
+        _:Nd66bf2ad21e042f48470ccf96fd62b91 .
+

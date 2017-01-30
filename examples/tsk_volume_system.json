@@ -1,0 +1,326 @@
+{
+  "@context": {
+    "@vocab": "http://case.example.org/core#",
+    "case": "http://case.example.org/core#",
+    "plaso": "http://plaso.example.org/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:Nccf917c11fde4d9db9bd1c4b8449fa2d",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:N93479e0663394e7db5264d0202beb8c1"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20161031"
+    },
+    {
+      "@id": "_:Nd79c48c7cce646cdb5f47503b4331922",
+      "@type": "ConfigurationSetting",
+      "itemName": "debug_mode",
+      "itemValue": "False"
+    },
+    {
+      "@id": "_:N99a93c40a8d64c979a36e6360ded9115",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py tsk_volume_system.plaso ../dfvfs/test_data/tsk_volume_system.raw"
+    },
+    {
+      "@id": "_:Nd19ae439a4634f71a2ca8a22e4ea38f7",
+      "@type": "Image",
+      "imageType": {
+        "@id": "case:RAW"
+      }
+    },
+    {
+      "@id": "_:N5417a11a96ed4ddb8d279fbdb77cb009",
+      "@type": "File",
+      "extension": ".raw",
+      "fileName": "tsk_volume_system",
+      "filePath": "D:\\dev\\dfvfs\\test_data\\tsk_volume_system.raw"
+    },
+    {
+      "@id": "_:N51f211dcbff34c5ab1ca737a33347a38",
+      "@type": "ForensicAction",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T15:55:34.984000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "_:N71612c48207d4d6280795e018c612c77"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T15:55:27.761000+00:00"
+      }
+    },
+    {
+      "@id": "_:Nd07e8726674e41608a3a9447e951351c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nb4dadcad7a5844bf8f43cb7ca233ada7"
+        },
+        {
+          "@id": "_:N8177588bfa4941c38d2c43ac8b2c938b"
+        },
+        {
+          "@id": "_:N92bffa66502f45918ba1247fd88b3c02"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nb4b64da828064d3c93222fca0edface1",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "a08d7668b3dd409dba8a4fecfc0948ad"
+    },
+    {
+      "@id": "_:N4c8b9ad68bf04e439c5cca296003603e",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nca81cf7395734969b52231ce12b3ea63",
+      "@type": "PathRelation",
+      "path": "/lost+found"
+    },
+    {
+      "@id": "_:Nbd63cb5ba43b4318b0d2b511e313b886",
+      "@type": "File",
+      "fileName": "p2",
+      "filePath": "/p2"
+    },
+    {
+      "@id": "_:N71612c48207d4d6280795e018c612c77",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "_:Nccf917c11fde4d9db9bd1c4b8449fa2d"
+      },
+      "performer": {
+        "@id": "_:N7a870d3142bb43eca1c82f9b0dbb250f"
+      }
+    },
+    {
+      "@id": "_:N93479e0663394e7db5264d0202beb8c1",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:N4c8b9ad68bf04e439c5cca296003603e"
+        },
+        {
+          "@id": "_:N4a9f77c84985418298a6a3ea76092c67"
+        },
+        {
+          "@id": "_:N99a93c40a8d64c979a36e6360ded9115"
+        },
+        {
+          "@id": "_:N835bb204a9d84ad4bc7a22d7330eeeb0"
+        },
+        {
+          "@id": "_:Ne6ba063c12734ba3ab42d5250e2ae443"
+        },
+        {
+          "@id": "_:Nb4b64da828064d3c93222fca0edface1"
+        },
+        {
+          "@id": "_:N88eeaddf273b4e549ad6390f99b45be8"
+        },
+        {
+          "@id": "_:Nb3d6f8ddfaa64b84b233ecf621427b40"
+        },
+        {
+          "@id": "_:Nd79c48c7cce646cdb5f47503b4331922"
+        }
+      ]
+    },
+    {
+      "@id": "_:N8177588bfa4941c38d2c43ac8b2c938b",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "_:N87df7bf6ff874709ac7dc0b41ccba78e",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:N99db528e82904b4da5b84b8131904461",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": {
+        "@id": "_:N7bbb33569325474a9a54e02bea4b3d5f"
+      },
+      "source": {
+        "@id": "_:N56649710a9494dfd95eb178128866c00"
+      },
+      "target": {
+        "@id": "_:Neab8601460bd4d17a5c481a66a1cc4d7"
+      }
+    },
+    {
+      "@id": "_:N92bffa66502f45918ba1247fd88b3c02",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:N88eeaddf273b4e549ad6390f99b45be8",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N7a870d3142bb43eca1c82f9b0dbb250f",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "propertyBundle": {
+        "@id": "_:N87df7bf6ff874709ac7dc0b41ccba78e"
+      }
+    },
+    {
+      "@id": "_:Neab8601460bd4d17a5c481a66a1cc4d7",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nd19ae439a4634f71a2ca8a22e4ea38f7"
+        },
+        {
+          "@id": "_:N5417a11a96ed4ddb8d279fbdb77cb009"
+        }
+      ]
+    },
+    {
+      "@id": "_:N6988bb7c3be74af3a17b2e047dabad0c",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:Naec07a5ad8c5482fba7691fcde40f437"
+        },
+        {
+          "@id": "_:Nca81cf7395734969b52231ce12b3ea63"
+        }
+      ],
+      "source": {
+        "@id": "_:Nd07e8726674e41608a3a9447e951351c"
+      },
+      "target": {
+        "@id": "_:N56649710a9494dfd95eb178128866c00"
+      }
+    },
+    {
+      "@id": "_:N4a9f77c84985418298a6a3ea76092c67",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nb3d6f8ddfaa64b84b233ecf621427b40",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "_:N7bbb33569325474a9a54e02bea4b3d5f",
+      "@type": "DiskPartition",
+      "paritionOffset": 180224,
+      "partitionID": 6
+    },
+    {
+      "@id": "_:N835bb204a9d84ad4bc7a22d7330eeeb0",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nb4dadcad7a5844bf8f43cb7ca233ada7",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-12-24T13:31:52+00:00"
+      },
+      "fileName": "lost+found",
+      "filePath": "/lost+found",
+      "fileSize": 12288,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-12-24T13:31:52+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-12-24T13:31:52+00:00"
+      }
+    },
+    {
+      "@id": "_:N75227bca759a4ce6bc858cd5a497b4cd",
+      "@type": "DiskPartition",
+      "paritionOffset": 180224,
+      "partitionID": 6
+    },
+    {
+      "@id": "_:Naec07a5ad8c5482fba7691fcde40f437",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:Ne6ba063c12734ba3ab42d5250e2ae443",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+    },
+    {
+      "@id": "_:N56649710a9494dfd95eb178128866c00",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:58:22.420000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N75227bca759a4ce6bc858cd5a497b4cd"
+        },
+        {
+          "@id": "_:Nbd63cb5ba43b4318b0d2b511e313b886"
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ document following the CASE ontology.
 """
 
 import argparse
+import rdflib
 import os
 
 import case
@@ -25,8 +26,10 @@ if __name__ == '__main__':
     # TODO: Add specific choices
     parser.add_argument(
         '--format',
+        choices=sorted([p.name for p in rdflib.plugin.plugins(kind=rdflib.serializer.Serializer)
+                 if '/' not in p.name]),
         default='json-ld',
-        help='The serialization format.')
+        help='The serialization format. (default: %(default)s)')
     options = parser.parse_args()
 
     if not os.path.exists(options.storage_file):

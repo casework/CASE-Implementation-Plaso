@@ -69,6 +69,7 @@ class PlasoExporter(object):
 
     def export_event(self, event):
         """Exports the given plaso EventObject into the graph."""
+        # TODO: Extract parser chain information and other metadata (e.g. sqlite query used)
         event_exporter = self.get_event_exporter(event.data_type)
         event_exporter.export_event(event)
 

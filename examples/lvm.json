@@ -1,0 +1,830 @@
+{
+  "@context": {
+    "@vocab": "http://case.example.org/core#",
+    "case": "http://case.example.org/core#",
+    "plaso": "http://plaso.example.org/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:Nf004c9fcda6745bb964bf3865da9179d",
+      "@type": "File",
+      "extension": ".qcow2",
+      "fileName": "lvmtest",
+      "filePath": "D:\\dev\\dfvfs\\test_data\\lvmtest.qcow2"
+    },
+    {
+      "@id": "_:N8368eec4988f4baaabd80397bb88ab64",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nc1c785c2cf214aad90aa186f1233d7d0"
+        },
+        {
+          "@id": "_:Ne209d7bdce3a43b6bafce0defea58b40"
+        },
+        {
+          "@id": "_:Nb8f05185a8f940b1aeb58c44d3a09435"
+        }
+      ]
+    },
+    {
+      "@id": "_:Ned347439e7b04065aec1a0207d45847d",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "fileName": "a_directory",
+      "filePath": "/a_directory",
+      "fileSize": 1024,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      }
+    },
+    {
+      "@id": "_:N8ff49dca3f1f4e04b58b13ef752fc69f",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:N0ccccc329ee348b882b55a2640a54184",
+      "@type": "plaso:TSK",
+      "inode": 12
+    },
+    {
+      "@id": "_:N4fb9c08eb242454c845085523dbc7073",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "_:N88b54747ce7548ff8f029959da38c2ce",
+      "@type": "LVMVolume",
+      "volumeIndex": 1
+    },
+    {
+      "@id": "_:Nc435873ce4864748b88118a30433ca7a",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:N6f3b07cf5f88472f981aaa22a6eeef07"
+        },
+        {
+          "@id": "_:N61ac420ed6b84143ad99b156f6e5a674"
+        }
+      ],
+      "source": {
+        "@id": "_:N3161b12652234c588dd9c2545753bb83"
+      },
+      "target": {
+        "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd"
+      }
+    },
+    {
+      "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nd84521b2441c43cc8b0d2e940a194c37"
+        },
+        {
+          "@id": "_:N88b54747ce7548ff8f029959da38c2ce"
+        }
+      ]
+    },
+    {
+      "@id": "_:N0f431f93037e4834af0fa0b9c0efca0e",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "fileName": "another_file",
+      "filePath": "/a_directory/another_file",
+      "fileSize": 22,
+      "isAllocated": true,
+      "isDirectory": false,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      }
+    },
+    {
+      "@id": "_:N5c4aa18cac5c42128084debad76ca290",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
+      },
+      "fileName": "lost+found",
+      "filePath": "/lost+found",
+      "fileSize": 12288,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
+      }
+    },
+    {
+      "@id": "_:N3ca545c6e10d4863a5aff16a08e7a416",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:Nc1c785c2cf214aad90aa186f1233d7d0",
+      "@type": "plaso:TSK",
+      "inode": 13
+    },
+    {
+      "@id": "_:N630f2ea9149f4b799d91392d0dd179b5",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:N0aa0331ccb1344ca9c000e1bbbedf76f"
+        },
+        {
+          "@id": "_:N2b23c340699f4d78b57a36758989eb61"
+        }
+      ],
+      "source": {
+        "@id": "_:Na89f7df3aa1c4d6d9b32a2616a26a743"
+      },
+      "target": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      }
+    },
+    {
+      "@id": "_:N42e2f50b2353415d9ecdf46a3b3d7dd0",
+      "@type": "PathRelation",
+      "path": "/lost+found"
+    },
+    {
+      "@id": "_:Na89f7df3aa1c4d6d9b32a2616a26a743",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N601fc4368fab47558edc6cb0c2f8195b"
+        },
+        {
+          "@id": "_:Ned347439e7b04065aec1a0207d45847d"
+        },
+        {
+          "@id": "_:N0ccccc329ee348b882b55a2640a54184"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nd0603fa8d4c544ae82c7e65dafc36743",
+      "@type": "File",
+      "fileName": "lvm1",
+      "filePath": "/lvm1",
+      "fileSystemType": {
+        "@id": "case:LVM"
+      }
+    },
+    {
+      "@id": "_:N80cda1a5b6cf40aba77c03d4aaf773d3",
+      "@type": "plaso:TSK",
+      "inode": 15
+    },
+    {
+      "@id": "_:N8330c4ffb73c48b882cf74e9309c1bcd",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:N770a27522fa04e3284c84fa392b82161"
+        },
+        {
+          "@id": "_:N25732a0b4f434c18868a10450d431af4"
+        },
+        {
+          "@id": "_:Ncbd9ccfa0b1e422595446e8df94640d8"
+        },
+        {
+          "@id": "_:Na99eb6e601904bb8a9b610016b188383"
+        },
+        {
+          "@id": "_:Nf4db2344350d491a8c92ae65fa06a31a"
+        },
+        {
+          "@id": "_:Ndf9cf66ee53b48c7bdcc432263cf8bab"
+        },
+        {
+          "@id": "_:N21fe4bd27e60474982ca0f21460aa222"
+        },
+        {
+          "@id": "_:N4fb9c08eb242454c845085523dbc7073"
+        },
+        {
+          "@id": "_:Nfa6821245f3447bb8e474eefa906d9ca"
+        }
+      ]
+    },
+    {
+      "@id": "_:N8df3dbe71f914a539b0b642edbd66c40",
+      "@type": "LVMVolume",
+      "volumeIndex": 0
+    },
+    {
+      "@id": "_:N601fc4368fab47558edc6cb0c2f8195b",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "_:N2bfd4358f93e43dcbf980608b8de61ae",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": {
+        "@id": "_:N4a7c6f63060941ac9d60a075c9c5a4e8"
+      },
+      "source": {
+        "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd"
+      },
+      "target": {
+        "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32"
+      }
+    },
+    {
+      "@id": "_:N2fc01898cffe4fa8a811b032afa4c51f",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:N1f16aaff28c44bcdb76ea213f613f275"
+      }
+    },
+    {
+      "@id": "_:Ndf9cf66ee53b48c7bdcc432263cf8bab",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N7c92cca6d12648df9447f6449d68546b",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.204000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:N52e0b2b863f746fcbbfff51d1f0645ba"
+        },
+        {
+          "@id": "_:N603d064e7e724fdb8b7f9eb5dadb74bb"
+        }
+      ],
+      "source": {
+        "@id": "_:N658782873fc74a59876913ed0289711d"
+      },
+      "target": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      }
+    },
+    {
+      "@id": "_:N61ac420ed6b84143ad99b156f6e5a674",
+      "@type": "PathRelation",
+      "path": "/lost+found"
+    },
+    {
+      "@id": "_:Nb9aeecfb642940c2b3ce507629020192",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": {
+        "@id": "_:N8df3dbe71f914a539b0b642edbd66c40"
+      },
+      "source": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      },
+      "target": {
+        "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32"
+      }
+    },
+    {
+      "@id": "_:N924efae7ff714f4599aecb2dcd1fbd68",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N80cda1a5b6cf40aba77c03d4aaf773d3"
+        },
+        {
+          "@id": "_:N2fc01898cffe4fa8a811b032afa4c51f"
+        },
+        {
+          "@id": "_:N927e2b5d8c98410f90bdde5cd7372a0f"
+        }
+      ]
+    },
+    {
+      "@id": "_:N3de51b4150654b35926005189616b80d",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": {
+        "@id": "_:N3ca545c6e10d4863a5aff16a08e7a416"
+      }
+    },
+    {
+      "@id": "_:N3161b12652234c588dd9c2545753bb83",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N5c4aa18cac5c42128084debad76ca290"
+        },
+        {
+          "@id": "_:Ndce99591e69e4451b3d6830b200d83e8"
+        },
+        {
+          "@id": "_:N6cb1677f255c4aabb2e7ac2fb5413d21"
+        }
+      ]
+    },
+    {
+      "@id": "_:N21fe4bd27e60474982ca0f21460aa222",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N27b9f52fea4a448f88539ec005e2e9fa",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:Nba0c7cc9350b4fa799192bd1eafa34ba"
+        },
+        {
+          "@id": "_:Nbc68798e3bd64f07ae9fd6e37fc5cdd3"
+        }
+      ],
+      "source": {
+        "@id": "_:N924efae7ff714f4599aecb2dcd1fbd68"
+      },
+      "target": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      }
+    },
+    {
+      "@id": "_:Nfa6821245f3447bb8e474eefa906d9ca",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "8849afcdba3745e5b6103ba8038c9262"
+    },
+    {
+      "@id": "_:N52e0b2b863f746fcbbfff51d1f0645ba",
+      "@type": "plaso:TSK",
+      "inode": 14
+    },
+    {
+      "@id": "_:Nfe7495db84644012838bdc370bc75922",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nccb941f14b534dac8ca89ef7e788e42b"
+        },
+        {
+          "@id": "_:N8ff49dca3f1f4e04b58b13ef752fc69f"
+        },
+        {
+          "@id": "_:N27ec2f13428d45ef852290de8bc2014e"
+        }
+      ]
+    },
+    {
+      "@id": "_:N221db9cd6d5a41738b73264e99c02d8c",
+      "@type": "plaso:TSK",
+      "inode": 13
+    },
+    {
+      "@id": "_:N25732a0b4f434c18868a10450d431af4",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nfffec359e88541e9a73539036106be10",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d"
+    },
+    {
+      "@id": "_:Nff8e2b6e6fd3428e9b4e393499f71171",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:N2cef9685b831466cbbff7fc83eac539a"
+        },
+        {
+          "@id": "_:N221db9cd6d5a41738b73264e99c02d8c"
+        }
+      ],
+      "source": {
+        "@id": "_:N8368eec4988f4baaabd80397bb88ab64"
+      },
+      "target": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      }
+    },
+    {
+      "@id": "_:N4a7c6f63060941ac9d60a075c9c5a4e8",
+      "@type": "LVMVolume",
+      "volumeIndex": 1
+    },
+    {
+      "@id": "_:Nba0c7cc9350b4fa799192bd1eafa34ba",
+      "@type": "PathRelation",
+      "path": "/passwords.txt"
+    },
+    {
+      "@id": "_:Na99eb6e601904bb8a9b610016b188383",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2"
+    },
+    {
+      "@id": "_:N3edbc603eb2046bcae78311021473bbe",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16"
+    },
+    {
+      "@id": "_:N6f3b07cf5f88472f981aaa22a6eeef07",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N70c53032a5ea4ab3b141480d8931668c"
+        },
+        {
+          "@id": "_:Nf004c9fcda6745bb964bf3865da9179d"
+        }
+      ]
+    },
+    {
+      "@id": "_:N927e2b5d8c98410f90bdde5cd7372a0f",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:20+00:00"
+      },
+      "extension": ".txt",
+      "fileName": "passwords",
+      "filePath": "/passwords.txt",
+      "fileSize": 116,
+      "isAllocated": true,
+      "isDirectory": false,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:20+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:20+00:00"
+      }
+    },
+    {
+      "@id": "_:N27a0bb0efeb24f3b84f99f6aa2b4b1f4",
+      "@type": "LVMVolume",
+      "volumeIndex": 0
+    },
+    {
+      "@id": "_:Naeac7ec35de840d1a10353e00bf4826c",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:N3edbc603eb2046bcae78311021473bbe"
+      }
+    },
+    {
+      "@id": "_:N2cef9685b831466cbbff7fc83eac539a",
+      "@type": "PathRelation",
+      "path": "/a_directory/a_file"
+    },
+    {
+      "@id": "_:N6cb1677f255c4aabb2e7ac2fb5413d21",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "_:N1f16aaff28c44bcdb76ea213f613f275",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "02a2a6af2f1ecf4720d7d49d640f0d0a269a7ec733e41973bdd34f09dad0e252"
+    },
+    {
+      "@id": "_:Ncbd9ccfa0b1e422595446e8df94640d8",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N70c53032a5ea4ab3b141480d8931668c",
+      "@type": "Image",
+      "imageType": {
+        "@id": "case:QCOW"
+      }
+    },
+    {
+      "@id": "_:Ne209d7bdce3a43b6bafce0defea58b40",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:Nfffec359e88541e9a73539036106be10"
+      }
+    },
+    {
+      "@id": "_:N2b23c340699f4d78b57a36758989eb61",
+      "@type": "PathRelation",
+      "path": "/a_directory"
+    },
+    {
+      "@id": "_:N658782873fc74a59876913ed0289711d",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N0f431f93037e4834af0fa0b9c0efca0e"
+        },
+        {
+          "@id": "_:N8dcc12206ff44a9aa4cbcb0e910299da"
+        },
+        {
+          "@id": "_:Naeac7ec35de840d1a10353e00bf4826c"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nf791271f10f443d699f6f52c0486ac04",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:N9c12af093a1145f69dd44d29b03e7f78"
+        },
+        {
+          "@id": "_:N42e2f50b2353415d9ecdf46a3b3d7dd0"
+        }
+      ],
+      "source": {
+        "@id": "_:Nfe7495db84644012838bdc370bc75922"
+      },
+      "target": {
+        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+      }
+    },
+    {
+      "@id": "_:N0aa0331ccb1344ca9c000e1bbbedf76f",
+      "@type": "plaso:TSK",
+      "inode": 12
+    },
+    {
+      "@id": "_:Nedccaa0c2e7a43ab87004bd1e8b0a098",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "_:N3821d20aaab742a39d77dcd1344b092b"
+      },
+      "performer": {
+        "@id": "_:N3de51b4150654b35926005189616b80d"
+      }
+    },
+    {
+      "@id": "_:N3821d20aaab742a39d77dcd1344b092b",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:N8330c4ffb73c48b882cf74e9309c1bcd"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20161031"
+    },
+    {
+      "@id": "_:N770a27522fa04e3284c84fa392b82161",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+    },
+    {
+      "@id": "_:N6ca973117f9e4ce090aae413503ca4f2",
+      "@type": "ForensicAction",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T16:33:04.542000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "_:Nedccaa0c2e7a43ab87004bd1e8b0a098"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T16:32:57.288000+00:00"
+      }
+    },
+    {
+      "@id": "_:Nd84521b2441c43cc8b0d2e940a194c37",
+      "@type": "File",
+      "fileName": "lvm2",
+      "filePath": "/lvm2",
+      "fileSystemType": {
+        "@id": "case:LVM"
+      }
+    },
+    {
+      "@id": "_:Nccb941f14b534dac8ca89ef7e788e42b",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T11:33:32.188000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N27a0bb0efeb24f3b84f99f6aa2b4b1f4"
+        },
+        {
+          "@id": "_:Nd0603fa8d4c544ae82c7e65dafc36743"
+        }
+      ]
+    },
+    {
+      "@id": "_:Ndce99591e69e4451b3d6830b200d83e8",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:Nf4db2344350d491a8c92ae65fa06a31a",
+      "@type": "ConfigurationSetting",
+      "itemName": "debug_mode",
+      "itemValue": "False"
+    },
+    {
+      "@id": "_:N8dcc12206ff44a9aa4cbcb0e910299da",
+      "@type": "plaso:TSK",
+      "inode": 14
+    },
+    {
+      "@id": "_:Nbc68798e3bd64f07ae9fd6e37fc5cdd3",
+      "@type": "plaso:TSK",
+      "inode": 15
+    },
+    {
+      "@id": "_:Nb8f05185a8f940b1aeb58c44d3a09435",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "fileName": "a_file",
+      "filePath": "/a_directory/a_file",
+      "fileSize": 53,
+      "isAllocated": true,
+      "isDirectory": false,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      }
+    },
+    {
+      "@id": "_:N603d064e7e724fdb8b7f9eb5dadb74bb",
+      "@type": "PathRelation",
+      "path": "/a_directory/another_file"
+    },
+    {
+      "@id": "_:N9c12af093a1145f69dd44d29b03e7f78",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:N27ec2f13428d45ef852290de8bc2014e",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      },
+      "fileName": "lost+found",
+      "filePath": "/lost+found",
+      "fileSize": 12288,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      }
+    }
+  ]
+}

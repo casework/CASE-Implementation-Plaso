@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:case="http://case.example.org/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <case:Trace rdf:nodeID="N7d9f42b0ee8f47fea3a1958620dbf0c1">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N83ea3cdad7fd47a3aacae3305357f00a">
+        <case:messageText>It's me Barney! I got a new phone after BamBam smashed my other one. This is my new number.</case:messageText>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:07:49.452000+00:00</case:sentTime>
+        <case:to rdf:nodeID="Ncee46d666ae2443e95e1ee5f56a0a61a"/>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isRead>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="Nd3862de6a57b4ab3af8d6ab65f4c28b9">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N3da54723f8c149f88e229a4c3ffa60b8">
+        <case:messageText>Oh noes, that last message did not get through!!!</case:messageText>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:15:44.135000+00:00</case:sentTime>
+        <case:from rdf:nodeID="N5265a9b001944fd6acb7ec2d5bce4b84"/>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isRead>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:ForensicAction rdf:nodeID="N592c8c3856154f8dbc9dbe31721f75ae">
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:35:23.897000+00:00</case:startTime>
+    <case:propertyBundle>
+      <case:ActionReferences rdf:nodeID="N3ce45a96121446249d33578d37a7f686">
+        <case:instrument>
+          <case:Tool rdf:nodeID="Na37d5941ade44e29891ec3adc9391655">
+            <case:creator>Joachim Metz</case:creator>
+            <case:version>1.5.2_20161031</case:version>
+            <case:propertyBundle>
+              <case:ToolConfiguration rdf:nodeID="N2d54720500d04723ac3b62027ae0d7b5">
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N3e5b2f73a7da4c60a3439855b007ebdf">
+                    <case:itemName>filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N5860d46f65484f758c4eae6b4dc102cb">
+                    <case:itemValue>fec401d89efa47ff96bcb86be7d620d5</case:itemValue>
+                    <case:itemName>identifier</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N4e2893cd02a34c039d4f935afc6804a3">
+                    <case:itemName>command_line_arguments</case:itemName>
+                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_sms.plaso D:/dev/plaso/test_data/mmssms.db</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N900e85e42b8c4afd94107d8f497f9b04">
+                    <case:itemName>parser_filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N875b2b863f3f4b7c8ddc46543de38065">
+                    <case:itemName>enabled_parser_names</case:itemName>
+                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nd379de42a07644a2b9699293f7c2fb37">
+                    <case:itemValue>False</case:itemValue>
+                    <case:itemName>debug_mode</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Ne6185828ca46467f8e111e4fd6a5a6fe">
+                    <case:itemName>preferred_encoding</case:itemName>
+                    <case:itemValue>cp1252</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N1c4867518ed84b099b3cd3302ee227fa">
+                    <case:itemName>filter_file</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N46c670e74ac5418b90678cdf32b53b9a">
+                    <case:itemName>preferred_year</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+              </case:ToolConfiguration>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+            <case:name>plaso</case:name>
+            <case:toolType>parser?</case:toolType>
+          </case:Tool>
+        </case:instrument>
+        <case:performer>
+          <case:Identity rdf:nodeID="N2c39ae2729bc4529a60361f2012192fc">
+            <case:propertyBundle>
+              <case:SimpleName rdf:nodeID="N7190090d5e3046bc9e34ff6c6146c7a8">
+                <case:givenName>John</case:givenName>
+                <case:familyName>Doe</case:familyName>
+              </case:SimpleName>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+          </case:Identity>
+        </case:performer>
+      </case:ActionReferences>
+    </case:propertyBundle>
+    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:35:23.944000+00:00</case:endTime>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+  </case:ForensicAction>
+  <case:Trace rdf:nodeID="N7f76e96b2a3e4f9e8e1c72c9c7e94de1">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N84f34477605145cbb2eccdf92cb4d7be">
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isRead>
+        <case:messageText>Did you get my message?</case:messageText>
+        <case:to rdf:nodeID="Ncee46d666ae2443e95e1ee5f56a0a61a"/>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:03:55.964000+00:00</case:sentTime>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="Nc93ebe0743184851b1bb785de127b5dd">
+    <case:propertyBundle>
+      <case:ContentData rdf:nodeID="N4766651488cd4a8998a8a06533b7effb">
+        <case:hash>
+          <case:Hash rdf:nodeID="N559fcfdb2f5241db85f4a2a9d4708b0e">
+            <case:hashValue>0e2cadfa9d68fb1769c01ceb5d75e4dfc4872dfdde7c6db37b75e896e31e283f</case:hashValue>
+            <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+          </case:Hash>
+        </case:hash>
+      </case:ContentData>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <case:File rdf:nodeID="N5eaee4834ece463b8af3c7897b84ecc9">
+        <case:extension>.db</case:extension>
+        <case:fileName>mmssms</case:fileName>
+        <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:accessedTime>
+        <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102400</case:fileSize>
+        <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+        <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:modifiedTime>
+        <case:filePath>D:\dev\plaso\test_data\mmssms.db</case:filePath>
+        <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:metadataChangedTime>
+      </case:File>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N822f283d401e43639c82a1895883f0e3">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N4820340a3778451389a09b9f7625ae8d">
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isRead>
+        <case:messageText>What message?</case:messageText>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:05:41.303000+00:00</case:sentTime>
+        <case:from rdf:nodeID="N5265a9b001944fd6acb7ec2d5bce4b84"/>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N625c3f4e496e46b4943eaffae41c2b16">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="Nfdd9750150ff4b06927d9d58cdba0117">
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:14:07.114000+00:00</case:sentTime>
+        <case:to rdf:nodeID="Ncee46d666ae2443e95e1ee5f56a0a61a"/>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isRead>
+        <case:messageText>You bet! I'm just going to write a reeeeealllllllyyyyy long message. I was thinking that this weekend we should head to the race track. I heard that Goggles Paesano is going to be there ;)</case:messageText>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="Nc03a1e5b44e24d73a5bc39d2dbbd69de">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="Nfc7780b990334eb0b29a6dbfc6900055">
+        <case:messageText>Yo Fred this is my new number.</case:messageText>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isRead>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T16:56:28.038000+00:00</case:sentTime>
+        <case:to rdf:nodeID="Ncee46d666ae2443e95e1ee5f56a0a61a"/>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N85ba3206e89d4c6e86c08fdd202ac5ea">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N94f08ced273c440ba69939768720d443">
+        <case:messageText>Who dis??</case:messageText>
+        <case:from rdf:nodeID="N5265a9b001944fd6acb7ec2d5bce4b84"/>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:06:16.416000+00:00</case:sentTime>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isRead>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N0764d561634843bf9fe2ee6efbffcbd4">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N4dab1b0f0e08405283fdf141f83eac8f">
+        <case:messageText>Guess the emulator was not happy with a long message</case:messageText>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:16:17.250000+00:00</case:sentTime>
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isRead>
+        <case:to rdf:nodeID="Ncee46d666ae2443e95e1ee5f56a0a61a"/>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N9fb7cbe9442641968ac991b112d45c58">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:45:58.348000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="N01078b81a9494c218ffb4f2f868e4a40">
+        <case:isRead rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isRead>
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-29T17:10:58.374000+00:00</case:sentTime>
+        <case:messageText>Are we going bowling after the water buffalo meeting tonight?</case:messageText>
+        <case:from rdf:nodeID="N5265a9b001944fd6acb7ec2d5bce4b84"/>
+      </case:Message>
+    </case:propertyBundle>
+  </case:Trace>
+</rdf:RDF>

@@ -1,0 +1,154 @@
+@prefix case: <http://case.example.org/core#> .
+@prefix plaso: <http://plaso.example.org/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:isRead true ;
+            case:messageText "Guess the emulator was not happy with a long message" ;
+            case:sentTime "2013-10-29T17:16:17.250000+00:00"^^xsd:dateTime ;
+            case:to _:N9a2a34e82ffa4c47aae641e3cb88cae6 ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from _:Nfa0c99f89ced460abef1d4d8ccc60b56 ;
+            case:isRead false ;
+            case:messageText "Who dis??" ;
+            case:sentTime "2013-10-29T17:06:16.416000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ContentData ;
+            case:hash [ a case:Hash ;
+                    case:hashMethod case:SHA256 ;
+                    case:hashValue "0e2cadfa9d68fb1769c01ceb5d75e4dfc4872dfdde7c6db37b75e896e31e283f" ] ],
+        [ a case:File ;
+            case:accessedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
+            case:extension ".db" ;
+            case:fileName "mmssms" ;
+            case:filePath "D:\\dev\\plaso\\test_data\\mmssms.db" ;
+            case:fileSize 102400 ;
+            case:isAllocated true ;
+            case:metadataChangedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
+            case:modifiedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:isRead true ;
+            case:messageText "It's me Barney! I got a new phone after BamBam smashed my other one. This is my new number." ;
+            case:sentTime "2013-10-29T17:07:49.452000+00:00"^^xsd:dateTime ;
+            case:to _:N9a2a34e82ffa4c47aae641e3cb88cae6 ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from _:Nfa0c99f89ced460abef1d4d8ccc60b56 ;
+            case:isRead false ;
+            case:messageText "What message?" ;
+            case:sentTime "2013-10-29T17:05:41.303000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from _:Nfa0c99f89ced460abef1d4d8ccc60b56 ;
+            case:isRead false ;
+            case:messageText "Oh noes, that last message did not get through!!!" ;
+            case:sentTime "2013-10-29T17:15:44.135000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.127000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:isRead true ;
+            case:messageText "Yo Fred this is my new number." ;
+            case:sentTime "2013-10-29T16:56:28.038000+00:00"^^xsd:dateTime ;
+            case:to _:N9a2a34e82ffa4c47aae641e3cb88cae6 ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from _:Nfa0c99f89ced460abef1d4d8ccc60b56 ;
+            case:isRead false ;
+            case:messageText "Are we going bowling after the water buffalo meeting tonight?" ;
+            case:sentTime "2013-10-29T17:10:58.374000+00:00"^^xsd:dateTime ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:isRead true ;
+            case:messageText "You bet! I'm just going to write a reeeeealllllllyyyyy long message. I was thinking that this weekend we should head to the race track. I heard that Goggles Paesano is going to be there ;)" ;
+            case:sentTime "2013-10-29T17:14:07.114000+00:00"^^xsd:dateTime ;
+            case:to _:N9a2a34e82ffa4c47aae641e3cb88cae6 ] .
+
+[] a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:isRead true ;
+            case:messageText "Did you get my message?" ;
+            case:sentTime "2013-10-29T17:03:55.964000+00:00"^^xsd:dateTime ;
+            case:to _:N9a2a34e82ffa4c47aae641e3cb88cae6 ] .
+
+[] a case:ForensicAction ;
+    case:createdTime "2017-01-30T10:41:34.127000"^^xsd:dateTime ;
+    case:endTime "2017-01-30T15:35:23.944000+00:00"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ActionReferences ;
+            case:instrument [ a case:Tool ;
+                    case:createdTime "2017-01-30T10:41:34.127000"^^xsd:dateTime ;
+                    case:creator "Joachim Metz" ;
+                    case:name "plaso" ;
+                    case:propertyBundle [ a case:ToolConfiguration ;
+                            case:configurationSetting [ a case:ConfigurationSetting ;
+                                    case:itemName "debug_mode" ;
+                                    case:itemValue "False" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_file" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_year" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "identifier" ;
+                                    case:itemValue "fec401d89efa47ff96bcb86be7d620d5" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "filter_expression" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "parser_filter_expression" ;
+                                    case:itemValue "" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "preferred_encoding" ;
+                                    case:itemValue "cp1252" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "enabled_parser_names" ;
+                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
+                                [ a case:ConfigurationSetting ;
+                                    case:itemName "command_line_arguments" ;
+                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_sms.plaso D:/dev/plaso/test_data/mmssms.db" ] ] ;
+                    case:toolType "parser?" ;
+                    case:version "1.5.2_20161031" ] ;
+            case:performer [ a case:Identity ;
+                    case:createdTime "2017-01-30T10:41:34.127000"^^xsd:dateTime ;
+                    case:propertyBundle [ a case:SimpleName ;
+                            case:familyName "Doe" ;
+                            case:givenName "John" ] ] ] ;
+    case:startTime "2017-01-30T15:35:23.897000+00:00"^^xsd:dateTime .
+
+_:N793ca8ad6688433086df968dfad898e4 a case:Contact ;
+    case:phoneNumber "15555215554" .
+
+_:N89c4449b11d3450ebfffa91bb0f5ec74 a case:Contact ;
+    case:phoneNumber "1 555-521-5554" .
+
+_:Nfa0c99f89ced460abef1d4d8ccc60b56 a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.142000"^^xsd:dateTime ;
+    case:propertyBundle _:N793ca8ad6688433086df968dfad898e4 .
+
+_:N9a2a34e82ffa4c47aae641e3cb88cae6 a case:Trace ;
+    case:createdTime "2017-01-30T10:41:34.127000"^^xsd:dateTime ;
+    case:propertyBundle _:N89c4449b11d3450ebfffa91bb0f5ec74 .
+

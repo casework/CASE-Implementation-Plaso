@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:case="http://case.example.org/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <case:ForensicAction rdf:nodeID="N394875b6a3b94ca99b9de8a71a3492c6">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T16:31:58.259000+00:00</case:startTime>
+    <case:propertyBundle>
+      <case:ActionReferences rdf:nodeID="N65d060df8c994a67b76fdf6cbc3b1cee">
+        <case:performer>
+          <case:Identity rdf:nodeID="Nb1a0f780cbef495e8346abceffbce37b">
+            <case:propertyBundle>
+              <case:SimpleName rdf:nodeID="N45910c69dfbb430481920ac4434852b4">
+                <case:givenName>John</case:givenName>
+                <case:familyName>Doe</case:familyName>
+              </case:SimpleName>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+          </case:Identity>
+        </case:performer>
+        <case:instrument>
+          <case:Tool rdf:nodeID="N81773c523cef4b57b9702ca1a6008a98">
+            <case:propertyBundle>
+              <case:ToolConfiguration rdf:nodeID="N07a0a8046f224c81bff5dd9d68507bbf">
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Ncfc712bd45a24a1e957c298790bdbfe9">
+                    <case:itemName>debug_mode</case:itemName>
+                    <case:itemValue>False</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N07ead712bec34c8e854936e09470f987">
+                    <case:itemName>parser_filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N6aa3f98ac886488e9867243b0145aac3">
+                    <case:itemName>filter_file</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Na197e7bbb22643df99e8cc8391a08ee8">
+                    <case:itemName>identifier</case:itemName>
+                    <case:itemValue>bd849fd0ba7e4212adac2aedd10d89f7</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nae359f0807c4458c93e44a371d0d0c28">
+                    <case:itemName>preferred_encoding</case:itemName>
+                    <case:itemValue>cp1252</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N9938a3788c8d46678b6e00698876d439">
+                    <case:itemName>preferred_year</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N0f5922ead51e49b38060bf6032f53173">
+                    <case:itemValue></case:itemValue>
+                    <case:itemName>filter_expression</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N3c981de7b075423eadaadf066a1380dc">
+                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+                    <case:itemName>enabled_parser_names</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Na21a3e3d95f040bd80eeb561fc4dc9bb">
+                    <case:itemName>command_line_arguments</case:itemName>
+                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py bz2.plaso ../dfvfs/test_data/syslog.bz2</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+              </case:ToolConfiguration>
+            </case:propertyBundle>
+            <case:version>1.5.2_20161031</case:version>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+            <case:name>plaso</case:name>
+            <case:creator>Joachim Metz</case:creator>
+            <case:toolType>parser?</case:toolType>
+          </case:Tool>
+        </case:instrument>
+      </case:ActionReferences>
+    </case:propertyBundle>
+    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T16:31:58.539000+00:00</case:endTime>
+  </case:ForensicAction>
+  <case:Relationship rdf:nodeID="N5e8dbb40c8414a6d92c4af824dbbd932">
+    <case:source>
+      <case:Trace rdf:nodeID="N21af6fe1abe749a696d2e09b21bb84a5">
+        <case:propertyBundle>
+          <case:File rdf:nodeID="N5d2a9ace554c4b2a951a304aa5cb3610">
+            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
+          </case:File>
+        </case:propertyBundle>
+        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+        <case:propertyBundle>
+          <case:Compression rdf:nodeID="Nfd38a20713974d218b94fe3f9d223e7f">
+            <case:compressionMethod rdf:resource="http://case.example.org/core#BZIP2"/>
+          </case:Compression>
+        </case:propertyBundle>
+      </case:Trace>
+    </case:source>
+    <case:propertyBundle>
+      <case:Compression rdf:nodeID="Nd1870c6202e645d39358402c969a502d">
+        <case:compressionMethod rdf:resource="http://case.example.org/core#BZIP2"/>
+      </case:Compression>
+    </case:propertyBundle>
+    <case:target>
+      <case:Trace rdf:nodeID="N9cb91e2b0ca74d69bb50a7fd6821d52a">
+        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+        <case:propertyBundle>
+          <case:ContentData rdf:nodeID="Ne56807f11cb048db8e132a14bb309d2b">
+            <case:hash>
+              <case:Hash rdf:nodeID="Nacd2eefe6e924c89bf0eef367a45aadb">
+                <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+                <case:hashValue>c7cb2f5db54bb701ae00f34bc5f9db72955ebea347c872cd4a4fea7e3627a3d5</case:hashValue>
+              </case:Hash>
+            </case:hash>
+          </case:ContentData>
+        </case:propertyBundle>
+        <case:propertyBundle>
+          <case:File rdf:nodeID="N280b17aff25741209f58dfa37a07a580">
+            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+            <case:filePath>D:\dev\dfvfs\test_data\syslog.bz2</case:filePath>
+            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:35:28+00:00</case:modifiedTime>
+            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:35:28+00:00</case:accessedTime>
+            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">608</case:fileSize>
+            <case:extension>.bz2</case:extension>
+            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:35:28+00:00</case:metadataChangedTime>
+            <case:fileName>syslog</case:fileName>
+          </case:File>
+        </case:propertyBundle>
+      </case:Trace>
+    </case:target>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:32:17.306000</case:createdTime>
+    <case:kindOfRelationship>decompressed-from</case:kindOfRelationship>
+  </case:Relationship>
+</rdf:RDF>

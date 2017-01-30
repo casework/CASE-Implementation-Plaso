@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:case="http://case.example.org/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <case:Trace rdf:nodeID="Nd9ca08c932c8433d902d8180c3a94059">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.973000</case:createdTime>
+    <case:propertyBundle>
+      <case:PhoneCall rdf:nodeID="N5529504a89a1435694fbdab18756fc12">
+        <case:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">639</case:duration>
+        <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-07T00:14:15.690000+00:00</case:endTime>
+        <case:callType>INCOMING</case:callType>
+        <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-07T00:03:36.690000+00:00</case:startTime>
+        <case:from rdf:nodeID="Ne6e6f7c2dfa746df8472b2d7e621de63"/>
+      </case:PhoneCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N0f18d72a70b14b599db8a761eb6a5a0d">
+    <case:propertyBundle>
+      <case:ContentData rdf:nodeID="Ne538fbc53e7b41faaa2c6da2d4bad325">
+        <case:hash>
+          <case:Hash rdf:nodeID="N00f8391edb8d4f419cc44e947385a215">
+            <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+            <case:hashValue>b37699f86515cff66f71a1a8d9b48c7392a83fc6f9fab35c6abd8f5435221591</case:hashValue>
+          </case:Hash>
+        </case:hash>
+      </case:ContentData>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <case:File rdf:nodeID="Na131a730d25a4a3dbf68c2f3cc8b7976">
+        <case:fileName>contacts2</case:fileName>
+        <case:extension>.db</case:extension>
+        <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:modifiedTime>
+        <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:metadataChangedTime>
+        <case:filePath>D:\dev\plaso\test_data\contacts2.db</case:filePath>
+        <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33792</case:fileSize>
+        <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:accessedTime>
+        <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+      </case:File>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.973000</case:createdTime>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N62a2cac727ed46e6a4434bd10c5596bc">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.973000</case:createdTime>
+    <case:propertyBundle>
+      <case:PhoneCall rdf:nodeID="N2f4be4264bdd415eb3b12de02e8c7fb0">
+        <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-06T21:17:16.690000+00:00</case:startTime>
+        <case:from rdf:nodeID="Ne6e6f7c2dfa746df8472b2d7e621de63"/>
+        <case:callType>MISSED</case:callType>
+        <case:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</case:duration>
+      </case:PhoneCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N15447dd56c8e4329baf6b732d1a370b3">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.973000</case:createdTime>
+    <case:propertyBundle>
+      <case:PhoneCall rdf:nodeID="N5b1770d1b8274103a7da764124cee6f2">
+        <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-06T21:20:59.283000+00:00</case:endTime>
+        <case:callType>OUTGOING</case:callType>
+        <case:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</case:duration>
+        <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-06T21:18:53.283000+00:00</case:startTime>
+        <case:to rdf:nodeID="Ne6e6f7c2dfa746df8472b2d7e621de63"/>
+      </case:PhoneCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:ForensicAction rdf:nodeID="N65b35ec7f5c1404a89961bcaa567f3df">
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:27:47.554000+00:00</case:startTime>
+    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:27:47.616000+00:00</case:endTime>
+    <case:propertyBundle>
+      <case:ActionReferences rdf:nodeID="Ne6361dec1d9b4c5bba0941f69f7f6d0a">
+        <case:performer>
+          <case:Identity rdf:nodeID="N4321ab4834e64126bf239903f670bbbe">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.957000</case:createdTime>
+            <case:propertyBundle>
+              <case:SimpleName rdf:nodeID="Naffe99b513a04c84800d386a73340508">
+                <case:familyName>Doe</case:familyName>
+                <case:givenName>John</case:givenName>
+              </case:SimpleName>
+            </case:propertyBundle>
+          </case:Identity>
+        </case:performer>
+        <case:instrument>
+          <case:Tool rdf:nodeID="N248f390ff20a40609e24248a8bbc9d05">
+            <case:creator>Joachim Metz</case:creator>
+            <case:propertyBundle>
+              <case:ToolConfiguration rdf:nodeID="Nab9120d7f324403f943dd4c944754dee">
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N4afad09d77e944ce845e2a952973a7c5">
+                    <case:itemName>identifier</case:itemName>
+                    <case:itemValue>08f217034c164f9c8ca08abbfbc1ba2c</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nc042991e3a654f81bda6aed6bb8004a2">
+                    <case:itemName>filter_file</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N2413a486c6794eb2b2b63d2b60b033e4">
+                    <case:itemValue></case:itemValue>
+                    <case:itemName>preferred_year</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nfd2be06991fd42e5974c5a5704c29110">
+                    <case:itemValue>False</case:itemValue>
+                    <case:itemName>debug_mode</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Ne965f6ad356e4a729be8932a0335028c">
+                    <case:itemName>filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N9c707a3bf6c34f0cbb286ef9d91b676b">
+                    <case:itemValue>cp1252</case:itemValue>
+                    <case:itemName>preferred_encoding</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N0b4be5ce5f704b24aed3e6bde1bc184d">
+                    <case:itemName>command_line_arguments</case:itemName>
+                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_calls.plaso D:/dev/plaso/test_data/contacts2.db</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Na225c84ac33f416998c8f8409a0c0968">
+                    <case:itemName>parser_filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N893482399dca4e40836e546a5b2b4b0e">
+                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+                    <case:itemName>enabled_parser_names</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+              </case:ToolConfiguration>
+            </case:propertyBundle>
+            <case:name>plaso</case:name>
+            <case:version>1.5.2_20161031</case:version>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.957000</case:createdTime>
+            <case:toolType>parser?</case:toolType>
+          </case:Tool>
+        </case:instrument>
+      </case:ActionReferences>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:31:54.957000</case:createdTime>
+  </case:ForensicAction>
+</rdf:RDF>

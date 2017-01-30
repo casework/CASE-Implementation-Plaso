@@ -1,0 +1,309 @@
+{
+  "@context": {
+    "@vocab": "http://case.example.org/core#",
+    "case": "http://case.example.org/core#",
+    "plaso": "http://plaso.example.org/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:Nc6a3c6b0d74f43c0869432700fcd6e2f",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      },
+      "extension": ".db",
+      "fileName": "contacts2",
+      "filePath": "D:\\dev\\plaso\\test_data\\contacts2.db",
+      "fileSize": 33792,
+      "isAllocated": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      }
+    },
+    {
+      "@id": "_:N808bb0130ea54f95a578a5d56273945e",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nda13c10c6a554cc59e39e84c2d720ec6",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "_:N19ce6027f1c849ff8171e52c22cc894d",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:Nac02258489b447139725940ee274f336"
+      }
+    },
+    {
+      "@id": "_:N76a495685ce74077a231133008828cf7",
+      "@type": "Contact",
+      "contactName": "Barney",
+      "phoneNumber": "5404561685"
+    },
+    {
+      "@id": "_:Nf25578b5efe5497e928916f00be89fb4",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N465fd56003234f989e5b22374e05dd9c",
+      "@type": "ConfigurationSetting",
+      "itemName": "debug_mode",
+      "itemValue": "False"
+    },
+    {
+      "@id": "_:Nf6714cb4086946769b9c6cf97a876907",
+      "@type": "PhoneCall",
+      "callType": "INCOMING",
+      "duration": 639,
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-11-07T00:14:15.690000+00:00"
+      },
+      "from": {
+        "@id": "_:N0b1a1d152a8c48fd9de5b9068a1faae6"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-11-07T00:03:36.690000+00:00"
+      }
+    },
+    {
+      "@id": "_:Nbf2b293bbe6e40ca811a4c8550af12c6",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": {
+        "@id": "_:Necab42a686c54e5fac4efd498ddff27f"
+      }
+    },
+    {
+      "@id": "_:N00c79498dae64c2884e112218420b324",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_calls.plaso D:/dev/plaso/test_data/contacts2.db"
+    },
+    {
+      "@id": "_:N751e7dfac74048ea9165c53c49607e2f",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nac65d2c5bb824ab0adddc21468c14201"
+      }
+    },
+    {
+      "@id": "_:N59ea2b5a532e483b835bb1c15e0a893e",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nf6714cb4086946769b9c6cf97a876907"
+      }
+    },
+    {
+      "@id": "_:N8f44cafa41ea40678660161a0404a8eb",
+      "@type": "ForensicAction",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T15:27:47.616000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "_:Nf2685d7ac59f44c8ab0ceb1c468f052b"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T15:27:47.554000+00:00"
+      }
+    },
+    {
+      "@id": "_:N0b1a1d152a8c48fd9de5b9068a1faae6",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": {
+        "@id": "_:N76a495685ce74077a231133008828cf7"
+      }
+    },
+    {
+      "@id": "_:Nf235330a9b854e57ae508be295029e91",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nf2685d7ac59f44c8ab0ceb1c468f052b",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "_:N9831f41c917e485a8fe264b4ceb98237"
+      },
+      "performer": {
+        "@id": "_:Nbf2b293bbe6e40ca811a4c8550af12c6"
+      }
+    },
+    {
+      "@id": "_:N0dbb0d44721d44a3832c3571a685d622",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N19ce6027f1c849ff8171e52c22cc894d"
+        },
+        {
+          "@id": "_:Nc6a3c6b0d74f43c0869432700fcd6e2f"
+        }
+      ]
+    },
+    {
+      "@id": "_:N0978281fe8f84e9c8ebafd99156c88e1",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Necab42a686c54e5fac4efd498ddff27f",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:Nac02258489b447139725940ee274f336",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "b37699f86515cff66f71a1a8d9b48c7392a83fc6f9fab35c6abd8f5435221591"
+    },
+    {
+      "@id": "_:N298ec9ed23b546ad91cec40e4ee729b3",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "08f217034c164f9c8ca08abbfbc1ba2c"
+    },
+    {
+      "@id": "_:N29c8e2d9d95740308cca491b04fadb1e",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+    },
+    {
+      "@id": "_:N7c3525e3bb7844e380a61dfbbcaa9eda",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:N298ec9ed23b546ad91cec40e4ee729b3"
+        },
+        {
+          "@id": "_:N808bb0130ea54f95a578a5d56273945e"
+        },
+        {
+          "@id": "_:N0978281fe8f84e9c8ebafd99156c88e1"
+        },
+        {
+          "@id": "_:Nf235330a9b854e57ae508be295029e91"
+        },
+        {
+          "@id": "_:N29c8e2d9d95740308cca491b04fadb1e"
+        },
+        {
+          "@id": "_:Nf25578b5efe5497e928916f00be89fb4"
+        },
+        {
+          "@id": "_:N00c79498dae64c2884e112218420b324"
+        },
+        {
+          "@id": "_:Nda13c10c6a554cc59e39e84c2d720ec6"
+        },
+        {
+          "@id": "_:N465fd56003234f989e5b22374e05dd9c"
+        }
+      ]
+    },
+    {
+      "@id": "_:N913756200bfa433aa7b32c34cdda67a1",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "propertyBundle": {
+        "@id": "_:N2464fa69585649679c148e1fff12b8f6"
+      }
+    },
+    {
+      "@id": "_:N9831f41c917e485a8fe264b4ceb98237",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T10:32:30.788000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:N7c3525e3bb7844e380a61dfbbcaa9eda"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20161031"
+    },
+    {
+      "@id": "_:N2464fa69585649679c148e1fff12b8f6",
+      "@type": "PhoneCall",
+      "callType": "OUTGOING",
+      "duration": 126,
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-11-06T21:20:59.283000+00:00"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-11-06T21:18:53.283000+00:00"
+      },
+      "to": {
+        "@id": "_:N0b1a1d152a8c48fd9de5b9068a1faae6"
+      }
+    },
+    {
+      "@id": "_:Nac65d2c5bb824ab0adddc21468c14201",
+      "@type": "PhoneCall",
+      "callType": "MISSED",
+      "duration": 0,
+      "from": {
+        "@id": "_:N0b1a1d152a8c48fd9de5b9068a1faae6"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-11-06T21:17:16.690000+00:00"
+      }
+    }
+  ]
+}
