@@ -1,22 +1,19 @@
 
+import collections
 from case_plaso import lib
-
-# Register functions based on indicators.
-registry = {}
-
-
-def register(cls):
-    """Registers EventExporter classes into registry."""
-    registry[cls.DATA_TYPE] = cls
-    return cls
 
 
 class EventExporter(object):
     """Base class for an event exporter."""
 
-    # Defines data types this exporter works with.
-    # (The data_types should be unique from all other event exporters.)
-    DATA_TYPE = None
+    TIMESTAMP_MAP = {}
+
+    # A knowledge base that will be shared among all instances of this class.
+    # NOTE: This will obviously break in the future if/when we support multiprocessing
+    # TODO: Make this more robust and harder for an event exporter to accidentally destroy everything.
+    knowledge_base = {}
+
+    _registry = {}
 
     def __init__(self, document):
         """Initializes PlasoExporter.
@@ -25,24 +22,46 @@ class EventExporter(object):
             document: CASE document to export plaso objects to.
         """
         self.document = document
-        self._cached_elements = {}
+        self._cached_property_bundles = {}
+        self._contacts = {}
 
-    def export_timestamp(self, event, cached_element):
+    def export_contact(self, **properties):
+        """Exports contact information from given properties.
+
+        Args:
+            properties: Dictionary of property names and values to export.
+
+        Returns:
+            The resulting trace.
+        """
+        contact_hash = lib.hash_dict(properties)
+        contact = self._contacts.get(contact_hash, None)
+        if not contact:
+            contact = self.document.create_trace()
+            contact.create_property_bundle('Contact', **properties)
+            self._contacts[contact_hash] = contact
+        return contact
+
+    def export_timestamp(self, event, property_bundle):
         """Exports the timestamp information from the element.
 
         Args:
             event: The plaso EventObject to export timestamp info from.
-            cached_element: The cached element returned from export_event_data()
+            property_bundle: The cached property bundle to place timestamp on.
         """
-        raise NotImplementedError()
+        try:
+            property_bundle.add(
+                self.TIMESTAMP_MAP[event.timestamp_desc],
+                lib.convert_timestamp(event.timestamp))
+        except KeyError:
+            pass
 
     def export_event_data(self, event):
         """Export the event, only pertaining to the event data, not the timestamp
         information.
 
         Returns:
-            cached element to be passed back to export_timestamp().
-            (usually this is a property bundle you created here)
+            property bundle to be passed back to export_timestamp().
         """
         raise NotImplementedError()
 
@@ -57,16 +76,24 @@ class EventExporter(object):
         event_data_hash = lib.hash_event_data(event)
 
         # Run export_event_data only on the first instance.
-        if event_data_hash not in self._cached_elements:
-            self._cached_elements[event_data_hash] = self.export_event_data(event)
+        if event_data_hash not in self._cached_property_bundles:
+            self._cached_property_bundles[event_data_hash] = self.export_event_data(event)
 
-        self.export_timestamp(event, self._cached_elements[event_data_hash])
+        self.export_timestamp(event, self._cached_property_bundles[event_data_hash])
+
+    @classmethod
+    def register(cls, data_type):
+        """Decorator for registering EventExporter classes into registry based on data_type."""
+        def _register(_cls):
+            cls._registry[data_type] = _cls
+            return _cls
+        return _register
 
     @classmethod
     def from_data_type(cls, data_type, document):
         """Factory for creating a EventExporter class based on data_type."""
         try:
-            return registry[data_type](document)
+            return cls._registry[data_type](document)
         except KeyError:
             return DefaultEventExporter(document)
 

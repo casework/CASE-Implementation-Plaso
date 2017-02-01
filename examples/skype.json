@@ -1,0 +1,1005 @@
+{
+  "@context": {
+    "@vocab": "http://case.example.org/core#",
+    "case": "http://case.example.org/core#",
+    "plaso": "http://plaso.example.org/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:N2598bf47f62e48e787cbb6554da85e8e",
+      "@type": "PhoneCall",
+      "callType": "INCOMING",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-01T22:12:17+00:00"
+      },
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      }
+    },
+    {
+      "@id": "_:Ne3f7ae66a93c42a1aa2c5dc23a6efa0e",
+      "@type": "ForensicAction",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.738000"
+      },
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T20:50:15.997000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "_:N33b262b0ee2c4aa98285bcf2730b415a"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T20:50:15.950000+00:00"
+      }
+    },
+    {
+      "@id": "_:N9bce63d1e0d64851a198920e99656992",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N221fef60c4b347be92cad27261784d2b"
+      }
+    },
+    {
+      "@id": "_:N151cd40f1192445ea52fb736e4034e36",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "fb52eae51d359b2ed060416dcf9725442fa0b495db32972529e9e75b34c533bb"
+    },
+    {
+      "@id": "_:N964515899ce846cb8b4ca62ce8f7c293",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N0b8cf35f380045cbaed0bdd9f8ef2ec1"
+      }
+    },
+    {
+      "@id": "_:N328aeb6bf36b492fb4074671838f1798",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N9b8c96ef355f45bd9ee6b9594d9cc6ba"
+      }
+    },
+    {
+      "@id": "_:N3aa5c2c872a040fba53b111456d74a30",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "_:N72dbc4030fc14ecea35a57fb4345f798",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:N151cd40f1192445ea52fb736e4034e36"
+      }
+    },
+    {
+      "@id": "_:N28345601474d486d94a57625e947be8c",
+      "@type": "plaso:SkypeCall",
+      "isVideo": false
+    },
+    {
+      "@id": "_:Nbb6d35490ab949699a26378aca61ec17",
+      "@type": "plaso:SkypeAccount",
+      "plaso:profileChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:22:08+00:00"
+      }
+    },
+    {
+      "@id": "_:Nbd87b482a0dc470d928ab57d020e2daa",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nccfea62a178e428ab7a13ea135d67ac1"
+      }
+    },
+    {
+      "@id": "_:N032bfec3179343dfb9e471865232b78f",
+      "@type": "Account",
+      "accountIssuer": "Skype"
+    },
+    {
+      "@id": "_:Nf68bc7618000456490d1bb7f35fc001c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Ncba58dedac904eadb8d1c7345c06bc1a"
+        },
+        {
+          "@id": "_:N8423129b98c44a038be5af97ac37f4fd"
+        }
+      ]
+    },
+    {
+      "@id": "_:Ne464fd2adbb34f2aa304f8b10ae94c02",
+      "@type": "DigitalAccount",
+      "accountLogin": "european.bbq.competitor",
+      "displayName": "European Competitor"
+    },
+    {
+      "@id": "_:Nf7f11fa69b0545f4ae3c4e3135082c69",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N50daf5781595481ea2e50c99f8903c78"
+      }
+    },
+    {
+      "@id": "_:N03e7a30aa10544518be5068890fb27ff",
+      "@type": "MessageThread",
+      "displayName": "european.bbq.competitor | yt?",
+      "message": {
+        "@id": "_:N76255d856b154fa298c2fa5216de062c"
+      }
+    },
+    {
+      "@id": "_:N1ad121b8fe07451f9efc7000113e924f",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N98825ad6d58e43439cba9e79c26723d8"
+      }
+    },
+    {
+      "@id": "_:N06e10745ed794c5f8c8c17364f7aebc0",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nce55a5cd4cd145799e36f67794ece440"
+      }
+    },
+    {
+      "@id": "_:Nd05c9d6043c1400fbf0c4c97f420d641",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N216424b0bb5e47bfba17170a0ded8880"
+      }
+    },
+    {
+      "@id": "_:N412f2df21ba446a69e638ed1d298ceef",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N5f6a7d18a6e7409c8e25994261a99019"
+      }
+    },
+    {
+      "@id": "_:N9921ca0b680f4ca691ef7cd2f0c73268",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nd59db270f801408281d58fea04ca9973"
+      }
+    },
+    {
+      "@id": "_:N3bb06ea9307647ff8078a4a6b379c7b4",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Nc682b2bfc131469db7a3cad02cd5adc6"
+        },
+        {
+          "@id": "_:N2d2b640d2cad461ba1b93c757a3e73cb"
+        }
+      ]
+    },
+    {
+      "@id": "_:N8bc29548f075414d9caa8180e3921dde",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N76255d856b154fa298c2fa5216de062c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N286760dbed604bea8bb739e9e8474cf4"
+      }
+    },
+    {
+      "@id": "_:N216424b0bb5e47bfba17170a0ded8880",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "<a href=\"https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx\">https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx</a>",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:30:11+00:00"
+      }
+    },
+    {
+      "@id": "_:N281ae7ffa79e43268ca4080aa0930a02",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N88f9f116854b45af8a8f9de660c93348"
+      }
+    },
+    {
+      "@id": "_:N33007e449f5e4214951599e2dce37453",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+    },
+    {
+      "@id": "_:Nb5dc0dc2669f49d9a54d383313785551",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N799ea04da20a464dac3bee857f3bb6fb"
+      }
+    },
+    {
+      "@id": "_:N1051082e04ec4e13930a0c5217df220f",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.738000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:Na52a29013aff4e2aa26d50448bd2f270"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20161031"
+    },
+    {
+      "@id": "_:N05eb9afe54334c25b9baeaac0d565781",
+      "@type": "Account",
+      "accountIssuer": "Skype"
+    },
+    {
+      "@id": "_:N20c1be2d7b94429bb56508a418170381",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:Nd59db270f801408281d58fea04ca9973",
+      "@type": "MessageThread",
+      "displayName": "European Competitor | need to know if you got it..",
+      "message": {
+        "@id": "_:N9bce63d1e0d64851a198920e99656992"
+      }
+    },
+    {
+      "@id": "_:N221fef60c4b347be92cad27261784d2b",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "need to know if you got it this time.",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:27:11+00:00"
+      }
+    },
+    {
+      "@id": "_:N47635693c94f4848b8b261cdb6d852d8",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N66270ce1448b47129d73269ca95481ac"
+        },
+        {
+          "@id": "_:N05eb9afe54334c25b9baeaac0d565781"
+        }
+      ]
+    },
+    {
+      "@id": "_:Na36adba29326458bad61f0aa21ec4c8f",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      },
+      "extension": ".db",
+      "fileName": "skype_main",
+      "filePath": "D:\\dev\\plaso\\test_data\\skype_main.db",
+      "fileSize": 344064,
+      "isAllocated": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-09-08T19:34:44+00:00"
+      }
+    },
+    {
+      "@id": "_:N2d2b640d2cad461ba1b93c757a3e73cb",
+      "@type": "plaso:SkypeCall",
+      "isVideo": false
+    },
+    {
+      "@id": "_:Na52a29013aff4e2aa26d50448bd2f270",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:N3aa5c2c872a040fba53b111456d74a30"
+        },
+        {
+          "@id": "_:N8ebfe223654d4b01b81919482996ec65"
+        },
+        {
+          "@id": "_:N8a10f6193bce4f63ad1e292ec95f442d"
+        },
+        {
+          "@id": "_:N3836df1cbe414974a16f69d13a514273"
+        },
+        {
+          "@id": "_:N33007e449f5e4214951599e2dce37453"
+        },
+        {
+          "@id": "_:N747cbccc6ad5445a9694ba46d32139c9"
+        },
+        {
+          "@id": "_:Nc3ef851b07a24bc1b81482ae3a27e7b0"
+        },
+        {
+          "@id": "_:Nd921bb9bf1404a1cbb98810be9107b11"
+        },
+        {
+          "@id": "_:N8bc29548f075414d9caa8180e3921dde"
+        }
+      ]
+    },
+    {
+      "@id": "_:N57ad78f83afa4a04a82e37a55335fce2",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "Hi European Competitor, I&apos;d like to add you as a contact. Gen Beringer",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:27:27+00:00"
+      }
+    },
+    {
+      "@id": "_:N3c8d4aa916104f049c0eda880c6b7a43",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N4b3317efa12c424c9f3e5d03fe5dab4d"
+        },
+        {
+          "@id": "_:N28345601474d486d94a57625e947be8c"
+        }
+      ]
+    },
+    {
+      "@id": "_:N898c1319c6f04f478a079202f35243db",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N77e4f9b482464e86b19da9f65f752bac"
+      }
+    },
+    {
+      "@id": "_:N8a10f6193bce4f63ad1e292ec95f442d",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N7f90bd97cbea43f89f5c9d90233eef89",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "but give me a minute....",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:30:16+00:00"
+      }
+    },
+    {
+      "@id": "_:N37c7740fb90b4cd0b04c05cdc9ae6892",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N4aaaad4b962c4a54994f65a46c633bf6"
+      }
+    },
+    {
+      "@id": "_:Nccfea62a178e428ab7a13ea135d67ac1",
+      "@type": "MessageThread",
+      "displayName": "European Competitor",
+      "message": {
+        "@id": "_:N71d03d4fd2e047518a67e6927086ac4d"
+      }
+    },
+    {
+      "@id": "_:Nca5b34eb6785400a9e2ec983a1796c4e",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "later",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:33:08+00:00"
+      }
+    },
+    {
+      "@id": "_:N33b262b0ee2c4aa98285bcf2730b415a",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "_:N1051082e04ec4e13930a0c5217df220f"
+      },
+      "performer": {
+        "@id": "_:N7c70770b72f346f4b97fc0ca4c1e0cb1"
+      }
+    },
+    {
+      "@id": "_:N4aaaad4b962c4a54994f65a46c633bf6",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "messageText": "fer christ sake, it was an accident!",
+      "to": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:32:37+00:00"
+      }
+    },
+    {
+      "@id": "_:N747cbccc6ad5445a9694ba46d32139c9",
+      "@type": "ConfigurationSetting",
+      "itemName": "debug_mode",
+      "itemValue": "False"
+    },
+    {
+      "@id": "_:Nada8f816b8c54839ab7f2a1ac8234316",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Na36adba29326458bad61f0aa21ec4c8f"
+        },
+        {
+          "@id": "_:N72dbc4030fc14ecea35a57fb4345f798"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nce55a5cd4cd145799e36f67794ece440",
+      "@type": "MessageThread",
+      "displayName": "European Competitor, Echo123",
+      "message": {
+        "@id": "_:N84c2406aa0544510a775fb4271701523"
+      }
+    },
+    {
+      "@id": "_:Nf33edeec342d490487c4cc1df01c3bcf",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:Nca5b34eb6785400a9e2ec983a1796c4e"
+      }
+    },
+    {
+      "@id": "_:N6ce7ce4bdc4749cf9f16df3ebaff3cfc",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N98195cca059b4964a1b0c7e0e7a1beca"
+      }
+    },
+    {
+      "@id": "_:Nc3ef851b07a24bc1b81482ae3a27e7b0",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py skype.plaso ../plaso/test_data/skype_main.db"
+    },
+    {
+      "@id": "_:N98195cca059b4964a1b0c7e0e7a1beca",
+      "@type": "Message",
+      "participant": {
+        "@id": "_:Nf7f11fa69b0545f4ae3c4e3135082c69"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-01T22:14:22+00:00"
+      }
+    },
+    {
+      "@id": "_:N8ebfe223654d4b01b81919482996ec65",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "ab32208da4714cba99de14ad691669df"
+    },
+    {
+      "@id": "_:Ncba58dedac904eadb8d1c7345c06bc1a",
+      "@type": "Account",
+      "accountIssuer": "Skype"
+    },
+    {
+      "@id": "_:Nc682b2bfc131469db7a3cad02cd5adc6",
+      "@type": "PhoneCall",
+      "callType": "INCOMING",
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-01T22:23:03+00:00"
+      },
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      }
+    },
+    {
+      "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:Ne464fd2adbb34f2aa304f8b10ae94c02"
+        },
+        {
+          "@id": "_:N032bfec3179343dfb9e471865232b78f"
+        }
+      ]
+    },
+    {
+      "@id": "_:N66270ce1448b47129d73269ca95481ac",
+      "@type": "DigitalAccount",
+      "accountLogin": "echo123"
+    },
+    {
+      "@id": "_:N4b3317efa12c424c9f3e5d03fe5dab4d",
+      "@type": "PhoneCall",
+      "callType": "INCOMING",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-01T22:12:17+00:00"
+      },
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      }
+    },
+    {
+      "@id": "_:Nbae3c40921264a37b8b979a79c17ae75",
+      "@type": "SimpleAddress",
+      "country": "us"
+    },
+    {
+      "@id": "_:N71d03d4fd2e047518a67e6927086ac4d",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N57ad78f83afa4a04a82e37a55335fce2"
+      }
+    },
+    {
+      "@id": "_:N286760dbed604bea8bb739e9e8474cf4",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "yt?",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:26:28+00:00"
+      }
+    },
+    {
+      "@id": "_:N50daf5781595481ea2e50c99f8903c78",
+      "@type": "Contact",
+      "phonenNumber": "+34123456789"
+    },
+    {
+      "@id": "_:N357017ee9d464493a9c252278c864459",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N7f90bd97cbea43f89f5c9d90233eef89"
+      }
+    },
+    {
+      "@id": "_:N3aed84b188214aa8a8b1aa8bec56a203",
+      "@type": "plaso:SkypeCall",
+      "isVideo": false
+    },
+    {
+      "@id": "_:N773ab9e0e180410a8fef703d41751856",
+      "@type": "SimpleName",
+      "familyName": "Beringer",
+      "givenName": "Gen"
+    },
+    {
+      "@id": "_:N8423129b98c44a038be5af97ac37f4fd",
+      "@type": "DigitalAccount",
+      "accountLogin": "gen.beringer",
+      "displayName": "Gen Beringer"
+    },
+    {
+      "@id": "_:N88f9f116854b45af8a8f9de660c93348",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "to": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:27:46+00:00"
+      }
+    },
+    {
+      "@id": "_:N3836df1cbe414974a16f69d13a514273",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:Nd921bb9bf1404a1cbb98810be9107b11",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:N4442586b5e324b42bf6e3a19302eab44",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "messageText": "He is our new employee",
+      "to": [
+        {
+          "@id": "_:N47635693c94f4848b8b261cdb6d852d8"
+        },
+        {
+          "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+        }
+      ],
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-27T15:29:19+00:00"
+      }
+    },
+    {
+      "@id": "_:N0b4660f7e85a4488b96fa98abdb73bfc",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N54b2f47edcb04fafb5197c7fa49c696c"
+      }
+    },
+    {
+      "@id": "_:Nfceccb19bc8647409c2db1855abebb9c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N03e7a30aa10544518be5068890fb27ff"
+      }
+    },
+    {
+      "@id": "_:N77e4f9b482464e86b19da9f65f752bac",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "messageText": "I&apos;m here",
+      "to": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:27:56+00:00"
+      }
+    },
+    {
+      "@id": "_:Nbcffe2d3d2e545d5b92c311e21330cff",
+      "@type": "Account",
+      "accountIssuer": "Skype"
+    },
+    {
+      "@id": "_:N5f6a7d18a6e7409c8e25994261a99019",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "try not to spill coffee on it this time",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:32:20+00:00"
+      }
+    },
+    {
+      "@id": "_:N9b8c96ef355f45bd9ee6b9594d9cc6ba",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "whatever.",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:32:59+00:00"
+      }
+    },
+    {
+      "@id": "_:N98825ad6d58e43439cba9e79c26723d8",
+      "@type": "MessageThread",
+      "displayName": "European Competitor | where do I get it from?",
+      "message": [
+        {
+          "@id": "_:N412f2df21ba446a69e638ed1d298ceef"
+        },
+        {
+          "@id": "_:N281ae7ffa79e43268ca4080aa0930a02"
+        },
+        {
+          "@id": "_:N37c7740fb90b4cd0b04c05cdc9ae6892"
+        },
+        {
+          "@id": "_:N357017ee9d464493a9c252278c864459"
+        },
+        {
+          "@id": "_:N898c1319c6f04f478a079202f35243db"
+        },
+        {
+          "@id": "_:N328aeb6bf36b492fb4074671838f1798"
+        },
+        {
+          "@id": "_:Nd05c9d6043c1400fbf0c4c97f420d641"
+        },
+        {
+          "@id": "_:N0b4660f7e85a4488b96fa98abdb73bfc"
+        },
+        {
+          "@id": "_:N964515899ce846cb8b4ca62ce8f7c293"
+        },
+        {
+          "@id": "_:Nb5dc0dc2669f49d9a54d383313785551"
+        },
+        {
+          "@id": "_:Nf33edeec342d490487c4cc1df01c3bcf"
+        }
+      ]
+    },
+    {
+      "@id": "_:N7c70770b72f346f4b97fc0ca4c1e0cb1",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.738000"
+      },
+      "propertyBundle": {
+        "@id": "_:N20c1be2d7b94429bb56508a418170381"
+      }
+    },
+    {
+      "@id": "_:Necba74e0273c45f7bf0def8977aae67c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N773ab9e0e180410a8fef703d41751856"
+        },
+        {
+          "@id": "_:Nbb6d35490ab949699a26378aca61ec17"
+        },
+        {
+          "@id": "_:Nbcffe2d3d2e545d5b92c311e21330cff"
+        },
+        {
+          "@id": "_:Nbae3c40921264a37b8b979a79c17ae75"
+        }
+      ]
+    },
+    {
+      "@id": "_:N799ea04da20a464dac3bee857f3bb6fb",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "messageText": "i got it",
+      "to": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:32:01+00:00"
+      }
+    },
+    {
+      "@id": "_:N6aaca28ecf764d518a42f98239dc259c",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:N2598bf47f62e48e787cbb6554da85e8e"
+        },
+        {
+          "@id": "_:N3aed84b188214aa8a8b1aa8bec56a203"
+        }
+      ]
+    },
+    {
+      "@id": "_:N84c2406aa0544510a775fb4271701523",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-02-01T16:12:25.753000"
+      },
+      "propertyBundle": {
+        "@id": "_:N4442586b5e324b42bf6e3a19302eab44"
+      }
+    },
+    {
+      "@id": "_:N54b2f47edcb04fafb5197c7fa49c696c",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "messageText": "where do I get it from?",
+      "to": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-07-30T21:28:04+00:00"
+      }
+    },
+    {
+      "@id": "_:N0b8cf35f380045cbaed0bdd9f8ef2ec1",
+      "@type": "Message",
+      "from": {
+        "@id": "_:Nf68bc7618000456490d1bb7f35fc001c"
+      },
+      "messageText": "<sms alt=\"f you want I can copy some documents for you, if you can pay it... ;)\"><type>2</type><status>6</status><failurereason>0</failurereason><targets><target status=\"6\">+34123456789</target></targets><price>0.116 EUR</price><body><chunk id=\"0\">f you want I can copy some documents for you, if you can pay it... ;)</chunk><untilnext>72</untilnext></body><encoded_body>f you want I can copy some documents for you, if you can pay it... ;)</encoded_body><sendtimestamp>13727168620</sendtimestamp></sms>",
+      "to": {
+        "@id": "_:Na5426d2cb7304c8e8b0eb1a53c5a2fa7"
+      },
+      "unknownTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2404-12-30T06:23:40+00:00"
+      }
+    }
+  ]
+}

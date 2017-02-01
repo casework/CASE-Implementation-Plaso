@@ -50,3 +50,19 @@
             TSK: location=/a_dir/a_file.txt
         ```
     - How do I deal with the LVM level? Do I put that in the Relationship object or Trace? or both?
+
+- Plaso's skype parser really needs to be reworked to grab more information (like usernames) and conform
+    to proper timestamp descriptions.
+    - The parser does not give enough information to attach events together.
+    - SkypeCallEvent should be setting the timestamp_desc, not call_type...
+    - The parser is using reserved words like ("display_name" and "username") as attributes.
+
+- When I'm creating a trace with an `Account` property bundle, can I add `SimpleName` and `SimpleAddress`
+    directly on the trace as well? If not, how would I structure that?
+
+- How do we deal with artifacts that can determine that a particular account is the "owner"
+    - Do we have an "isOwner" property, or do something else?
+
+- What is the "callType" property in `PhoneCall` pb used for? INCOMING/OUTGOING? VIDEO/AUDIO? something else?
+
+- CASE needs to add support for file transfer/downloads.

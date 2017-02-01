@@ -3,14 +3,12 @@ import os
 
 from dfvfs.lib import definitions as dfvfs_definitions
 
-from case import CASE
-from case_plaso import event_exporter, lib, mappings, file_relationships
+from case_plaso import lib, mappings, file_relationships
+from case_plaso.event_exporter import EventExporter
 
 
-@event_exporter.register
-class FileStatExporter(event_exporter.EventExporter):
-
-    DATA_TYPE = 'fs:stat'
+@EventExporter.register('fs:stat')
+class FileStatExporter(EventExporter):
 
     TIMESTAMP_MAP = {
         'atime': 'accessedTime',

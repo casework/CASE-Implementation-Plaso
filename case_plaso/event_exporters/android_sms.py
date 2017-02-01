@@ -1,25 +1,14 @@
 
-from case_plaso import event_exporter, lib
+from case_plaso import lib
+from case_plaso.event_exporter import EventExporter
 
 
-@event_exporter.register
-class AndroidSMSExporter(event_exporter.EventExporter):
+@EventExporter.register('android:messaging:sms')
+class AndroidSMSExporter(EventExporter):
     """Exporter for android sms events."""
 
-    DATA_TYPE = 'android:messaging:sms'
-
-    def __init__(self, document):
-        super(AndroidSMSExporter, self).__init__(document)
-        self._contacts = {}
-
     def export_event(self, event):
-        contact = self._contacts.get(event.address, None)
-        if not contact:
-            contact = self.document.create_trace()
-            contact.create_property_bundle(
-                'Contact',
-                phoneNumber=event.address)
-            self._contacts[event.address] = contact
+        contact = self.export_contact(phoneNumber=event.address)
 
         trace = self.document.create_trace()
         pb = trace.create_property_bundle(

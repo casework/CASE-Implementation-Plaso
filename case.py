@@ -8,6 +8,7 @@ import rdflib.term
 CASE = rdflib.Namespace('http://case.example.org/core#')
 
 
+# TODO: Perhaps inherit from RDFlib graph?
 class Document(object):
 
     def __init__(self, graph=None):
@@ -21,6 +22,34 @@ class Document(object):
             graph = rdflib.Graph()
         graph.namespace_manager.bind('case', CASE)
         self.graph = graph
+
+    def _sanitize_triple(self, (s, p, o)):
+        """Santizes the triple to contains pure rdflib terms."""
+
+        if isinstance(s, Node):
+            s = s._node
+
+        if isinstance(o, Node):
+            o = o._node
+        elif o is not None and not isinstance(o, rdflib.term.Node):
+            o = rdflib.Literal(o)
+
+        if p is not None and not isinstance(p, rdflib.term.Node):
+            p = CASE[p]
+
+        return s, p, o
+
+    def __iter__(self):
+        """Wrapper for iterating over all triples in the graph"""
+        return iter(self.graph)
+
+    def __contains__(self, (s, p, o)):
+        """Wrapper for checking if triple is contained in the graph."""
+        return self._sanitize_triple((s, p, o)) in self.graph
+
+    def triples(self, (s, p, o)):
+        """Generator over the triple store in graph."""
+        return self.graph.triples(self._sanitize_triple((s, p, o)))
 
     def _json_ld_context(self):
         context = dict(

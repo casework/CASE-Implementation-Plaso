@@ -1,14 +1,11 @@
 
 from plaso.lib.eventdata import EventTimestamp
 
-from case import CASE
-from case_plaso import event_exporter, lib
+from case_plaso.event_exporter import EventExporter
 
 
-@event_exporter.register
-class NTFSExporter(event_exporter.EventExporter):
-
-    DATA_TYPE = 'fs:stat:ntfs'
+@EventExporter.register('fs:stat:ntfs')
+class NTFSExporter(EventExporter):
 
     TIMESTAMP_MAP = {
         EventTimestamp.CREATION_TIME: 'mftFileNameCreatedTime',
@@ -27,12 +24,3 @@ class NTFSExporter(event_exporter.EventExporter):
             mftFlags=getattr(event, 'file_attribute_flags', None),
             mftParentID=getattr(event, 'parent_file_reference', None))
         return pb
-
-    def export_timestamp(self, event, pb):
-        try:
-            pb.add(
-                self.TIMESTAMP_MAP[event.timestamp_desc],
-                lib.convert_timestamp(event.timestamp))
-        except KeyError:
-            # TODO: Log this or something.
-            pass
