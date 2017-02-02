@@ -53,6 +53,14 @@
          rdfs:comment "Determines if account is owner." .
 
 
+###  http://plaso.example.org/core#isVideo
+:isVideo rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :SkypeCall ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Determines if call is a video conference." .
+
+
 ###  http://plaso.example.org/core#lastOnlineTime
 :lastOnlineTime rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
