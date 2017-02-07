@@ -89,13 +89,6 @@
                rdfs:range xsd:dateTimeStamp .
 
 
-###  http://plaso.example.org/core#unknownTime
-:unknownTime rdf:type owl:DatatypeProperty ;
-             rdfs:domain case:Message ;
-             rdfs:range xsd:dateTimeStamp ;
-             rdfs:comment "A timestamp with an unknown meaning." .
-
-
 #################################################################
 #    Classes
 #################################################################

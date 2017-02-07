@@ -4,37 +4,180 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:plaso="http://plaso.example.org/core#"
 >
-  <case:Trace rdf:nodeID="N9a2207d11c2e47efa54521031d88b9e6">
+  <case:Trace rdf:nodeID="N53026970f6e6460897050703858a3a57">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.657000</case:createdTime>
     <case:propertyBundle>
-      <case:Message rdf:nodeID="Ne690ad5bbbb04eecbed924c9395b4c21">
+      <case:PhoneCall rdf:nodeID="N40a5d8bc77284af794c8532fd7130fe9">
+        <case:callType>INCOMING</case:callType>
+        <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+        <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+        <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:23:03+00:00</case:endTime>
+      </case:PhoneCall>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <plaso:SkypeCall rdf:nodeID="N1616698a61f64802a59951cd6caa8547">
+        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
+      </plaso:SkypeCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N33a22b020dcb4631bf5529b202c974ed">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.656000</case:createdTime>
+    <case:propertyBundle>
+      <case:Message rdf:nodeID="Nc20226550d7f46d8b24feb523b5f4244">
+        <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:14:22+00:00</case:sentTime>
         <case:participant>
-          <case:Trace rdf:nodeID="Nab0e434c1929490c811daed6c9e6a255">
+          <case:Trace rdf:nodeID="Na37532d097014bb89f84e06758ccf59f">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.656000</case:createdTime>
             <case:propertyBundle>
-              <case:Contact rdf:nodeID="N36bdc4c4a9734cbd98ce4b9fe9d9968c">
+              <case:Contact rdf:nodeID="N27f3e28da609473481020f0c9a30d8dc">
                 <case:phonenNumber>+34123456789</case:phonenNumber>
               </case:Contact>
             </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
           </case:Trace>
         </case:participant>
-        <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:14:22+00:00</case:unknownTime>
       </case:Message>
     </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
   </case:Trace>
-  <case:Trace rdf:nodeID="Nf4730f9be87546b1af87fcff5fb29290">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+  <case:ForensicAction rdf:nodeID="Nd562217b0a224033be84e47e1c7b6547">
+    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T20:50:15.997000+00:00</case:endTime>
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T20:50:15.950000+00:00</case:startTime>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.653000</case:createdTime>
     <case:propertyBundle>
-      <case:MessageThread rdf:nodeID="N35247ef372eb438491fc6dae2f379df1">
-        <case:message>
-          <case:Trace rdf:nodeID="N5e4e68d1ed714d388ad4b62c4cf511ec">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+      <case:ActionReferences rdf:nodeID="N272b80058a8549248d09335f88e37014">
+        <case:performer>
+          <case:Identity rdf:nodeID="N982638fe1d444e28bc8ae64bf5c0947e">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.652000</case:createdTime>
             <case:propertyBundle>
-              <case:Message rdf:nodeID="N9e04a2131adc4398aed21ab9de97be95">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:11+00:00</case:unknownTime>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
+              <case:SimpleName rdf:nodeID="N93068e6d91fe471eb9a87d85ae05dfd2">
+                <case:givenName>John</case:givenName>
+                <case:familyName>Doe</case:familyName>
+              </case:SimpleName>
+            </case:propertyBundle>
+          </case:Identity>
+        </case:performer>
+        <case:instrument>
+          <case:Tool rdf:nodeID="N5f3c026f63f14a5cbafca9ef5bf3fdc5">
+            <case:creator>Joachim Metz</case:creator>
+            <case:toolType>parser?</case:toolType>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.651000</case:createdTime>
+            <case:name>plaso</case:name>
+            <case:propertyBundle>
+              <case:ToolConfiguration rdf:nodeID="Na70d4382fcb4462499396040833ab452">
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nfbc478c2806b4d4aa0c5cffc01a936d2">
+                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py skype.plaso ../plaso/test_data/skype_main.db</case:itemValue>
+                    <case:itemName>command_line_arguments</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N76f2bc4f094b4b43b43614673beadad4">
+                    <case:itemValue>cp1252</case:itemValue>
+                    <case:itemName>preferred_encoding</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nf3f4f83445dd4331a75c3bf346cc92f4">
+                    <case:itemValue></case:itemValue>
+                    <case:itemName>filter_file</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N36f6ae3e45c744348d61e3aa8ee09366">
+                    <case:itemName>debug_mode</case:itemName>
+                    <case:itemValue>False</case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nded10dab10514839b8c37ca991e26714">
+                    <case:itemValue></case:itemValue>
+                    <case:itemName>preferred_year</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N938e181ff84649efad2a8bdd51063b73">
+                    <case:itemValue></case:itemValue>
+                    <case:itemName>parser_filter_expression</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nccf9c30135c949848385692f44057916">
+                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+                    <case:itemName>enabled_parser_names</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="Nb1be34c9a6da4c9faee83cb9f924f4fa">
+                    <case:itemValue>ab32208da4714cba99de14ad691669df</case:itemValue>
+                    <case:itemName>identifier</case:itemName>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+                <case:configurationSetting>
+                  <case:ConfigurationSetting rdf:nodeID="N8b674046577e459fabd549cfbc7019a0">
+                    <case:itemName>filter_expression</case:itemName>
+                    <case:itemValue></case:itemValue>
+                  </case:ConfigurationSetting>
+                </case:configurationSetting>
+              </case:ToolConfiguration>
+            </case:propertyBundle>
+            <case:version>1.5.2_20161031</case:version>
+          </case:Tool>
+        </case:instrument>
+      </case:ActionReferences>
+    </case:propertyBundle>
+  </case:ForensicAction>
+  <case:Trace rdf:nodeID="N530d844403f64f5eb60e2e4aa4d506ac">
+    <case:propertyBundle>
+      <case:SimpleName rdf:nodeID="Ne0a7c7476dd94c19860170d4b42e101c">
+        <case:familyName>Beringer</case:familyName>
+        <case:givenName>Gen</case:givenName>
+      </case:SimpleName>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <plaso:SkypeAccount rdf:nodeID="N52c1763dc583443d89bd421262f9d05c">
+        <plaso:profileChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:22:08+00:00</plaso:profileChangedTime>
+      </plaso:SkypeAccount>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <case:SimpleAddress rdf:nodeID="N96c1431d0c2b445b906f9396a55b41f2">
+        <case:country>us</case:country>
+      </case:SimpleAddress>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <case:Account rdf:nodeID="N3d43f82e3851492bb442bb8b963d181c">
+        <case:accountIssuer>Skype</case:accountIssuer>
+      </case:Account>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.658000</case:createdTime>
+  </case:Trace>
+  <case:Trace rdf:nodeID="Nd633a19394b74871b841162b81afe129">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.654000</case:createdTime>
+    <case:propertyBundle>
+      <plaso:SkypeCall rdf:nodeID="Ne91a88cc612b49be88f6bff7d3a41f40">
+        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
+      </plaso:SkypeCall>
+    </case:propertyBundle>
+    <case:propertyBundle>
+      <case:PhoneCall rdf:nodeID="Nc414ac8d9c8e47bb8bc0fceb4d5a3ba8">
+        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:12:17+00:00</case:createdTime>
+        <case:callType>INCOMING</case:callType>
+        <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+        <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+      </case:PhoneCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N28f5c925cde149619f796090512b2c8f">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.660000</case:createdTime>
+    <case:propertyBundle>
+      <case:MessageThread rdf:nodeID="Ne048af53131c4ac18949f020c8ca6cbf">
+        <case:message>
+          <case:Trace rdf:nodeID="Nd9276f72fd2343a9b360411df13d2767">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.659000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N44b4401beac94282a7d538b2f6ded3ce">
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
                 <case:messageText>need to know if you got it this time.</case:messageText>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:11+00:00</case:sentTime>
               </case:Message>
             </case:propertyBundle>
           </case:Trace>
@@ -43,151 +186,24 @@
       </case:MessageThread>
     </case:propertyBundle>
   </case:Trace>
-  <case:ForensicAction rdf:nodeID="N9a03a98e24da4a23867ff33da5452d31">
-    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T20:50:15.997000+00:00</case:endTime>
-    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T20:50:15.950000+00:00</case:startTime>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.124000</case:createdTime>
+  <case:Trace rdf:nodeID="N8489a29aa2154cfaaa55df42fde3e992">
     <case:propertyBundle>
-      <case:ActionReferences rdf:nodeID="N00e744b8a19840888b67e09385b6ca32">
-        <case:instrument>
-          <case:Tool rdf:nodeID="Nfd2d3e53c7fa489eabc61f8a178344f7">
-            <case:propertyBundle>
-              <case:ToolConfiguration rdf:nodeID="Nfc8eb02f4e1845d7a9ef70ab1e191eda">
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Nb521c4dfbf624b3f91fa0f024014ae34">
-                    <case:itemName>enabled_parser_names</case:itemName>
-                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N4f3ceb5a46354284b671b37818ff8c62">
-                    <case:itemValue></case:itemValue>
-                    <case:itemName>filter_file</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N81459feb70714268b5fd41db6edff93e">
-                    <case:itemName>identifier</case:itemName>
-                    <case:itemValue>ab32208da4714cba99de14ad691669df</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N241843723e7b4568a067d72b070e8a60">
-                    <case:itemName>debug_mode</case:itemName>
-                    <case:itemValue>False</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N3b40878d60604fcf80717ab10d302d6c">
-                    <case:itemValue></case:itemValue>
-                    <case:itemName>filter_expression</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N63417444262141828e528538ee8f64a4">
-                    <case:itemName>parser_filter_expression</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N997b5d11a7ac4199803f677711406e34">
-                    <case:itemValue>cp1252</case:itemValue>
-                    <case:itemName>preferred_encoding</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N4dcfca8cd8ce4ece86ffdac65efc34ab">
-                    <case:itemValue></case:itemValue>
-                    <case:itemName>preferred_year</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Nf330bef108d04f03bd0132b4c2d0b7ff">
-                    <case:itemName>command_line_arguments</case:itemName>
-                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py skype.plaso ../plaso/test_data/skype_main.db</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-              </case:ToolConfiguration>
-            </case:propertyBundle>
-            <case:toolType>parser?</case:toolType>
-            <case:creator>Joachim Metz</case:creator>
-            <case:version>1.5.2_20161031</case:version>
-            <case:name>plaso</case:name>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.124000</case:createdTime>
-          </case:Tool>
-        </case:instrument>
-        <case:performer>
-          <case:Identity rdf:nodeID="N1865577a51af48f9a0aecf63edd5d189">
-            <case:propertyBundle>
-              <case:SimpleName rdf:nodeID="N358bd7444e9b4578ac2b543ccf596566">
-                <case:familyName>Doe</case:familyName>
-                <case:givenName>John</case:givenName>
-              </case:SimpleName>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.124000</case:createdTime>
-          </case:Identity>
-        </case:performer>
-      </case:ActionReferences>
-    </case:propertyBundle>
-  </case:ForensicAction>
-  <case:Trace rdf:nodeID="N7f187a035a3c4907a3357c91e487c794">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <plaso:SkypeCall rdf:nodeID="Nb753840e2a004732a04e9aa3e8fdb0d6">
-        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
-      </plaso:SkypeCall>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <case:PhoneCall rdf:nodeID="N3a844e26a7a546439d5e734db9288e3f">
-        <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:23:03+00:00</case:endTime>
-        <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-        <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-        <case:callType>INCOMING</case:callType>
-      </case:PhoneCall>
-    </case:propertyBundle>
-  </case:Trace>
-  <case:Trace rdf:nodeID="N00118b355fe440c7932bf4d01a84bb4f">
-    <case:propertyBundle>
-      <case:SimpleName rdf:nodeID="Nca79893713594bbb8c4564294616c62b">
-        <case:givenName>Gen</case:givenName>
-        <case:familyName>Beringer</case:familyName>
-      </case:SimpleName>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <case:Account rdf:nodeID="N3c94545b1d0e41b4af990baf4ecf0bb1">
-        <case:accountIssuer>Skype</case:accountIssuer>
-      </case:Account>
-    </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <case:SimpleAddress rdf:nodeID="N33354e9571dd4332ae97639f0def652a">
-        <case:country>us</case:country>
-      </case:SimpleAddress>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <plaso:SkypeAccount rdf:nodeID="N97dbbe5f9b3a4e618bc5fa89ad7429c5">
-        <plaso:profileChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:22:08+00:00</plaso:profileChangedTime>
-      </plaso:SkypeAccount>
-    </case:propertyBundle>
-  </case:Trace>
-  <case:Trace rdf:nodeID="N19f1d2445fca4471b5be4f5b4df6d060">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <case:File rdf:nodeID="N9748f938cd1841f0910b187c5e30d2ff">
-        <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">344064</case:fileSize>
+      <case:File rdf:nodeID="Ncd83cba0e581462b9ed2fc3fc0076467">
         <case:fileName>skype_main</case:fileName>
-        <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-        <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:accessedTime>
         <case:extension>.db</case:extension>
-        <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:metadataChangedTime>
+        <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
         <case:filePath>D:\dev\plaso\test_data\skype_main.db</case:filePath>
+        <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:accessedTime>
+        <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">344064</case:fileSize>
+        <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:metadataChangedTime>
         <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-08T19:34:44+00:00</case:modifiedTime>
       </case:File>
     </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.667000</case:createdTime>
     <case:propertyBundle>
-      <case:ContentData rdf:nodeID="N4090152c0ecb4de4bb901ff3c826913e">
+      <case:ContentData rdf:nodeID="Na8611f58f6d44a35aa6510dfbe20ede4">
         <case:hash>
-          <case:Hash rdf:nodeID="N5102b508fc3d49e4a1c3448f9cb9fd87">
+          <case:Hash rdf:nodeID="N60c6a6e78e3045d8b564cc43aace6b4b">
             <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
             <case:hashValue>fb52eae51d359b2ed060416dcf9725442fa0b495db32972529e9e75b34c533bb</case:hashValue>
           </case:Hash>
@@ -195,259 +211,243 @@
       </case:ContentData>
     </case:propertyBundle>
   </case:Trace>
-  <case:Trace rdf:nodeID="Nd85e0ec4f00941fb8ff75a9fe293f894">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+  <case:Trace rdf:nodeID="N56d4f0dc6b6146f1947c105336ba84e5">
     <case:propertyBundle>
-      <case:MessageThread rdf:nodeID="Na76cfc2bcdb4471b8bccccb4415b280f">
+      <case:PhoneCall rdf:nodeID="N04e02612eb1047809d2b37b5adde2c60">
+        <case:callType>INCOMING</case:callType>
+        <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+        <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+        <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:12:17+00:00</case:startTime>
+      </case:PhoneCall>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.655000</case:createdTime>
+    <case:propertyBundle>
+      <plaso:SkypeCall rdf:nodeID="N5af7d1f06ec64da9a431afa76fad3dab">
+        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
+      </plaso:SkypeCall>
+    </case:propertyBundle>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N345eebc2ec2b472f8713dc0a7b6797fa">
+    <case:propertyBundle>
+      <case:MessageThread rdf:nodeID="N4db1e1059dab4ddda5cebcbe18d50c17">
+        <case:displayName>European Competitor</case:displayName>
         <case:message>
-          <case:Trace rdf:nodeID="N88aae8db5e304c59b8c3e6569e7bdbf1">
+          <case:Trace rdf:nodeID="N9ba61c47f5ab46cbb0c1b10f63808142">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.660000</case:createdTime>
             <case:propertyBundle>
-              <case:Message rdf:nodeID="N9a5a527e00c442938ec0b7f8d1014ece">
-                <case:messageText>I&amp;apos;m here</case:messageText>
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:56+00:00</case:unknownTime>
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="Nf5ee1eb227cf4afa992a4f279018533e">
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N4836e448816d4f49838760b40fd4f771">
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:01+00:00</case:unknownTime>
-                <case:messageText>i got it</case:messageText>
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="N40dea023d7894528906db3f21c649e9d">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N5641ba3abbc54b0799fdbb12af50a860">
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:messageText>where do I get it from?</case:messageText>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:28:04+00:00</case:unknownTime>
-              </case:Message>
-            </case:propertyBundle>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="N34b799b8f2ee450bb3e45e32e6f25f30">
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N7332a8a1cdb549ed8297776d6f652070">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:30:16+00:00</case:unknownTime>
-                <case:messageText>but give me a minute....</case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="Nf9f00f746c3a4830bb8d1748284e8230">
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N45aebfbcc3dd4b0f883f885406afa1d3">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:20+00:00</case:unknownTime>
-                <case:messageText>try not to spill coffee on it this time</case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="N4f74ac0a0cc743f2a7eeba2c30776be9">
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="Ne497c1283f22481cacc471a70430a776">
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:37+00:00</case:unknownTime>
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:messageText>fer christ sake, it was an accident!</case:messageText>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="N8a33984ce52942ff87d718017b988545">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N721001d4ab3f45168921f3a656b62a91">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:33:08+00:00</case:unknownTime>
-                <case:messageText>later</case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-              </case:Message>
-            </case:propertyBundle>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="N8cd1a6536ce3465198e5f0daf6edafc2">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N6c0ba95ff65b4dc2ba7412af7451e398">
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:messageText><![CDATA[<a href="https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx">https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx</a>]]></case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:30:11+00:00</case:unknownTime>
-              </case:Message>
-            </case:propertyBundle>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="Nd03804345bf34d078ddeba7cd03070bd">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="Ne075b2d3827a4178bdc51c0e72f76893">
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:46+00:00</case:unknownTime>
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-              </case:Message>
-            </case:propertyBundle>
-          </case:Trace>
-        </case:message>
-        <case:message>
-          <case:Trace rdf:nodeID="Ncbc61c0026294b078d6c8fd095ea83a5">
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N9c4f66c628ee411891f82533fdde403c">
-                <case:messageText><![CDATA[<sms alt="f you want I can copy some documents for you, if you can pay it... ;)"><type>2</type><status>6</status><failurereason>0</failurereason><targets><target status="6">+34123456789</target></targets><price>0.116 EUR</price><body><chunk id="0">f you want I can copy some documents for you, if you can pay it... ;)</chunk><untilnext>72</untilnext></body><encoded_body>f you want I can copy some documents for you, if you can pay it... ;)</encoded_body><sendtimestamp>13727168620</sendtimestamp></sms>]]></case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2404-12-30T06:23:40+00:00</case:unknownTime>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-              </case:Message>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-          </case:Trace>
-        </case:message>
-        <case:displayName>European Competitor | where do I get it from?</case:displayName>
-        <case:message>
-          <case:Trace rdf:nodeID="Na90f3a5f41044192a1cd7bb1b28c55fd">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-            <case:propertyBundle>
-              <case:Message rdf:nodeID="N74cdad966ff14331aad553ac316ba8df">
-                <case:messageText>whatever.</case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:59+00:00</case:unknownTime>
+              <case:Message rdf:nodeID="Naa113486cea543378fa0afde64612ff6">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:27+00:00</case:sentTime>
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:messageText>Hi European Competitor, I&amp;apos;d like to add you as a contact. Gen Beringer</case:messageText>
               </case:Message>
             </case:propertyBundle>
           </case:Trace>
         </case:message>
       </case:MessageThread>
     </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.660000</case:createdTime>
   </case:Trace>
-  <case:Trace rdf:nodeID="Nce51e9fda3624e408aab65085a5d3fb0">
+  <case:Trace rdf:nodeID="Nd632f12b381d41aeba5fc03549bcf83a">
     <case:propertyBundle>
-      <case:MessageThread rdf:nodeID="N4e1f571ddc76423eb765525be42a3e59">
+      <case:MessageThread rdf:nodeID="Nde8dc8d5f80847d3abdbbfd0d3ff5141">
         <case:message>
-          <case:Trace rdf:nodeID="N1032be55836846b48a6fd7843f66328c">
+          <case:Trace rdf:nodeID="Nab9cbac9125b4c458962ebf204b71234">
             <case:propertyBundle>
-              <case:Message rdf:nodeID="N8cbf0a56f18c4b7690c72fa2e4884772">
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:26:28+00:00</case:unknownTime>
-                <case:messageText>yt?</case:messageText>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
+              <case:Message rdf:nodeID="N91519c9fd8c04fdc85097dc20b74c10b">
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:to>
+                  <case:Trace rdf:nodeID="Ndae35a27c3be4f5d998414ddc25f1e26">
+                    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.666000</case:createdTime>
+                    <case:propertyBundle>
+                      <case:Account rdf:nodeID="N55d990c9f17e473d97a7dfeadf7d6ba2">
+                        <case:accountIssuer>Skype</case:accountIssuer>
+                      </case:Account>
+                    </case:propertyBundle>
+                    <case:propertyBundle>
+                      <case:DigitalAccount rdf:nodeID="Ne058c9ba347e4f45bdb8c081bbfcf445">
+                        <case:accountLogin>echo123</case:accountLogin>
+                      </case:DigitalAccount>
+                    </case:propertyBundle>
+                  </case:Trace>
+                </case:to>
+                <case:messageText>He is our new employee</case:messageText>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-27T15:29:19+00:00</case:sentTime>
               </case:Message>
             </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.666000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:displayName>European Competitor, Echo123</case:displayName>
+      </case:MessageThread>
+    </case:propertyBundle>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.667000</case:createdTime>
+  </case:Trace>
+  <case:Trace rdf:nodeID="N48f49bc3592d44a5a2b512b6f325301a">
+    <case:propertyBundle>
+      <case:MessageThread rdf:nodeID="Nbe5876cd88af4cbab37af3b8f93ed353">
+        <case:message>
+          <case:Trace rdf:nodeID="N64802ce00bd4465aba256be0bde28c97">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.658000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N3ef8f1b37f28496693c7e2d15a57305b">
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:26:28+00:00</case:sentTime>
+                <case:messageText>yt?</case:messageText>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+              </case:Message>
+            </case:propertyBundle>
           </case:Trace>
         </case:message>
         <case:displayName>european.bbq.competitor | yt?</case:displayName>
       </case:MessageThread>
     </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.659000</case:createdTime>
   </case:Trace>
-  <case:Trace rdf:nodeID="N291b24c1545743cda777852f158dc566">
+  <case:Trace rdf:nodeID="Nf55db2a5cf444e13ba840bc363ff48e2">
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.661000</case:createdTime>
     <case:propertyBundle>
-      <plaso:SkypeCall rdf:nodeID="Naf90d72c945d4cf09c2c6317c6b43c2b">
-        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
-      </plaso:SkypeCall>
-    </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.124000</case:createdTime>
-    <case:propertyBundle>
-      <case:PhoneCall rdf:nodeID="Nc73b77218e2f4916802aae1cdf54600a">
-        <case:callType>INCOMING</case:callType>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:12:17+00:00</case:createdTime>
-        <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-        <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-      </case:PhoneCall>
-    </case:propertyBundle>
-  </case:Trace>
-  <case:Trace rdf:nodeID="N0f91db0e25b24ad9a5b26ece1593d4ce">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <case:PhoneCall rdf:nodeID="N006d84e2f10c491eab68a9dc4c4cbd78">
-        <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-        <case:callType>INCOMING</case:callType>
-        <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-        <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-01T22:12:17+00:00</case:startTime>
-      </case:PhoneCall>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <plaso:SkypeCall rdf:nodeID="N02dc922a004e458fa1afb797d41dad35">
-        <case:isVideo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isVideo>
-      </plaso:SkypeCall>
-    </case:propertyBundle>
-  </case:Trace>
-  <case:Trace rdf:nodeID="N46308b7fee484999950279270282775e">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <case:MessageThread rdf:nodeID="Nc1bf92fc3ea04a5892b52dce430387f5">
-        <case:displayName>European Competitor, Echo123</case:displayName>
+      <case:MessageThread rdf:nodeID="N490ed17384e2432982bc82e432471e48">
         <case:message>
-          <case:Trace rdf:nodeID="N19141a749c064bdd957703d0cefc7ba8">
+          <case:Trace rdf:nodeID="Nf11cfb0d5b73483f8b59188439270385">
             <case:propertyBundle>
-              <case:Message rdf:nodeID="N7afe1168525a4f93bc4a9f9232731c08">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-27T15:29:19+00:00</case:unknownTime>
-                <case:from rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:to rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
-                <case:to>
-                  <case:Trace rdf:nodeID="N5adb267ab7fc446b981762bcbf9e56f1">
-                    <case:propertyBundle>
-                      <case:Account rdf:nodeID="Nbf0b5048ea3a45fa887918958aa66fe3">
-                        <case:accountIssuer>Skype</case:accountIssuer>
-                      </case:Account>
-                    </case:propertyBundle>
-                    <case:propertyBundle>
-                      <case:DigitalAccount rdf:nodeID="Na657b231eb494c2f8a1dfebf8bb4034a">
-                        <case:accountLogin>echo123</case:accountLogin>
-                      </case:DigitalAccount>
-                    </case:propertyBundle>
-                    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-                  </case:Trace>
-                </case:to>
-                <case:messageText>He is our new employee</case:messageText>
+              <case:Message rdf:nodeID="Nae260752ec354c0e9dd857fbe205686f">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:30:16+00:00</case:sentTime>
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:messageText>but give me a minute....</case:messageText>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
               </case:Message>
             </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.664000</case:createdTime>
           </case:Trace>
         </case:message>
-      </case:MessageThread>
-    </case:propertyBundle>
-  </case:Trace>
-  <case:Trace rdf:nodeID="N65adfba462a14d2797b46e036fd404b7">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
-    <case:propertyBundle>
-      <case:MessageThread rdf:nodeID="N144802d964c6431bb923c0bb6bdad664">
-        <case:displayName>European Competitor</case:displayName>
+        <case:displayName>European Competitor | where do I get it from?</case:displayName>
         <case:message>
-          <case:Trace rdf:nodeID="N73632da89cfb41afbca821977ef53897">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T16:12:39.140000</case:createdTime>
+          <case:Trace rdf:nodeID="Nd406092e30ba4de095ab769860dafa61">
             <case:propertyBundle>
-              <case:Message rdf:nodeID="N0987f3e928794df396b5c12be2309766">
-                <case:unknownTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:27+00:00</case:unknownTime>
-                <case:messageText>Hi European Competitor, I&amp;apos;d like to add you as a contact. Gen Beringer</case:messageText>
-                <case:to rdf:nodeID="Ne4ad158ad6304248aa9e80c6ed9738ca"/>
-                <case:from rdf:nodeID="Nb4e189a73b744d9dad22c9278d0da405"/>
+              <case:Message rdf:nodeID="Nba2aa697679b47d798dab76eefe4d9ed">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:46+00:00</case:sentTime>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+              </case:Message>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.661000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N525fad4c1fc342de811364fe8d719acb">
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N2387e76fe2c14327ab862b6501827403">
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2404-12-30T06:23:40+00:00</case:sentTime>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:messageText><![CDATA[<sms alt="f you want I can copy some documents for you, if you can pay it... ;)"><type>2</type><status>6</status><failurereason>0</failurereason><targets><target status="6">+34123456789</target></targets><price>0.116 EUR</price><body><chunk id="0">f you want I can copy some documents for you, if you can pay it... ;)</chunk><untilnext>72</untilnext></body><encoded_body>f you want I can copy some documents for you, if you can pay it... ;)</encoded_body><sendtimestamp>13727168620</sendtimestamp></sms>]]></case:messageText>
+              </case:Message>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.668000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N3b3bbbf608024153a7bdd02041f661eb">
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N296e6125f5044786a2220df43b9abdec">
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:28:04+00:00</case:sentTime>
+                <case:messageText>where do I get it from?</case:messageText>
+              </case:Message>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.662000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="Nf23e33e48631479caa362677b7646e14">
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N968eeee435bc4ce2b41e63286fd85139">
+                <case:messageText>I&amp;apos;m here</case:messageText>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:27:56+00:00</case:sentTime>
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+              </case:Message>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.662000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="Ncdfe780e77ce4d0ba11f9b88d0a4582f">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.665000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="Nf8c6b284e0134ba0a41765804b2cbdde">
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:messageText>later</case:messageText>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:33:08+00:00</case:sentTime>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+              </case:Message>
+            </case:propertyBundle>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N6718032eb1b84a14a1aa28bda25342b5">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.664000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N8cf65392ebd34933aefc9b7d53adaed7">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:20+00:00</case:sentTime>
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:messageText>try not to spill coffee on it this time</case:messageText>
+              </case:Message>
+            </case:propertyBundle>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N8608808fea24408daeb48aba576f3160">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.665000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N3079deb7ed29486189d782312b5cacd5">
+                <case:messageText>whatever.</case:messageText>
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:59+00:00</case:sentTime>
+              </case:Message>
+            </case:propertyBundle>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N096c7a08b69d41d48887e16ce29981b2">
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="Ne9035097856e4dc085a86c810d2c6f75">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:30:11+00:00</case:sentTime>
+                <case:messageText><![CDATA[<a href="https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx">https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx</a>]]></case:messageText>
+                <case:to rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:from rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+              </case:Message>
+            </case:propertyBundle>
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.663000</case:createdTime>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N9bdd775db66945199d587cc455fbe823">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.664000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="Nf59e69e9c33f474d886c71a9fc28a2e5">
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:01+00:00</case:sentTime>
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:messageText>i got it</case:messageText>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+              </case:Message>
+            </case:propertyBundle>
+          </case:Trace>
+        </case:message>
+        <case:message>
+          <case:Trace rdf:nodeID="N6649c17d476a49beb7668b10b09f8313">
+            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-07T10:01:04.665000</case:createdTime>
+            <case:propertyBundle>
+              <case:Message rdf:nodeID="N510db70aa8b44ebba5f0bc76a4a9cdae">
+                <case:from rdf:nodeID="N8b9032a1718040229f0b4e5dd2a4a3cd"/>
+                <case:sentTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-30T21:32:37+00:00</case:sentTime>
+                <case:to rdf:nodeID="Nc9055361f40744e7b22302db19a15c57"/>
+                <case:messageText>fer christ sake, it was an accident!</case:messageText>
               </case:Message>
             </case:propertyBundle>
           </case:Trace>

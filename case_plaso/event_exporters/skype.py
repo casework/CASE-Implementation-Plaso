@@ -113,9 +113,9 @@ class SkypeChatExporter(SkypeExporter):
         trace = self.document.create_trace()
         pb = trace.create_property_bundle(
             'Message',
-            unknownTime=lib.convert_timestamp(event.timestamp),  # This is probably sent time, but we can't be sure.
+            # TODO: Confirm the difference between a sentTime and createdTime for message.
+            sentTime=lib.convert_timestamp(event.timestamp),
             messageText=getattr(event, 'text', None))
-
 
         # Add author.
         # The developer of this parser, connected the diplayname to the author username.
@@ -158,6 +158,5 @@ class SkypeSMSExporter(SkypeExporter):
         trace.create_property_bundle(
             'Message',
             participant=contact,
-            unknownTime=lib.convert_timestamp(event.timestamp)  # TODO: Figure out meaning. (its probably created or sent time)
-        )
+            sentTime=lib.convert_timestamp(event.timestamp))
 
