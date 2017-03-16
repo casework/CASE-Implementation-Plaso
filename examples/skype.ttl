@@ -5,208 +5,43 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.182000"^^xsd:dateTime ;
-    case:propertyBundle [ a case:MessageThread ;
-            case:displayName "European Competitor, Echo123" ;
-            case:message [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.181000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:messageText "He is our new employee" ;
-                            case:sentTime "2013-10-27T15:29:19+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2,
-                                [ a case:Trace ;
-                                    case:createdTime "2017-02-07T10:01:17.182000"^^xsd:dateTime ;
-                                    case:propertyBundle [ a case:DigitalAccount ;
-                                            case:accountLogin "echo123" ],
-                                        [ a case:Account ;
-                                            case:accountIssuer "Skype" ] ] ] ] ] .
-
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.173000"^^xsd:dateTime ;
-    case:propertyBundle [ a plaso:SkypeAccount ;
-            plaso:profileChangedTime "2013-07-30T21:22:08+00:00"^^xsd:dateTime ],
-        [ a case:Account ;
-            case:accountIssuer "Skype" ],
-        [ a case:SimpleAddress ;
-            case:country "us" ],
-        [ a case:SimpleName ;
-            case:familyName "Beringer" ;
-            case:givenName "Gen" ] .
-
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.171000"^^xsd:dateTime ;
-    case:propertyBundle [ a case:PhoneCall ;
+<025128ca-d5f8-46e5-8744-fb39e55361d7> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.734000"^^xsd:dateTime ;
+    case:propertyBundle [ a plaso:SkypeCall ;
+            case:isVideo false ],
+        [ a case:PhoneCall ;
             case:callType "INCOMING" ;
-            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-            case:startTime "2013-07-01T22:12:17+00:00"^^xsd:dateTime ;
-            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ],
-        [ a plaso:SkypeCall ;
-            case:isVideo false ] .
+            case:endTime "2013-07-01T22:23:03+00:00"^^xsd:dateTime ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.172000"^^xsd:dateTime ;
-    case:propertyBundle [ a case:Message ;
-            case:participant [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.172000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Contact ;
-                            case:phonenNumber "+34123456789" ] ] ;
-            case:sentTime "2013-07-01T22:14:22+00:00"^^xsd:dateTime ] .
-
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.177000"^^xsd:dateTime ;
+<0c6f3d21-cafe-486a-ab8d-533bc2f46496> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.736000"^^xsd:dateTime ;
     case:propertyBundle [ a case:MessageThread ;
-            case:displayName "European Competitor | where do I get it from?" ;
-            case:message [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.178000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:messageText "where do I get it from?" ;
-                            case:sentTime "2013-07-30T21:28:04+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.177000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:messageText "I&apos;m here" ;
-                            case:sentTime "2013-07-30T21:27:56+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.180000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:messageText "i got it" ;
-                            case:sentTime "2013-07-30T21:32:01+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.177000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:sentTime "2013-07-30T21:27:46+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.183000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "<sms alt=\"f you want I can copy some documents for you, if you can pay it... ;)\"><type>2</type><status>6</status><failurereason>0</failurereason><targets><target status=\"6\">+34123456789</target></targets><price>0.116 EUR</price><body><chunk id=\"0\">f you want I can copy some documents for you, if you can pay it... ;)</chunk><untilnext>72</untilnext></body><encoded_body>f you want I can copy some documents for you, if you can pay it... ;)</encoded_body><sendtimestamp>13727168620</sendtimestamp></sms>" ;
-                            case:sentTime "2404-12-30T06:23:40+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.181000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "whatever." ;
-                            case:sentTime "2013-07-30T21:32:59+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.181000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "later" ;
-                            case:sentTime "2013-07-30T21:33:08+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.180000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "try not to spill coffee on it this time" ;
-                            case:sentTime "2013-07-30T21:32:20+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.179000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "but give me a minute...." ;
-                            case:sentTime "2013-07-30T21:30:16+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.180000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:Nec90f460a6a04b4294b4ce4d8b58a058 ;
-                            case:messageText "fer christ sake, it was an accident!" ;
-                            case:sentTime "2013-07-30T21:32:37+00:00"^^xsd:dateTime ;
-                            case:to _:N27b78743dfd4475dbefecdc3e3256cc2 ] ],
-                [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.179000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "<a href=\"https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx\">https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx</a>" ;
-                            case:sentTime "2013-07-30T21:30:11+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ] ] .
+            case:displayName "european.bbq.competitor | yt?" ;
+            case:message <f01e8d53-9745-4864-a237-3ace8ef751e6> ] .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.175000"^^xsd:dateTime ;
+<12b8b8f3-423f-4635-b08c-ee01d29dd3b1> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.737000"^^xsd:dateTime ;
     case:propertyBundle [ a case:MessageThread ;
             case:displayName "European Competitor | need to know if you got it.." ;
-            case:message [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.175000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "need to know if you got it this time." ;
-                            case:sentTime "2013-07-30T21:27:11+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ] ] .
+            case:message <37ec05df-0b72-4d64-a464-91e76d70f587> ] .
 
-[] a case:ForensicAction ;
-    case:createdTime "2017-02-07T10:01:17.168000"^^xsd:dateTime ;
+<1d62d122-1053-4852-83c8-5e8ecbba131e> a case:ForensicAction ;
+    case:createdTime "2017-03-16T15:05:19.730000"^^xsd:dateTime ;
     case:endTime "2017-02-01T20:50:15.997000+00:00"^^xsd:dateTime ;
     case:propertyBundle [ a case:ActionReferences ;
-            case:instrument [ a case:Tool ;
-                    case:createdTime "2017-02-07T10:01:17.167000"^^xsd:dateTime ;
-                    case:creator "Joachim Metz" ;
-                    case:name "plaso" ;
-                    case:propertyBundle [ a case:ToolConfiguration ;
-                            case:configurationSetting [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_file" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "command_line_arguments" ;
-                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py skype.plaso ../plaso/test_data/skype_main.db" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_year" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "debug_mode" ;
-                                    case:itemValue "False" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_expression" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "enabled_parser_names" ;
-                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_encoding" ;
-                                    case:itemValue "cp1252" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "identifier" ;
-                                    case:itemValue "ab32208da4714cba99de14ad691669df" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "parser_filter_expression" ;
-                                    case:itemValue "" ] ] ;
-                    case:toolType "parser?" ;
-                    case:version "1.5.2_20161031" ] ;
-            case:performer [ a case:Identity ;
-                    case:createdTime "2017-02-07T10:01:17.168000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:SimpleName ;
-                            case:familyName "Doe" ;
-                            case:givenName "John" ] ] ] ;
+            case:instrument <bac84a81-afc6-4dad-ba63-36453943e11e> ;
+            case:performer <9724cebd-1fdd-42e5-b43a-f62c4f56c2c4> ] ;
     case:startTime "2017-02-01T20:50:15.950000+00:00"^^xsd:dateTime .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.176000"^^xsd:dateTime ;
-    case:propertyBundle [ a case:MessageThread ;
-            case:displayName "European Competitor" ;
-            case:message [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.176000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "Hi European Competitor, I&apos;d like to add you as a contact. Gen Beringer" ;
-                            case:sentTime "2013-07-30T21:27:27+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ] ] .
-
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.182000"^^xsd:dateTime ;
-    case:propertyBundle [ a case:File ;
+<21c5fc81-b977-4c2b-bace-cdb5e62d703b> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.744000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ContentData ;
+            case:hash [ a case:Hash ;
+                    case:hashMethod case:SHA256 ;
+                    case:hashValue "fb52eae51d359b2ed060416dcf9725442fa0b495db32972529e9e75b34c533bb" ] ],
+        [ a case:File ;
             case:accessedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
             case:extension ".db" ;
             case:fileName "skype_main" ;
@@ -214,65 +49,260 @@
             case:fileSize 344064 ;
             case:isAllocated true ;
             case:metadataChangedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ;
-            case:modifiedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ],
-        [ a case:ContentData ;
-            case:hash [ a case:Hash ;
-                    case:hashMethod case:SHA256 ;
-                    case:hashValue "fb52eae51d359b2ed060416dcf9725442fa0b495db32972529e9e75b34c533bb" ] ] .
+            case:modifiedTime "2016-09-08T19:34:44+00:00"^^xsd:dateTime ] .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.172000"^^xsd:dateTime ;
+<23e03d8b-ab60-468f-ba47-7ad624fddd29> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.744000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:MessageThread ;
+            case:displayName "European Competitor, Echo123" ;
+            case:message <8e7f8b90-a4f4-496e-94ec-6d9f8560d4a1> ] .
+
+<71e7d924-70fd-40cb-a38e-74875bbf35e3> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.732000"^^xsd:dateTime ;
     case:propertyBundle [ a case:PhoneCall ;
             case:callType "INCOMING" ;
-            case:endTime "2013-07-01T22:23:03+00:00"^^xsd:dateTime ;
-            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ],
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:startTime "2013-07-01T22:12:17+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ],
         [ a plaso:SkypeCall ;
             case:isVideo false ] .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.174000"^^xsd:dateTime ;
+<78b2feed-db4a-4e31-ab77-06a975d7cdac> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.738000"^^xsd:dateTime ;
     case:propertyBundle [ a case:MessageThread ;
-            case:displayName "european.bbq.competitor | yt?" ;
-            case:message [ a case:Trace ;
-                    case:createdTime "2017-02-07T10:01:17.174000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:Message ;
-                            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-                            case:messageText "yt?" ;
-                            case:sentTime "2013-07-30T21:26:28+00:00"^^xsd:dateTime ;
-                            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] ] ] .
+            case:displayName "European Competitor" ;
+            case:message <7f57a1b7-7087-4c99-939f-72d93501d5a0> ] .
 
-[] a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.170000"^^xsd:dateTime ;
+<9f42f6cb-dea3-4916-8aeb-eb772911354c> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.738000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:MessageThread ;
+            case:displayName "European Competitor | where do I get it from?" ;
+            case:message <2992c7c1-5db0-47b8-88c4-a6156cfd2d0a>,
+                <356b3157-ca89-456b-9014-b223cf24d81c>,
+                <364d4a1d-5777-4081-abaf-9fe5caa7ec01>,
+                <48cf182b-7d69-4a5e-9ebc-638d2af498ba>,
+                <4a4abcb6-4d0a-446b-9773-5dfebe62107d>,
+                <818ea640-d898-446d-8c0d-83e67a61e1b1>,
+                <aa3cddcb-9ed6-430c-984d-7d5c3b829e4d>,
+                <b309b2af-fb16-4215-8459-976448237111>,
+                <c698b99e-35a5-47fa-9568-1b5a3bc9761a>,
+                <c7b5a08f-4b8f-4cc9-af5a-cfaf7a1a66d4>,
+                <f1b528c9-a987-435a-9b0c-30abc72b743d> ] .
+
+<a0c2ecde-8e03-4d22-8401-f06ccee68307> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.735000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Account ;
+            case:accountIssuer "Skype" ],
+        [ a plaso:SkypeAccount ;
+            plaso:profileChangedTime "2013-07-30T21:22:08+00:00"^^xsd:dateTime ],
+        [ a case:SimpleName ;
+            case:familyName "Beringer" ;
+            case:givenName "Gen" ],
+        [ a case:SimpleAddress ;
+            case:country "us" ] .
+
+<aa9580d2-6055-405b-855f-8084d1fe2e0b> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.733000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:participant <f0c47874-320e-477c-8fcb-7744f18bcfbb> ;
+            case:sentTime "2013-07-01T22:14:22+00:00"^^xsd:dateTime ] .
+
+<d21e2e88-4d21-4a61-b2ba-7a86eb894f40> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.731000"^^xsd:dateTime ;
     case:propertyBundle [ a plaso:SkypeCall ;
             case:isVideo false ],
         [ a case:PhoneCall ;
             case:callType "INCOMING" ;
             case:createdTime "2013-07-01T22:12:17+00:00"^^xsd:dateTime ;
-            case:from _:N27b78743dfd4475dbefecdc3e3256cc2 ;
-            case:to _:Nec90f460a6a04b4294b4ce4d8b58a058 ] .
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-_:N66813cb5b69f4e7d9d80ed7816d8ac58 a case:DigitalAccount ;
-    case:accountLogin "european.bbq.competitor" ;
-    case:displayName "European Competitor" .
+<2992c7c1-5db0-47b8-88c4-a6156cfd2d0a> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.742000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:messageText "fer christ sake, it was an accident!" ;
+            case:sentTime "2013-07-30T21:32:37+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb> ] .
 
-_:N8711e21c0ac844489e53cb3c85c0eb16 a case:Account ;
-    case:accountIssuer "Skype" .
+<356b3157-ca89-456b-9014-b223cf24d81c> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.742000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "try not to spill coffee on it this time" ;
+            case:sentTime "2013-07-30T21:32:20+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-_:Na7bbda99f9aa4882b0eb840fefb69d95 a case:Account ;
-    case:accountIssuer "Skype" .
+<364d4a1d-5777-4081-abaf-9fe5caa7ec01> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.745000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "<sms alt=\"f you want I can copy some documents for you, if you can pay it... ;)\"><type>2</type><status>6</status><failurereason>0</failurereason><targets><target status=\"6\">+34123456789</target></targets><price>0.116 EUR</price><body><chunk id=\"0\">f you want I can copy some documents for you, if you can pay it... ;)</chunk><untilnext>72</untilnext></body><encoded_body>f you want I can copy some documents for you, if you can pay it... ;)</encoded_body><sendtimestamp>13727168620</sendtimestamp></sms>" ;
+            case:sentTime "2404-12-30T06:23:40+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-_:Ne7366cd2407b4d18a06d75fbc9f8cb66 a case:DigitalAccount ;
-    case:accountLogin "gen.beringer" ;
-    case:displayName "Gen Beringer" .
+<37ec05df-0b72-4d64-a464-91e76d70f587> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.736000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "need to know if you got it this time." ;
+            case:sentTime "2013-07-30T21:27:11+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-_:N27b78743dfd4475dbefecdc3e3256cc2 a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.170000"^^xsd:dateTime ;
-    case:propertyBundle _:Na7bbda99f9aa4882b0eb840fefb69d95,
-        _:Ne7366cd2407b4d18a06d75fbc9f8cb66 .
+<48cf182b-7d69-4a5e-9ebc-638d2af498ba> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.740000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "<a href=\"https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx\">https://www.dropbox.com/s/3t95y5d8j64azsj/Recipes.docx</a>" ;
+            case:sentTime "2013-07-30T21:30:11+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
 
-_:Nec90f460a6a04b4294b4ce4d8b58a058 a case:Trace ;
-    case:createdTime "2017-02-07T10:01:17.170000"^^xsd:dateTime ;
-    case:propertyBundle _:N66813cb5b69f4e7d9d80ed7816d8ac58,
-        _:N8711e21c0ac844489e53cb3c85c0eb16 .
+<4a4abcb6-4d0a-446b-9773-5dfebe62107d> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.741000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "but give me a minute...." ;
+            case:sentTime "2013-07-30T21:30:16+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
+
+<7f57a1b7-7087-4c99-939f-72d93501d5a0> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.737000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "Hi European Competitor, I&apos;d like to add you as a contact. Gen Beringer" ;
+            case:sentTime "2013-07-30T21:27:27+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
+
+<818ea640-d898-446d-8c0d-83e67a61e1b1> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.741000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:messageText "i got it" ;
+            case:sentTime "2013-07-30T21:32:01+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb> ] .
+
+<8e7f8b90-a4f4-496e-94ec-6d9f8560d4a1> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.743000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:messageText "He is our new employee" ;
+            case:sentTime "2013-10-27T15:29:19+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb>,
+                <bc70dbed-58d7-4d44-8ea5-ac9cfa7eb379> ] .
+
+<9724cebd-1fdd-42e5-b43a-f62c4f56c2c4> a case:Identity ;
+    case:createdTime "2017-03-16T15:05:19.729000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:SimpleName ;
+            case:familyName "Doe" ;
+            case:givenName "John" ] .
+
+<aa3cddcb-9ed6-430c-984d-7d5c3b829e4d> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.739000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:messageText "I&apos;m here" ;
+            case:sentTime "2013-07-30T21:27:56+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb> ] .
+
+<b309b2af-fb16-4215-8459-976448237111> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.742000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "whatever." ;
+            case:sentTime "2013-07-30T21:32:59+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
+
+<bac84a81-afc6-4dad-ba63-36453943e11e> a case:Tool ;
+    case:createdTime "2017-03-16T15:05:19.728000"^^xsd:dateTime ;
+    case:creator "Joachim Metz" ;
+    case:name "plaso" ;
+    case:propertyBundle [ a case:ToolConfiguration ;
+            case:configurationSetting [ a case:ConfigurationSetting ;
+                    case:itemName "debug_mode" ;
+                    case:itemValue "False" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "parser_filter_expression" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "identifier" ;
+                    case:itemValue "ab32208da4714cba99de14ad691669df" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "filter_file" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "command_line_arguments" ;
+                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py skype.plaso ../plaso/test_data/skype_main.db" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "filter_expression" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "enabled_parser_names" ;
+                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "preferred_encoding" ;
+                    case:itemValue "cp1252" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "preferred_year" ;
+                    case:itemValue "" ] ] ;
+    case:toolType "parser?" ;
+    case:version "1.5.2_20161031" .
+
+<bc70dbed-58d7-4d44-8ea5-ac9cfa7eb379> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.743000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Account ;
+            case:accountIssuer "Skype" ],
+        [ a case:DigitalAccount ;
+            case:accountLogin "echo123" ] .
+
+<c698b99e-35a5-47fa-9568-1b5a3bc9761a> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.743000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "later" ;
+            case:sentTime "2013-07-30T21:33:08+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
+
+<c7b5a08f-4b8f-4cc9-af5a-cfaf7a1a66d4> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.740000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:messageText "where do I get it from?" ;
+            case:sentTime "2013-07-30T21:28:04+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb> ] .
+
+<f01e8d53-9745-4864-a237-3ace8ef751e6> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.736000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <a256fd94-8fc9-457a-81e8-10a9041d07bb> ;
+            case:messageText "yt?" ;
+            case:sentTime "2013-07-30T21:26:28+00:00"^^xsd:dateTime ;
+            case:to <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ] .
+
+<f0c47874-320e-477c-8fcb-7744f18bcfbb> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.733000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Contact ;
+            case:phonenNumber "+34123456789" ] .
+
+<f1b528c9-a987-435a-9b0c-30abc72b743d> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.738000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Message ;
+            case:from <3b2d8385-c3d3-4d13-ad81-b359e9d16290> ;
+            case:sentTime "2013-07-30T21:27:46+00:00"^^xsd:dateTime ;
+            case:to <a256fd94-8fc9-457a-81e8-10a9041d07bb> ] .
+
+<3b2d8385-c3d3-4d13-ad81-b359e9d16290> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.731000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Account ;
+            case:accountIssuer "Skype" ],
+        [ a case:DigitalAccount ;
+            case:accountLogin "european.bbq.competitor" ;
+            case:displayName "European Competitor" ] .
+
+<a256fd94-8fc9-457a-81e8-10a9041d07bb> a case:Trace ;
+    case:createdTime "2017-03-16T15:05:19.731000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Account ;
+            case:accountIssuer "Skype" ],
+        [ a case:DigitalAccount ;
+            case:accountLogin "gen.beringer" ;
+            case:displayName "Gen Beringer" ] .
 

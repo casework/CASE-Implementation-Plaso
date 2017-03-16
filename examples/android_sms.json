@@ -9,318 +9,29 @@
   },
   "@graph": [
     {
-      "@id": "_:N9a538ab6fad44b43a524156c3634fb90",
-      "@type": "ConfigurationSetting",
-      "itemName": "filter_file",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Ne7c67cd7a6be458b805f9560e9f7d2ff",
-      "@type": "Message",
-      "from": {
-        "@id": "_:N1b885e8a5dee4b1494c534c44ab9de0f"
-      },
-      "isRead": false,
-      "messageText": "What message?",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:05:41.303000+00:00"
-      }
-    },
-    {
-      "@id": "_:Ndc73626e27c44e2e8d413a8af58c4dbd",
+      "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa",
       "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
+        "@value": "2017-03-16T14:58:31.061000"
       },
       "propertyBundle": {
-        "@id": "_:N21fc9f00a0314c52b427e642d3091110"
+        "@id": "_:6170c1ab-7f1e-4fae-a005-c7ae16a2b50c"
       }
     },
     {
-      "@id": "_:Nbed72a55093d4712b4bd28bdf802c366",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N8c2b5fa40b1042e6990c8998671ddb1f"
-      }
-    },
-    {
-      "@id": "_:N83cec2a1ee434013a0e5705312f75fc8",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N293b987cc81c46588cb3d67b22074b64"
-      }
-    },
-    {
-      "@id": "_:N3e508cad14d74dc984bd1929611fd0c8",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:Ne4d277c019784d84a61228c21e7e4815"
-      }
-    },
-    {
-      "@id": "_:N2f1df81c33b24ff2a63f01e743f93b28",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:Ne7c67cd7a6be458b805f9560e9f7d2ff"
-      }
-    },
-    {
-      "@id": "_:N7e2b8c52525440b09542acb5bd7177a7",
-      "@type": "ToolConfiguration",
-      "configurationSetting": [
-        {
-          "@id": "_:N7ba1e5689f9a4365bf492ebd1ac7f07f"
-        },
-        {
-          "@id": "_:Nc3f98875780c492693664b803d41ac6b"
-        },
-        {
-          "@id": "_:N7afcfcf2a54f420bacf6bff2ef2ab4ac"
-        },
-        {
-          "@id": "_:Ne29d981bdf594fb1a579a54c4b264cd8"
-        },
-        {
-          "@id": "_:Nccf52a1ff6a04627b5603868cbd1ca52"
-        },
-        {
-          "@id": "_:N40716cfe9a21417081f056df7b6a0cd2"
-        },
-        {
-          "@id": "_:Nc7faf094471b4fbd807c311816c2a98d"
-        },
-        {
-          "@id": "_:N950d86712ce04182ae8cc31f22b1ddee"
-        },
-        {
-          "@id": "_:N9a538ab6fad44b43a524156c3634fb90"
-        }
-      ]
-    },
-    {
-      "@id": "_:Nf21d676b020e444c8570e1dc36a01d20",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N9d2f0906cc1b4a7e8e8321336b7534dc"
-      }
-    },
-    {
-      "@id": "_:N1c62121adee641ec9c46fcfa23c01bf3",
+      "@id": "_:6241a1f3-29b3-4f88-a1b7-d975c41d7327",
       "@type": "Contact",
       "phoneNumber": "15555215554"
     },
     {
-      "@id": "_:N7ba1e5689f9a4365bf492ebd1ac7f07f",
-      "@type": "ConfigurationSetting",
-      "itemName": "command_line_arguments",
-      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py D:/dev/case_plaso/android_sms.plaso D:/dev/plaso/test_data/mmssms.db"
-    },
-    {
-      "@id": "_:N1b885e8a5dee4b1494c534c44ab9de0f",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N1c62121adee641ec9c46fcfa23c01bf3"
-      }
-    },
-    {
-      "@id": "_:Nb682d25222294b439a33f586b122d978",
-      "@type": "Message",
-      "isRead": true,
-      "messageText": "Yo Fred this is my new number.",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T16:56:28.038000+00:00"
-      },
-      "to": {
-        "@id": "_:N3520191897b0482483b04962c63f7e0c"
-      }
-    },
-    {
-      "@id": "_:N3520191897b0482483b04962c63f7e0c",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N481e20e258a74011b3438f48aa0af07d"
-      }
-    },
-    {
-      "@id": "_:N37515556118642419a0db29039711c0c",
-      "@type": "Identity",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N9ab377993d7f4d44b13b11bc06c3f0bc"
-      }
-    },
-    {
-      "@id": "_:Nc7faf094471b4fbd807c311816c2a98d",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_year",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Ne79a2459d29c435fb8a88e30c6433db6",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": {
-        "@id": "_:N533c45dab317404ab827189b6f07a0c5"
-      }
-    },
-    {
-      "@id": "_:N7afcfcf2a54f420bacf6bff2ef2ab4ac",
-      "@type": "ConfigurationSetting",
-      "itemName": "filter_expression",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Nc3f98875780c492693664b803d41ac6b",
-      "@type": "ConfigurationSetting",
-      "itemName": "enabled_parser_names",
-      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
-    },
-    {
-      "@id": "_:Nccf52a1ff6a04627b5603868cbd1ca52",
+      "@id": "_:0fac70cf-0689-4f80-aa70-549013bea798",
       "@type": "ConfigurationSetting",
       "itemName": "debug_mode",
       "itemValue": "False"
     },
     {
-      "@id": "_:Ne4d277c019784d84a61228c21e7e4815",
-      "@type": "Message",
-      "isRead": true,
-      "messageText": "It's me Barney! I got a new phone after BamBam smashed my other one. This is my new number.",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:07:49.452000+00:00"
-      },
-      "to": {
-        "@id": "_:N3520191897b0482483b04962c63f7e0c"
-      }
-    },
-    {
-      "@id": "_:N25667b51f88142a487a5815a31da62de",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:Ne0cc9af9413048148c433bb044ed8873"
-        },
-        {
-          "@id": "_:Ne0f7624918544e92a23202bc52237236"
-        }
-      ]
-    },
-    {
-      "@id": "_:Ndb91bac8e1d84aa99f27b25f7bb3204a",
-      "@type": "Hash",
-      "hashMethod": {
-        "@id": "case:SHA256"
-      },
-      "hashValue": "0e2cadfa9d68fb1769c01ceb5d75e4dfc4872dfdde7c6db37b75e896e31e283f"
-    },
-    {
-      "@id": "_:N0a22f9e944984a1d8c3ffb196e93c3d5",
-      "@type": "Message",
-      "isRead": true,
-      "messageText": "Did you get my message?",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:03:55.964000+00:00"
-      },
-      "to": {
-        "@id": "_:N3520191897b0482483b04962c63f7e0c"
-      }
-    },
-    {
-      "@id": "_:N9d2f0906cc1b4a7e8e8321336b7534dc",
-      "@type": "Message",
-      "from": {
-        "@id": "_:N1b885e8a5dee4b1494c534c44ab9de0f"
-      },
-      "isRead": false,
-      "messageText": "Who dis??",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:06:16.416000+00:00"
-      }
-    },
-    {
-      "@id": "_:N293b987cc81c46588cb3d67b22074b64",
-      "@type": "Message",
-      "from": {
-        "@id": "_:N1b885e8a5dee4b1494c534c44ab9de0f"
-      },
-      "isRead": false,
-      "messageText": "Are we going bowling after the water buffalo meeting tonight?",
-      "sentTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:10:58.374000+00:00"
-      }
-    },
-    {
-      "@id": "_:Nd6ec4456951044998eb37945d2436faa",
-      "@type": "Tool",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.577000"
-      },
-      "creator": "Joachim Metz",
-      "name": "plaso",
-      "propertyBundle": {
-        "@id": "_:N7e2b8c52525440b09542acb5bd7177a7"
-      },
-      "toolType": "parser?",
-      "version": "1.5.2_20161031"
-    },
-    {
-      "@id": "_:N6de24acbb59048e69a9209b51eb4fdad",
-      "@type": "ActionReferences",
-      "instrument": {
-        "@id": "_:Nd6ec4456951044998eb37945d2436faa"
-      },
-      "performer": {
-        "@id": "_:N37515556118642419a0db29039711c0c"
-      }
-    },
-    {
-      "@id": "_:Ne0cc9af9413048148c433bb044ed8873",
+      "@id": "_:b35c28a5-60ce-430b-8d08-71b583e377e7",
       "@type": "File",
       "accessedTime": {
         "@type": "xsd:dateTime",
@@ -341,7 +52,115 @@
       }
     },
     {
-      "@id": "_:N21fc9f00a0314c52b427e642d3091110",
+      "@id": "_:8ba5e31b-7ab4-4cdc-af25-71f695a78e71",
+      "@type": "Message",
+      "isRead": true,
+      "messageText": "It's me Barney! I got a new phone after BamBam smashed my other one. This is my new number.",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T17:07:49.452000+00:00"
+      },
+      "to": {
+        "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa"
+      }
+    },
+    {
+      "@id": "_:fe406927-a198-4337-9321-3d776f29f114",
+      "@type": "Message",
+      "from": {
+        "@id": "dd931cae-63d8-4296-85bd-a32980790a6f"
+      },
+      "isRead": false,
+      "messageText": "Oh noes, that last message did not get through!!!",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T17:15:44.135000+00:00"
+      }
+    },
+    {
+      "@id": "_:fa80a9d1-a080-4dd7-903e-9e9c9481b7e4",
+      "@type": "Message",
+      "from": {
+        "@id": "dd931cae-63d8-4296-85bd-a32980790a6f"
+      },
+      "isRead": false,
+      "messageText": "What message?",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T17:05:41.303000+00:00"
+      }
+    },
+    {
+      "@id": "_:87775ae2-5e9b-4202-8123-6b44f96262fe",
+      "@type": "Message",
+      "isRead": true,
+      "messageText": "Yo Fred this is my new number.",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T16:56:28.038000+00:00"
+      },
+      "to": {
+        "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa"
+      }
+    },
+    {
+      "@id": "_:423cc022-3280-42ad-8e86-d7460d4593a8",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:3cd5a3b6-a463-485f-82b5-6cb38dc0902a"
+        },
+        {
+          "@id": "_:a4e4a041-ae16-4195-aa19-432a4e2e64a4"
+        },
+        {
+          "@id": "_:dd330f82-a0eb-42cd-88aa-25a68c375edc"
+        },
+        {
+          "@id": "_:5b9c40b0-6346-48f6-9524-08af2794a2c1"
+        },
+        {
+          "@id": "_:9de22155-afed-44ef-adbb-60de86785eeb"
+        },
+        {
+          "@id": "_:a7100b90-a028-4187-b270-b9bceda59089"
+        },
+        {
+          "@id": "_:0fac70cf-0689-4f80-aa70-549013bea798"
+        },
+        {
+          "@id": "_:f15780d9-dcf9-4522-b79f-3884230d4714"
+        },
+        {
+          "@id": "_:ab85a6f8-77ed-4bc6-9b65-aa7a4de0bf8e"
+        }
+      ]
+    },
+    {
+      "@id": "_:85741aa4-c01b-4ab4-9a91-8de60f638e5d",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:23fd5e2b-cef8-4278-8d63-b569475954e4"
+      }
+    },
+    {
+      "@id": "_:a4e4a041-ae16-4195-aa19-432a4e2e64a4",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/plaso/Scripts/log2timeline.py --no-dependencies-check android_sms.plaso ../plaso/test_data/mmssms.db"
+    },
+    {
+      "@id": "_:8e14c7b8-8491-4e40-b98d-e0a8079f5368",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "e921e35b-93dd-4f37-84db-c20126ddf0f2"
+      },
+      "performer": {
+        "@id": "d45c8a49-30b7-4e76-8407-de6551b2927c"
+      }
+    },
+    {
+      "@id": "_:5c866221-17b0-444d-bf1e-885fb3e7bf64",
       "@type": "Message",
       "isRead": true,
       "messageText": "You bet! I'm just going to write a reeeeealllllllyyyyy long message. I was thinking that this weekend we should head to the race track. I heard that Goggles Paesano is going to be there ;)",
@@ -350,88 +169,125 @@
         "@value": "2013-10-29T17:14:07.114000+00:00"
       },
       "to": {
-        "@id": "_:N3520191897b0482483b04962c63f7e0c"
+        "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa"
       }
     },
     {
-      "@id": "_:N6cdffcd464a345358451545bbf56de5a",
+      "@id": "8b894970-9ef8-4fe1-ac64-2aae2fe9937f",
       "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
+        "@value": "2017-03-16T14:58:31.064000"
       },
       "propertyBundle": {
-        "@id": "_:Nb682d25222294b439a33f586b122d978"
+        "@id": "_:bac995b4-6202-4ad3-8c67-5c2ea4954c8c"
       }
     },
     {
-      "@id": "_:Ne0f7624918544e92a23202bc52237236",
-      "@type": "ContentData",
-      "hash": {
-        "@id": "_:Ndb91bac8e1d84aa99f27b25f7bb3204a"
-      }
-    },
-    {
-      "@id": "_:N40716cfe9a21417081f056df7b6a0cd2",
-      "@type": "ConfigurationSetting",
-      "itemName": "identifier",
-      "itemValue": "fec401d89efa47ff96bcb86be7d620d5"
-    },
-    {
-      "@id": "_:Nc0a35bd9fd5a48d2935316a9c2160c24",
-      "@type": "ForensicAction",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
-      },
-      "endTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T15:35:23.944000+00:00"
-      },
-      "propertyBundle": {
-        "@id": "_:N6de24acbb59048e69a9209b51eb4fdad"
-      },
-      "startTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T15:35:23.897000+00:00"
-      }
-    },
-    {
-      "@id": "_:N950d86712ce04182ae8cc31f22b1ddee",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_encoding",
-      "itemValue": "cp1252"
-    },
-    {
-      "@id": "_:Nff1aae2a99744019b9079ae77a5c43ff",
+      "@id": "20cb0416-2c14-4b16-a688-c1ff21bf2288",
       "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T10:41:21.592000"
+        "@value": "2017-03-16T14:58:31.065000"
       },
       "propertyBundle": {
-        "@id": "_:N0a22f9e944984a1d8c3ffb196e93c3d5"
+        "@id": "_:3ae036c4-8e9f-4115-b7bd-9d03803db889"
       }
     },
     {
-      "@id": "_:N9ab377993d7f4d44b13b11bc06c3f0bc",
-      "@type": "SimpleName",
-      "familyName": "Doe",
-      "givenName": "John"
+      "@id": "37aa1afb-646d-47f4-a50e-3156c0ce96b7",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.065000"
+      },
+      "propertyBundle": {
+        "@id": "_:fe406927-a198-4337-9321-3d776f29f114"
+      }
     },
     {
-      "@id": "_:Ne29d981bdf594fb1a579a54c4b264cd8",
+      "@id": "9169e977-1d95-4daa-aebe-1f3682be428f",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.064000"
+      },
+      "propertyBundle": {
+        "@id": "_:8ba5e31b-7ab4-4cdc-af25-71f695a78e71"
+      }
+    },
+    {
+      "@id": "_:5b9c40b0-6346-48f6-9524-08af2794a2c1",
       "@type": "ConfigurationSetting",
-      "itemName": "parser_filter_expression",
+      "itemName": "preferred_year",
       "itemValue": ""
     },
     {
-      "@id": "_:N481e20e258a74011b3438f48aa0af07d",
-      "@type": "Contact",
-      "phoneNumber": "1 555-521-5554"
+      "@id": "_:9de22155-afed-44ef-adbb-60de86785eeb",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
     },
     {
-      "@id": "_:N533c45dab317404ab827189b6f07a0c5",
+      "@id": "_:dd330f82-a0eb-42cd-88aa-25a68c375edc",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "624f2636e65e451e8dd7cb044ec44b69"
+    },
+    {
+      "@id": "_:bac995b4-6202-4ad3-8c67-5c2ea4954c8c",
+      "@type": "Message",
+      "from": {
+        "@id": "dd931cae-63d8-4296-85bd-a32980790a6f"
+      },
+      "isRead": false,
+      "messageText": "Who dis??",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T17:06:16.416000+00:00"
+      }
+    },
+    {
+      "@id": "dd931cae-63d8-4296-85bd-a32980790a6f",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.063000"
+      },
+      "propertyBundle": {
+        "@id": "_:6241a1f3-29b3-4f88-a1b7-d975c41d7327"
+      }
+    },
+    {
+      "@id": "_:ab85a6f8-77ed-4bc6-9b65-aa7a4de0bf8e",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+    },
+    {
+      "@id": "07f5ea3c-c8ef-4b79-8b74-bd008d583b85",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.062000"
+      },
+      "propertyBundle": {
+        "@id": "_:fd1ff588-7d89-4bb8-b42d-33033bcb55d5"
+      }
+    },
+    {
+      "@id": "f7f99e93-d4b4-41ad-88ed-6bf770123ec2",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.065000"
+      },
+      "propertyBundle": {
+        "@id": "_:5c866221-17b0-444d-bf1e-885fb3e7bf64"
+      }
+    },
+    {
+      "@id": "_:806465b6-7033-4764-979d-82906069e71d",
       "@type": "Message",
       "isRead": true,
       "messageText": "Guess the emulator was not happy with a long message",
@@ -440,21 +296,165 @@
         "@value": "2013-10-29T17:16:17.250000+00:00"
       },
       "to": {
-        "@id": "_:N3520191897b0482483b04962c63f7e0c"
+        "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa"
       }
     },
     {
-      "@id": "_:N8c2b5fa40b1042e6990c8998671ddb1f",
-      "@type": "Message",
-      "from": {
-        "@id": "_:N1b885e8a5dee4b1494c534c44ab9de0f"
+      "@id": "_:6170c1ab-7f1e-4fae-a005-c7ae16a2b50c",
+      "@type": "Contact",
+      "phoneNumber": "1 555-521-5554"
+    },
+    {
+      "@id": "1685f5bf-d60b-4f54-8216-209dd8b64e13",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.062000"
       },
-      "isRead": false,
-      "messageText": "Oh noes, that last message did not get through!!!",
+      "propertyBundle": {
+        "@id": "_:87775ae2-5e9b-4202-8123-6b44f96262fe"
+      }
+    },
+    {
+      "@id": "_:fd1ff588-7d89-4bb8-b42d-33033bcb55d5",
+      "@type": "Message",
+      "isRead": true,
+      "messageText": "Did you get my message?",
       "sentTime": {
         "@type": "xsd:dateTime",
-        "@value": "2013-10-29T17:15:44.135000+00:00"
+        "@value": "2013-10-29T17:03:55.964000+00:00"
+      },
+      "to": {
+        "@id": "7bfc309d-d826-40e2-a748-f42bb5053cfa"
       }
+    },
+    {
+      "@id": "_:3ae036c4-8e9f-4115-b7bd-9d03803db889",
+      "@type": "Message",
+      "from": {
+        "@id": "dd931cae-63d8-4296-85bd-a32980790a6f"
+      },
+      "isRead": false,
+      "messageText": "Are we going bowling after the water buffalo meeting tonight?",
+      "sentTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2013-10-29T17:10:58.374000+00:00"
+      }
+    },
+    {
+      "@id": "89bdbc4f-a148-4212-8240-a760dfad2f4e",
+      "@type": "ForensicAction",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.060000"
+      },
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T18:57:52.946000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "_:8e14c7b8-8491-4e40-b98d-e0a8079f5368"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T18:57:52.889000+00:00"
+      }
+    },
+    {
+      "@id": "e921e35b-93dd-4f37-84db-c20126ddf0f2",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.058000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:423cc022-3280-42ad-8e86-d7460d4593a8"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20170103-json-patch"
+    },
+    {
+      "@id": "_:f15780d9-dcf9-4522-b79f-3884230d4714",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "ccf9d75e-7402-4c5f-95f5-d79e261577b6",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.066000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:b35c28a5-60ce-430b-8d08-71b583e377e7"
+        },
+        {
+          "@id": "_:85741aa4-c01b-4ab4-9a91-8de60f638e5d"
+        }
+      ]
+    },
+    {
+      "@id": "8ad41eb2-0687-4d77-beee-9750e9f1eb66",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.063000"
+      },
+      "propertyBundle": {
+        "@id": "_:fa80a9d1-a080-4dd7-903e-9e9c9481b7e4"
+      }
+    },
+    {
+      "@id": "d45c8a49-30b7-4e76-8407-de6551b2927c",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.060000"
+      },
+      "propertyBundle": {
+        "@id": "_:feb58a5a-0954-4802-a12e-4a82b54ea2d7"
+      }
+    },
+    {
+      "@id": "_:feb58a5a-0954-4802-a12e-4a82b54ea2d7",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:23fd5e2b-cef8-4278-8d63-b569475954e4",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "0e2cadfa9d68fb1769c01ceb5d75e4dfc4872dfdde7c6db37b75e896e31e283f"
+    },
+    {
+      "@id": "7e075c35-1bb2-45bf-80db-36703e7391d4",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:58:31.066000"
+      },
+      "propertyBundle": {
+        "@id": "_:806465b6-7033-4764-979d-82906069e71d"
+      }
+    },
+    {
+      "@id": "_:3cd5a3b6-a463-485f-82b5-6cb38dc0902a",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:a7100b90-a028-4187-b270-b9bceda59089",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
     }
   ]
 }

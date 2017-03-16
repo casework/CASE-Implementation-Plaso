@@ -90,7 +90,7 @@ class PlasoExporter(object):
                     value = ''
                 value = str(value)
                 setting = self.document.create_node(
-                    'ConfigurationSetting', itemName=attribute, itemValue=value)
+                    'ConfigurationSetting', bnode=True, itemName=attribute, itemValue=value)
                 config.add('configurationSetting', setting)
 
         # TODO: How do we know who performed the Plaso action? That information

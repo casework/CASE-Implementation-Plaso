@@ -9,19 +9,177 @@
   },
   "@graph": [
     {
-      "@id": "_:N78544b58ab704e4f823f902f691e7ada",
-      "@type": "ConfigurationSetting",
-      "itemName": "identifier",
-      "itemValue": "28e7612dc90547509856051e028b74fb"
+      "@id": "7112304c-88b3-4982-9105-153ffbea3a1a",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "c7cb2f5db54bb701ae00f34bc5f9db72955ebea347c872cd4a4fea7e3627a3d5"
     },
     {
-      "@id": "_:N1a57ce743541497ba1d684c4ce0f0de2",
+      "@id": "cd13b579-72cf-4810-8fe9-2b7f8a4ac267",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "e330d22b-40d5-4fa6-a108-baa63eff7f1a",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "391a7836-dc46-43ab-808b-51627f723595"
+      },
+      "performer": {
+        "@id": "e52fe09f-858e-45da-ab06-0e56ad980c7b"
+      }
+    },
+    {
+      "@id": "854a4142-6734-4a08-86ba-a593e79365cb",
+      "@type": "File",
+      "isDirectory": false
+    },
+    {
+      "@id": "662f4a3d-7ab6-4766-9db6-e08c33f136e7",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "7112304c-88b3-4982-9105-153ffbea3a1a"
+      }
+    },
+    {
+      "@id": "1bb351f5-a8b6-4eb9-b5eb-c39a7a8c9274",
+      "@type": "Compression",
+      "compressionMethod": {
+        "@id": "case:BZIP2"
+      }
+    },
+    {
+      "@id": "64cc7d15-7250-4730-ac9a-01a7bd9e954a",
       "@type": "ConfigurationSetting",
       "itemName": "debug_mode",
       "itemValue": "False"
     },
     {
-      "@id": "_:N31a8bdda16714910a0e525fda2ed3fe5",
+      "@id": "3698904f-ea96-490b-acc0-829001803e9d",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "b7e83cde-5b4b-4b3c-b679-65935853964e",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "64cc7d15-7250-4730-ac9a-01a7bd9e954a"
+        },
+        {
+          "@id": "810bca6f-932f-4027-bb0f-53f6441130d4"
+        },
+        {
+          "@id": "6979e941-d652-4ac9-afc1-62c83bde1882"
+        },
+        {
+          "@id": "3698904f-ea96-490b-acc0-829001803e9d"
+        },
+        {
+          "@id": "0832f5cb-2ce3-4200-96ac-59e88e5f5416"
+        },
+        {
+          "@id": "d7ae0cfe-a8c8-427a-aaa7-06d9bbe82b60"
+        },
+        {
+          "@id": "ea2c7636-eac0-428d-b86b-2ce9838e88c4"
+        },
+        {
+          "@id": "ec9359ee-f073-4261-af17-f7523329808d"
+        },
+        {
+          "@id": "cd13b579-72cf-4810-8fe9-2b7f8a4ac267"
+        }
+      ]
+    },
+    {
+      "@id": "ea2c7636-eac0-428d-b86b-2ce9838e88c4",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "d7ae0cfe-a8c8-427a-aaa7-06d9bbe82b60",
+      "@type": "ConfigurationSetting",
+      "itemName": "parser_filter_expression",
+      "itemValue": ""
+    },
+    {
+      "@id": "ec75b230-808b-4679-956e-f4420532e41b",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:28:13.950000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "854a4142-6734-4a08-86ba-a593e79365cb"
+        },
+        {
+          "@id": "c7ec915d-28e6-4d56-b20e-580d19b43f48"
+        }
+      ]
+    },
+    {
+      "@id": "c7ec915d-28e6-4d56-b20e-580d19b43f48",
+      "@type": "Compression",
+      "compressionMethod": {
+        "@id": "case:BZIP2"
+      }
+    },
+    {
+      "@id": "d64311b4-e261-4699-80d7-c15db65afbb1",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:28:13.950000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "decompressed-from",
+      "propertyBundle": {
+        "@id": "1bb351f5-a8b6-4eb9-b5eb-c39a7a8c9274"
+      },
+      "source": {
+        "@id": "ec75b230-808b-4679-956e-f4420532e41b"
+      },
+      "target": {
+        "@id": "b7fba129-fdc7-42d2-a631-49cf528e2b11"
+      }
+    },
+    {
+      "@id": "b7fba129-fdc7-42d2-a631-49cf528e2b11",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T14:28:13.950000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "662f4a3d-7ab6-4766-9db6-e08c33f136e7"
+        },
+        {
+          "@id": "6f7886fe-44f9-49b6-b93f-5e5067a20676"
+        }
+      ]
+    },
+    {
+      "@id": "810bca6f-932f-4027-bb0f-53f6441130d4",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "bd849fd0ba7e4212adac2aedd10d89f7"
+    },
+    {
+      "@id": "5d4846b8-4c4c-44f9-a3d0-ed38b131360a",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "6f7886fe-44f9-49b6-b93f-5e5067a20676",
       "@type": "File",
       "accessedTime": {
         "@type": "xsd:dateTime",
@@ -42,225 +200,67 @@
       }
     },
     {
-      "@id": "_:N10c531d6c70b499f94cf2db301710689",
-      "@type": "Trace",
+      "@id": "c1940d24-d08d-4617-834a-fbed5496c9e6",
+      "@type": "ForensicAction",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
+        "@value": "2017-03-16T14:28:13.949000"
       },
-      "propertyBundle": [
-        {
-          "@id": "_:N5edaadfa3bec43bd9612422ed7db86e9"
-        },
-        {
-          "@id": "_:N31a8bdda16714910a0e525fda2ed3fe5"
-        }
-      ]
+      "endTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T16:31:58.539000+00:00"
+      },
+      "propertyBundle": {
+        "@id": "e330d22b-40d5-4fa6-a108-baa63eff7f1a"
+      },
+      "startTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-01-30T16:31:58.259000+00:00"
+      }
     },
     {
-      "@id": "_:N17e3ccbdb8334fdca17af69868b55a9e",
-      "@type": "ToolConfiguration",
-      "configurationSetting": [
-        {
-          "@id": "_:Nbb76d94c29fd4f85822b1d3fe3a8b550"
-        },
-        {
-          "@id": "_:N22ef7596caa547b3898c39f720f74366"
-        },
-        {
-          "@id": "_:N5d823dac1d464dac9bcad77e09095424"
-        },
-        {
-          "@id": "_:Ne508d49d40c64e78bdfd9f68a15545ce"
-        },
-        {
-          "@id": "_:N78544b58ab704e4f823f902f691e7ada"
-        },
-        {
-          "@id": "_:Nc5b0626afdb743b2b3c31cfd84c8e747"
-        },
-        {
-          "@id": "_:N1a57ce743541497ba1d684c4ce0f0de2"
-        },
-        {
-          "@id": "_:Nfad7bc0ea3f041afbbced1ef7b2b296d"
-        },
-        {
-          "@id": "_:N838960ce721546a3b724d0e261e085e8"
-        }
-      ]
-    },
-    {
-      "@id": "_:N3d99ff9a632e4021b4cb94643a7eb6fd",
+      "@id": "391a7836-dc46-43ab-808b-51627f723595",
       "@type": "Tool",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
+        "@value": "2017-03-16T14:28:13.947000"
       },
       "creator": "Joachim Metz",
       "name": "plaso",
       "propertyBundle": {
-        "@id": "_:N17e3ccbdb8334fdca17af69868b55a9e"
+        "@id": "b7e83cde-5b4b-4b3c-b679-65935853964e"
       },
       "toolType": "parser?",
       "version": "1.5.2_20161031"
     },
     {
-      "@id": "_:Nccd6b28234fa4a16aed60c6cedd1994b",
-      "@type": "Compression",
-      "compressionMethod": {
-        "@id": "case:BZIP2"
-      }
-    },
-    {
-      "@id": "_:N5d823dac1d464dac9bcad77e09095424",
-      "@type": "ConfigurationSetting",
-      "itemName": "parser_filter_expression",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Ncd4b488cf47a45b8aa614300e7b30637",
-      "@type": "SimpleName",
-      "familyName": "Doe",
-      "givenName": "John"
-    },
-    {
-      "@id": "_:N5edaadfa3bec43bd9612422ed7db86e9",
-      "@type": "ContentData",
-      "hash": {
-        "@id": "_:Nb80cbcbb765e440abaf110cbfd017f43"
-      }
-    },
-    {
-      "@id": "_:Nc5b0626afdb743b2b3c31cfd84c8e747",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_encoding",
-      "itemValue": "cp1252"
-    },
-    {
-      "@id": "_:N838960ce721546a3b724d0e261e085e8",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_year",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Nb3845257340c4fd9b468b07311fd0f01",
-      "@type": "Compression",
-      "compressionMethod": {
-        "@id": "case:BZIP2"
-      }
-    },
-    {
-      "@id": "_:N1c9e85cbe197494c8d4c63b03b86938f",
-      "@type": "File",
-      "isDirectory": false
-    },
-    {
-      "@id": "_:N413c9814ca2a4b6892a74412f184a8b3",
-      "@type": "ForensicAction",
+      "@id": "e52fe09f-858e-45da-ab06-0e56ad980c7b",
+      "@type": "Identity",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
-      },
-      "endTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T16:07:13.694000+00:00"
+        "@value": "2017-03-16T14:28:13.949000"
       },
       "propertyBundle": {
-        "@id": "_:N9814f8f5470a41c9a0b0ea91db337c70"
-      },
-      "startTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T16:07:13.397000+00:00"
+        "@id": "5d4846b8-4c4c-44f9-a3d0-ed38b131360a"
       }
     },
     {
-      "@id": "_:N9814f8f5470a41c9a0b0ea91db337c70",
-      "@type": "ActionReferences",
-      "instrument": {
-        "@id": "_:N3d99ff9a632e4021b4cb94643a7eb6fd"
-      },
-      "performer": {
-        "@id": "_:N3b5c335528924d15af46150c57127a91"
-      }
-    },
-    {
-      "@id": "_:Ne508d49d40c64e78bdfd9f68a15545ce",
-      "@type": "ConfigurationSetting",
-      "itemName": "enabled_parser_names",
-      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
-    },
-    {
-      "@id": "_:Nbb76d94c29fd4f85822b1d3fe3a8b550",
+      "@id": "0832f5cb-2ce3-4200-96ac-59e88e5f5416",
       "@type": "ConfigurationSetting",
       "itemName": "filter_expression",
       "itemValue": ""
     },
     {
-      "@id": "_:Nb80cbcbb765e440abaf110cbfd017f43",
-      "@type": "Hash",
-      "hashMethod": {
-        "@id": "case:SHA256"
-      },
-      "hashValue": "c7cb2f5db54bb701ae00f34bc5f9db72955ebea347c872cd4a4fea7e3627a3d5"
-    },
-    {
-      "@id": "_:N4a0f12e3ccf845ecb3717a10bf65ab44",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:N1c9e85cbe197494c8d4c63b03b86938f"
-        },
-        {
-          "@id": "_:Nccd6b28234fa4a16aed60c6cedd1994b"
-        }
-      ]
-    },
-    {
-      "@id": "_:N3b5c335528924d15af46150c57127a91",
-      "@type": "Identity",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
-      },
-      "propertyBundle": {
-        "@id": "_:Ncd4b488cf47a45b8aa614300e7b30637"
-      }
-    },
-    {
-      "@id": "_:Nfad7bc0ea3f041afbbced1ef7b2b296d",
+      "@id": "6979e941-d652-4ac9-afc1-62c83bde1882",
       "@type": "ConfigurationSetting",
       "itemName": "command_line_arguments",
       "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py bz2.plaso ../dfvfs/test_data/syslog.bz2"
     },
     {
-      "@id": "_:N22ef7596caa547b3898c39f720f74366",
+      "@id": "ec9359ee-f073-4261-af17-f7523329808d",
       "@type": "ConfigurationSetting",
-      "itemName": "filter_file",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Na0b3b9f5a82e46388956778f78003025",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:07:29.852000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "decompressed-from",
-      "propertyBundle": {
-        "@id": "_:Nb3845257340c4fd9b468b07311fd0f01"
-      },
-      "source": {
-        "@id": "_:N4a0f12e3ccf845ecb3717a10bf65ab44"
-      },
-      "target": {
-        "@id": "_:N10c531d6c70b499f94cf2db301710689"
-      }
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
     }
   ]
 }

@@ -1,180 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-  xmlns:case="http://case.example.org/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:plaso="http://plaso.example.org/core#"
+   xmlns:case="http://case.example.org/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <case:Relationship rdf:nodeID="Nd1b3d45f002c4e88adb432f323bcdf6f">
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N7132ed75c69f409a915a4fe1b59c08b2">
-        <case:path>/lost+found</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:source>
-      <case:Trace rdf:nodeID="N686e996b7eff4028b5aaf81f2af601d7">
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N993d0db9a2364aecb529dc9bb9231481">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N38ad90d33adf4527bbbcf2bf9529176e"/>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Ne9769087491248b6a446845ca177c28d">
-            <case:fileName>lost+found</case:fileName>
-            <case:filePath>/lost+found</case:filePath>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:accessedTime>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:metadataChangedTime>
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:modifiedTime>
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
-          </case:File>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:source>
+  <rdf:Description rdf:about="ad939ec5-01da-4184-83cb-a03f14a98229">
+    <case:propertyBundle rdf:nodeID="aa90eca2-8954-4f78-a71d-414e54b9721c"/>
+    <case:propertyBundle rdf:nodeID="e35a8289-1338-4cee-bd60-521be1f79443"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.740000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="51ee2f70-af0f-4ac7-9765-7bf7aa565ddf"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ecf1d04c-4dc8-43af-98a8-82dff02ff6a2">
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+    <case:path>/lost+found</case:path>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7c56850-f849-4259-a611-470d63eb5be3">
+    <rdf:type rdf:resource="http://case.example.org/core#SimpleName"/>
+    <case:givenName>John</case:givenName>
+    <case:familyName>Doe</case:familyName>
+  </rdf:Description>
+  <rdf:Description rdf:about="4ff55f77-4919-44f0-9e0d-7a7fc31a5010">
+    <case:target rdf:resource="813c03a1-c375-410f-960a-9ab224936b5f"/>
     <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="Neb814667ccab478e9e428bece745fdaf">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-    <case:target>
-      <case:Trace rdf:nodeID="N80d1104b1e294e3fa4afb1f8af9b6ebb">
-        <case:propertyBundle>
-          <case:File rdf:nodeID="N8f402586a0164af489f4b06f70a76ea1">
-            <case:filePath>/p2</case:filePath>
-            <case:fileName>p2</case:fileName>
-          </case:File>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-        <case:propertyBundle>
-          <case:DiskPartition rdf:nodeID="N946934c90f8d40a9bc1531405d17d462">
-            <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
-            <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
-          </case:DiskPartition>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:target>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-  </case:Relationship>
-  <case:ForensicAction rdf:nodeID="N2f63b12eaac646ffa54b671902456728">
-    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:55:34.984000+00:00</case:endTime>
-    <case:propertyBundle>
-      <case:ActionReferences rdf:nodeID="N77ab8921ab7e459f893ac636f11098f8">
-        <case:instrument>
-          <case:Tool rdf:nodeID="Nd2ec7b1c3c3f4f888d96dcd113498b21">
-            <case:name>plaso</case:name>
-            <case:creator>Joachim Metz</case:creator>
-            <case:propertyBundle>
-              <case:ToolConfiguration rdf:nodeID="N462ed0763ec5479e84116ca51f6088f6">
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N09fb1cb28a314273a3e4fa5bd5647dd8">
-                    <case:itemName>identifier</case:itemName>
-                    <case:itemValue>a08d7668b3dd409dba8a4fecfc0948ad</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N7ae32ea57ffe4ca589fba8fce23c61e2">
-                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
-                    <case:itemName>enabled_parser_names</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N0083201a4aee4284a9e1ff97896914b3">
-                    <case:itemName>preferred_year</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N8e9ec9600c4e4bb4b2b2074a691ad955">
-                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py tsk_volume_system.plaso ../dfvfs/test_data/tsk_volume_system.raw</case:itemValue>
-                    <case:itemName>command_line_arguments</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N3c2d70e372004a42b91839c455413e67">
-                    <case:itemName>debug_mode</case:itemName>
-                    <case:itemValue>False</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N2689ffb3c8d448428bcdea8c007df197">
-                    <case:itemName>parser_filter_expression</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Neb5e86d9581a4ac6bbcff92809b33b84">
-                    <case:itemName>filter_expression</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N7faec3e795434478ba9eeabd9065cf76">
-                    <case:itemName>filter_file</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Nf33b2a8e866c493b8ddac7dbdeec5783">
-                    <case:itemName>preferred_encoding</case:itemName>
-                    <case:itemValue>cp1252</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-              </case:ToolConfiguration>
-            </case:propertyBundle>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-            <case:version>1.5.2_20161031</case:version>
-            <case:toolType>parser?</case:toolType>
-          </case:Tool>
-        </case:instrument>
-        <case:performer>
-          <case:Identity rdf:nodeID="N951fa5395d364c8b85914af8a233f335">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-            <case:propertyBundle>
-              <case:SimpleName rdf:nodeID="N9d364121e8a241f0b3e5dba63eb130db">
-                <case:givenName>John</case:givenName>
-                <case:familyName>Doe</case:familyName>
-              </case:SimpleName>
-            </case:propertyBundle>
-          </case:Identity>
-        </case:performer>
-      </case:ActionReferences>
-    </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T15:55:27.761000+00:00</case:startTime>
-  </case:ForensicAction>
-  <case:Relationship rdf:nodeID="Nef497f6b7b87489eafb775118208239b">
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:target>
-      <case:Trace rdf:nodeID="Nec94fdc18486471091730ca16f31570d">
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Nbbc940a9961a4dc698c215c61346ac04">
-            <case:extension>.raw</case:extension>
-            <case:fileName>tsk_volume_system</case:fileName>
-            <case:filePath>D:\dev\dfvfs\test_data\tsk_volume_system.raw</case:filePath>
-          </case:File>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:Image rdf:nodeID="Nd178d4d38c5f45c8b60dbe90d8686000">
-            <case:imageType rdf:resource="http://case.example.org/core#RAW"/>
-          </case:Image>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:target>
-    <case:propertyBundle>
-      <case:DiskPartition rdf:nodeID="Ne8b30da29e004e31a5bd8d7820197f4e">
-        <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
-        <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
-      </case:DiskPartition>
-    </case:propertyBundle>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T10:58:16.815000</case:createdTime>
+    <case:source rdf:resource="ad939ec5-01da-4184-83cb-a03f14a98229"/>
+    <case:propertyBundle rdf:nodeID="ecf1d04c-4dc8-43af-98a8-82dff02ff6a2"/>
     <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:source rdf:nodeID="N80d1104b1e294e3fa4afb1f8af9b6ebb"/>
-  </case:Relationship>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.742000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="b9c7c4d0-0738-4f8d-a867-3a16193dcf6e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ad3e08e5-9fc2-4ec7-934b-c54e529bddea">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemValue>cp1252</case:itemValue>
+    <case:itemName>preferred_encoding</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="83255582-2dbf-4f53-8135-aaffa73203d1">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>filter_expression</case:itemName>
+    <case:itemValue></case:itemValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="aa90eca2-8954-4f78-a71d-414e54b9721c">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cc0a3ae5-8cdd-4f9d-ab25-a7a1bf01a60d">
+    <case:itemValue></case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>preferred_year</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d13c3713-a5d0-41c1-8f02-17fb0bc622dc">
+    <case:filePath>/p2</case:filePath>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:fileName>p2</case:fileName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="813cd06a-0f5a-4397-9fa7-c8a0e49eeb7b">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemValue></case:itemValue>
+    <case:itemName>parser_filter_expression</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="52959d59-8558-4cdc-8204-73b8c9b220f2">
+    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/plaso/Scripts/log2timeline.py --no-dependencies-check tsk_volume_system.plaso ../plaso/test_data/tsk_volume_system.raw</case:itemValue>
+    <case:itemName>command_line_arguments</case:itemName>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="f7d69124-cf92-4cdf-9233-f55b2c548af5">
+    <case:propertyBundle rdf:nodeID="cbcc5864-d971-49da-827b-eb6743ff32d0"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:target rdf:resource="0658cec1-170d-4a41-bf25-9edc6319e2f1"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.741000</case:createdTime>
+    <case:source rdf:resource="813c03a1-c375-410f-960a-9ab224936b5f"/>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+  </rdf:Description>
+  <rdf:Description rdf:about="0658cec1-170d-4a41-bf25-9edc6319e2f1">
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.740000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="1a4e6d78-7c96-44e6-bf41-06bc16e6f762"/>
+    <case:propertyBundle rdf:nodeID="79f09380-8ed5-46d0-b1e2-236bf801cd6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="813c03a1-c375-410f-960a-9ab224936b5f">
+    <case:propertyBundle rdf:nodeID="d13c3713-a5d0-41c1-8f02-17fb0bc622dc"/>
+    <case:propertyBundle rdf:nodeID="5bc0a879-9ede-4ba9-9242-a03be5f0aafa"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.740000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b9c7c4d0-0738-4f8d-a867-3a16193dcf6e">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="1a4e6d78-7c96-44e6-bf41-06bc16e6f762">
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:extension>.raw</case:extension>
+    <case:filePath>D:\dev\plaso\test_data\tsk_volume_system.raw</case:filePath>
+    <case:fileName>tsk_volume_system</case:fileName>
+  </rdf:Description>
+  <rdf:Description rdf:about="b6ec3f37-9c6f-41f3-8329-f89a2ea9fb10">
+    <case:version>1.5.2_20170103-json-patch</case:version>
+    <case:name>plaso</case:name>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.737000</case:createdTime>
+    <case:creator>Joachim Metz</case:creator>
+    <case:toolType>parser?</case:toolType>
+    <rdf:type rdf:resource="http://case.example.org/core#Tool"/>
+    <case:propertyBundle rdf:nodeID="a59f19ca-7d29-4dad-8f77-2a0dfdbc9c24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="eedcdc0d-5064-4949-b6e9-1b3e2dc34d83">
+    <rdf:type rdf:resource="http://case.example.org/core#ActionReferences"/>
+    <case:instrument rdf:resource="b6ec3f37-9c6f-41f3-8329-f89a2ea9fb10"/>
+    <case:performer rdf:resource="cad1d492-66ba-421b-9693-b65c56d3fbda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="5bc0a879-9ede-4ba9-9242-a03be5f0aafa">
+    <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
+    <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
+    <rdf:type rdf:resource="http://case.example.org/core#DiskPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="7954a3a0-41b8-43f5-9e44-b867662c7caa">
+    <case:itemName>debug_mode</case:itemName>
+    <case:itemValue>False</case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="cad1d492-66ba-421b-9693-b65c56d3fbda">
+    <rdf:type rdf:resource="http://case.example.org/core#Identity"/>
+    <case:propertyBundle rdf:nodeID="e7c56850-f849-4259-a611-470d63eb5be3"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.739000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="79f09380-8ed5-46d0-b1e2-236bf801cd6b">
+    <case:imageType rdf:resource="http://case.example.org/core#RAW"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Image"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a59f19ca-7d29-4dad-8f77-2a0dfdbc9c24">
+    <case:configurationSetting rdf:nodeID="cc0a3ae5-8cdd-4f9d-ab25-a7a1bf01a60d"/>
+    <case:configurationSetting rdf:nodeID="6e7b487d-4d91-4f9c-8942-6380932a3806"/>
+    <case:configurationSetting rdf:nodeID="7954a3a0-41b8-43f5-9e44-b867662c7caa"/>
+    <case:configurationSetting rdf:nodeID="62f8d8ad-538f-4838-bda4-5fd4e09f10f4"/>
+    <case:configurationSetting rdf:nodeID="83255582-2dbf-4f53-8135-aaffa73203d1"/>
+    <case:configurationSetting rdf:nodeID="52959d59-8558-4cdc-8204-73b8c9b220f2"/>
+    <rdf:type rdf:resource="http://case.example.org/core#ToolConfiguration"/>
+    <case:configurationSetting rdf:nodeID="79d3bcfc-33ca-4656-9f64-6a33ea1ad97c"/>
+    <case:configurationSetting rdf:nodeID="813cd06a-0f5a-4397-9fa7-c8a0e49eeb7b"/>
+    <case:configurationSetting rdf:nodeID="ad3e08e5-9fc2-4ec7-934b-c54e529bddea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="79d3bcfc-33ca-4656-9f64-6a33ea1ad97c">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>identifier</case:itemName>
+    <case:itemValue>33443a930a814fe1a3a287bcc3c2c7b4</case:itemValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbcc5864-d971-49da-827b-eb6743ff32d0">
+    <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
+    <rdf:type rdf:resource="http://case.example.org/core#DiskPartition"/>
+    <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
+  </rdf:Description>
+  <rdf:Description rdf:about="ff908cca-8a98-4410-8e6d-d06aea6783a4">
+    <case:propertyBundle rdf:nodeID="eedcdc0d-5064-4949-b6e9-1b3e2dc34d83"/>
+    <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T19:12:39.611000+00:00</case:endTime>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:15:19.739000</case:createdTime>
+    <rdf:type rdf:resource="http://case.example.org/core#ForensicAction"/>
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T19:12:30.839000+00:00</case:startTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="6e7b487d-4d91-4f9c-8942-6380932a3806">
+    <case:itemName>enabled_parser_names</case:itemName>
+    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e35a8289-1338-4cee-bd60-521be1f79443">
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:accessedTime>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
+    <case:filePath>/lost+found</case:filePath>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:modifiedTime>
+    <case:fileName>lost+found</case:fileName>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-12-24T13:31:52+00:00</case:metadataChangedTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="62f8d8ad-538f-4838-bda4-5fd4e09f10f4">
+    <case:itemValue></case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>filter_file</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="51ee2f70-af0f-4ac7-9765-7bf7aa565ddf">
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
 </rdf:RDF>

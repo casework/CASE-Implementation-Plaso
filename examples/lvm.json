@@ -9,115 +9,88 @@
   },
   "@graph": [
     {
-      "@id": "_:Nf004c9fcda6745bb964bf3865da9179d",
-      "@type": "File",
-      "extension": ".qcow2",
-      "fileName": "lvmtest",
-      "filePath": "D:\\dev\\dfvfs\\test_data\\lvmtest.qcow2"
+      "@id": "_:0aa76130-8360-455a-bbfd-96cc66e74842",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_expression",
+      "itemValue": ""
     },
     {
-      "@id": "_:N8368eec4988f4baaabd80397bb88ab64",
+      "@id": "3d90c58d-d470-4977-adc8-4a4bd4fb236f",
       "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.884000"
       },
       "propertyBundle": [
         {
-          "@id": "_:Nc1c785c2cf214aad90aa186f1233d7d0"
+          "@id": "_:61433308-8de1-4f90-bc53-db483266aa15"
         },
         {
-          "@id": "_:Ne209d7bdce3a43b6bafce0defea58b40"
+          "@id": "_:4da9061a-8892-4459-816d-04167376d345"
         },
         {
-          "@id": "_:Nb8f05185a8f940b1aeb58c44d3a09435"
+          "@id": "_:ef486610-ddff-4a9a-8a4d-943f1014e3c8"
         }
       ]
     },
     {
-      "@id": "_:Ned347439e7b04065aec1a0207d45847d",
-      "@type": "File",
-      "accessedTime": {
+      "@id": "964d2c90-43b4-4a59-840f-be43ac0ea124",
+      "@type": "Trace",
+      "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:53:14+00:00"
+        "@value": "2017-03-16T15:10:27.882000"
       },
-      "fileName": "a_directory",
-      "filePath": "/a_directory",
-      "fileSize": 1024,
-      "isAllocated": true,
-      "isDirectory": true,
-      "metadataChangedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:53:14+00:00"
-      },
-      "modifiedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:53:14+00:00"
-      }
+      "propertyBundle": [
+        {
+          "@id": "_:24cdcd4b-ff1f-4803-8f0a-ced2212199a1"
+        },
+        {
+          "@id": "_:925fc33a-a730-428d-b202-dc611908e1dc"
+        }
+      ]
     },
     {
-      "@id": "_:N8ff49dca3f1f4e04b58b13ef752fc69f",
-      "@type": "plaso:TSK",
-      "inode": 11
-    },
-    {
-      "@id": "_:N0ccccc329ee348b882b55a2640a54184",
-      "@type": "plaso:TSK",
-      "inode": 12
-    },
-    {
-      "@id": "_:N4fb9c08eb242454c845085523dbc7073",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_encoding",
-      "itemValue": "cp1252"
-    },
-    {
-      "@id": "_:N88b54747ce7548ff8f029959da38c2ce",
-      "@type": "LVMVolume",
-      "volumeIndex": 1
-    },
-    {
-      "@id": "_:Nc435873ce4864748b88118a30433ca7a",
+      "@id": "56e26650-b831-45a1-a64d-6e76bf1caca3",
       "@type": "Relationship",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.888000"
       },
       "isDirectional": true,
       "kindOfRelationship": "contained-within",
       "propertyBundle": [
         {
-          "@id": "_:N6f3b07cf5f88472f981aaa22a6eeef07"
+          "@id": "_:a5721674-227b-481c-80dc-cf05d579c794"
         },
         {
-          "@id": "_:N61ac420ed6b84143ad99b156f6e5a674"
+          "@id": "_:361f862d-2a17-4639-b5a8-f87c0ef019e7"
         }
       ],
       "source": {
-        "@id": "_:N3161b12652234c588dd9c2545753bb83"
+        "@id": "9f11ffc9-086e-4c23-b6b8-cc7477f59366"
       },
       "target": {
-        "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd"
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
       }
     },
     {
-      "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:Nd84521b2441c43cc8b0d2e940a194c37"
-        },
-        {
-          "@id": "_:N88b54747ce7548ff8f029959da38c2ce"
-        }
-      ]
+      "@id": "_:f75e6b0c-ecbc-4c24-99e0-ea98fb132466",
+      "@type": "ConfigurationSetting",
+      "itemName": "identifier",
+      "itemValue": "8849afcdba3745e5b6103ba8038c9262"
     },
     {
-      "@id": "_:N0f431f93037e4834af0fa0b9c0efca0e",
+      "@id": "_:3863f201-6275-4aee-89f3-543da38afb3a",
+      "@type": "plaso:TSK",
+      "inode": 14
+    },
+    {
+      "@id": "_:fdff5132-1932-414f-84e2-ad2dfb1dcd9e",
+      "@type": "PathRelation",
+      "path": "/lost+found"
+    },
+    {
+      "@id": "_:2c3db311-4289-46cf-ba0a-1695209b321c",
       "@type": "File",
       "accessedTime": {
         "@type": "xsd:dateTime",
@@ -138,420 +111,45 @@
       }
     },
     {
-      "@id": "_:N5c4aa18cac5c42128084debad76ca290",
-      "@type": "File",
-      "accessedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:47+00:00"
-      },
-      "fileName": "lost+found",
-      "filePath": "/lost+found",
-      "fileSize": 12288,
-      "isAllocated": true,
-      "isDirectory": true,
-      "metadataChangedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:47+00:00"
-      },
-      "modifiedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:47+00:00"
-      }
-    },
-    {
-      "@id": "_:N3ca545c6e10d4863a5aff16a08e7a416",
-      "@type": "SimpleName",
-      "familyName": "Doe",
-      "givenName": "John"
-    },
-    {
-      "@id": "_:Nc1c785c2cf214aad90aa186f1233d7d0",
+      "@id": "_:e4d19bb4-b714-434d-a783-60cd56022b9c",
       "@type": "plaso:TSK",
-      "inode": 13
+      "inode": 11
     },
     {
-      "@id": "_:N630f2ea9149f4b799d91392d0dd179b5",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": [
-        {
-          "@id": "_:N0aa0331ccb1344ca9c000e1bbbedf76f"
-        },
-        {
-          "@id": "_:N2b23c340699f4d78b57a36758989eb61"
-        }
-      ],
-      "source": {
-        "@id": "_:Na89f7df3aa1c4d6d9b32a2616a26a743"
-      },
-      "target": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
-      }
+      "@id": "_:674942be-8df8-4a4a-a334-ef2c9db6341e",
+      "@type": "ConfigurationSetting",
+      "itemName": "debug_mode",
+      "itemValue": "False"
     },
     {
-      "@id": "_:N42e2f50b2353415d9ecdf46a3b3d7dd0",
-      "@type": "PathRelation",
-      "path": "/lost+found"
-    },
-    {
-      "@id": "_:Na89f7df3aa1c4d6d9b32a2616a26a743",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:N601fc4368fab47558edc6cb0c2f8195b"
-        },
-        {
-          "@id": "_:Ned347439e7b04065aec1a0207d45847d"
-        },
-        {
-          "@id": "_:N0ccccc329ee348b882b55a2640a54184"
-        }
-      ]
-    },
-    {
-      "@id": "_:Nd0603fa8d4c544ae82c7e65dafc36743",
+      "@id": "_:925fc33a-a730-428d-b202-dc611908e1dc",
       "@type": "File",
-      "fileName": "lvm1",
-      "filePath": "/lvm1",
+      "fileName": "lvm2",
+      "filePath": "/lvm2",
       "fileSystemType": {
         "@id": "case:LVM"
       }
     },
     {
-      "@id": "_:N80cda1a5b6cf40aba77c03d4aaf773d3",
-      "@type": "plaso:TSK",
-      "inode": 15
-    },
-    {
-      "@id": "_:N8330c4ffb73c48b882cf74e9309c1bcd",
-      "@type": "ToolConfiguration",
-      "configurationSetting": [
-        {
-          "@id": "_:N770a27522fa04e3284c84fa392b82161"
-        },
-        {
-          "@id": "_:N25732a0b4f434c18868a10450d431af4"
-        },
-        {
-          "@id": "_:Ncbd9ccfa0b1e422595446e8df94640d8"
-        },
-        {
-          "@id": "_:Na99eb6e601904bb8a9b610016b188383"
-        },
-        {
-          "@id": "_:Nf4db2344350d491a8c92ae65fa06a31a"
-        },
-        {
-          "@id": "_:Ndf9cf66ee53b48c7bdcc432263cf8bab"
-        },
-        {
-          "@id": "_:N21fe4bd27e60474982ca0f21460aa222"
-        },
-        {
-          "@id": "_:N4fb9c08eb242454c845085523dbc7073"
-        },
-        {
-          "@id": "_:Nfa6821245f3447bb8e474eefa906d9ca"
-        }
-      ]
-    },
-    {
-      "@id": "_:N8df3dbe71f914a539b0b642edbd66c40",
-      "@type": "LVMVolume",
-      "volumeIndex": 0
-    },
-    {
-      "@id": "_:N601fc4368fab47558edc6cb0c2f8195b",
-      "@type": "ContentData"
-    },
-    {
-      "@id": "_:N2bfd4358f93e43dcbf980608b8de61ae",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": {
-        "@id": "_:N4a7c6f63060941ac9d60a075c9c5a4e8"
-      },
-      "source": {
-        "@id": "_:Ndca6c8190fea4c28bd00a9475e16a7fd"
-      },
-      "target": {
-        "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32"
-      }
-    },
-    {
-      "@id": "_:N2fc01898cffe4fa8a811b032afa4c51f",
+      "@id": "_:0b3a5ccd-1bc9-4c47-89ab-ed1b500e0a7f",
       "@type": "ContentData",
       "hash": {
-        "@id": "_:N1f16aaff28c44bcdb76ea213f613f275"
+        "@id": "_:74e0e765-74cf-4a96-b0db-5a00582dffca"
       }
     },
     {
-      "@id": "_:Ndf9cf66ee53b48c7bdcc432263cf8bab",
+      "@id": "_:6f8b70cb-62af-4afb-85c0-d0290bb8f4ea",
       "@type": "ConfigurationSetting",
-      "itemName": "filter_file",
+      "itemName": "parser_filter_expression",
       "itemValue": ""
     },
     {
-      "@id": "_:N7c92cca6d12648df9447f6449d68546b",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.204000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": [
-        {
-          "@id": "_:N52e0b2b863f746fcbbfff51d1f0645ba"
-        },
-        {
-          "@id": "_:N603d064e7e724fdb8b7f9eb5dadb74bb"
-        }
-      ],
-      "source": {
-        "@id": "_:N658782873fc74a59876913ed0289711d"
-      },
-      "target": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
-      }
-    },
-    {
-      "@id": "_:N61ac420ed6b84143ad99b156f6e5a674",
-      "@type": "PathRelation",
-      "path": "/lost+found"
-    },
-    {
-      "@id": "_:Nb9aeecfb642940c2b3ce507629020192",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": {
-        "@id": "_:N8df3dbe71f914a539b0b642edbd66c40"
-      },
-      "source": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
-      },
-      "target": {
-        "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32"
-      }
-    },
-    {
-      "@id": "_:N924efae7ff714f4599aecb2dcd1fbd68",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:N80cda1a5b6cf40aba77c03d4aaf773d3"
-        },
-        {
-          "@id": "_:N2fc01898cffe4fa8a811b032afa4c51f"
-        },
-        {
-          "@id": "_:N927e2b5d8c98410f90bdde5cd7372a0f"
-        }
-      ]
-    },
-    {
-      "@id": "_:N3de51b4150654b35926005189616b80d",
-      "@type": "Identity",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": {
-        "@id": "_:N3ca545c6e10d4863a5aff16a08e7a416"
-      }
-    },
-    {
-      "@id": "_:N3161b12652234c588dd9c2545753bb83",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:N5c4aa18cac5c42128084debad76ca290"
-        },
-        {
-          "@id": "_:Ndce99591e69e4451b3d6830b200d83e8"
-        },
-        {
-          "@id": "_:N6cb1677f255c4aabb2e7ac2fb5413d21"
-        }
-      ]
-    },
-    {
-      "@id": "_:N21fe4bd27e60474982ca0f21460aa222",
-      "@type": "ConfigurationSetting",
-      "itemName": "filter_expression",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:N27b9f52fea4a448f88539ec005e2e9fa",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": [
-        {
-          "@id": "_:Nba0c7cc9350b4fa799192bd1eafa34ba"
-        },
-        {
-          "@id": "_:Nbc68798e3bd64f07ae9fd6e37fc5cdd3"
-        }
-      ],
-      "source": {
-        "@id": "_:N924efae7ff714f4599aecb2dcd1fbd68"
-      },
-      "target": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
-      }
-    },
-    {
-      "@id": "_:Nfa6821245f3447bb8e474eefa906d9ca",
-      "@type": "ConfigurationSetting",
-      "itemName": "identifier",
-      "itemValue": "8849afcdba3745e5b6103ba8038c9262"
-    },
-    {
-      "@id": "_:N52e0b2b863f746fcbbfff51d1f0645ba",
-      "@type": "plaso:TSK",
-      "inode": 14
-    },
-    {
-      "@id": "_:Nfe7495db84644012838bdc370bc75922",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:Nccb941f14b534dac8ca89ef7e788e42b"
-        },
-        {
-          "@id": "_:N8ff49dca3f1f4e04b58b13ef752fc69f"
-        },
-        {
-          "@id": "_:N27ec2f13428d45ef852290de8bc2014e"
-        }
-      ]
-    },
-    {
-      "@id": "_:N221db9cd6d5a41738b73264e99c02d8c",
+      "@id": "_:b02d8120-57ba-40cb-93a1-6038f18c496c",
       "@type": "plaso:TSK",
       "inode": 13
     },
     {
-      "@id": "_:N25732a0b4f434c18868a10450d431af4",
-      "@type": "ConfigurationSetting",
-      "itemName": "preferred_year",
-      "itemValue": ""
-    },
-    {
-      "@id": "_:Nfffec359e88541e9a73539036106be10",
-      "@type": "Hash",
-      "hashMethod": {
-        "@id": "case:SHA256"
-      },
-      "hashValue": "4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d"
-    },
-    {
-      "@id": "_:Nff8e2b6e6fd3428e9b4e393499f71171",
-      "@type": "Relationship",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "isDirectional": true,
-      "kindOfRelationship": "contained-within",
-      "propertyBundle": [
-        {
-          "@id": "_:N2cef9685b831466cbbff7fc83eac539a"
-        },
-        {
-          "@id": "_:N221db9cd6d5a41738b73264e99c02d8c"
-        }
-      ],
-      "source": {
-        "@id": "_:N8368eec4988f4baaabd80397bb88ab64"
-      },
-      "target": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
-      }
-    },
-    {
-      "@id": "_:N4a7c6f63060941ac9d60a075c9c5a4e8",
-      "@type": "LVMVolume",
-      "volumeIndex": 1
-    },
-    {
-      "@id": "_:Nba0c7cc9350b4fa799192bd1eafa34ba",
-      "@type": "PathRelation",
-      "path": "/passwords.txt"
-    },
-    {
-      "@id": "_:Na99eb6e601904bb8a9b610016b188383",
-      "@type": "ConfigurationSetting",
-      "itemName": "command_line_arguments",
-      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2"
-    },
-    {
-      "@id": "_:N3edbc603eb2046bcae78311021473bbe",
-      "@type": "Hash",
-      "hashMethod": {
-        "@id": "case:SHA256"
-      },
-      "hashValue": "c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16"
-    },
-    {
-      "@id": "_:N6f3b07cf5f88472f981aaa22a6eeef07",
-      "@type": "plaso:TSK",
-      "inode": 11
-    },
-    {
-      "@id": "_:N3a7ed61d791646eb8b3d3543a6f7cd32",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
-      },
-      "propertyBundle": [
-        {
-          "@id": "_:N70c53032a5ea4ab3b141480d8931668c"
-        },
-        {
-          "@id": "_:Nf004c9fcda6745bb964bf3865da9179d"
-        }
-      ]
-    },
-    {
-      "@id": "_:N927e2b5d8c98410f90bdde5cd7372a0f",
+      "@id": "_:0f87b839-197c-43fb-b718-c40162343126",
       "@type": "File",
       "accessedTime": {
         "@type": "xsd:dateTime",
@@ -573,28 +171,248 @@
       }
     },
     {
-      "@id": "_:N27a0bb0efeb24f3b84f99f6aa2b4b1f4",
+      "@id": "_:47d16c0b-250a-446e-b08e-e175cec57cdc",
+      "@type": "plaso:TSK",
+      "inode": 14
+    },
+    {
+      "@id": "_:8733e40c-53e8-48c4-97f2-e315bc59ba9a",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "fileName": "a_directory",
+      "filePath": "/a_directory",
+      "fileSize": 1024,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:53:14+00:00"
+      }
+    },
+    {
+      "@id": "8bc53e31-784a-4fe6-b79f-90e0bb9df9fa",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.887000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:8d91b463-6e3c-4fae-953a-991324ea6aec"
+        },
+        {
+          "@id": "_:de6c595a-a8e5-4fe9-9c65-e4d62ccae2f6"
+        }
+      ],
+      "source": {
+        "@id": "82c2b86c-9728-42c1-b85f-a29f5d94a26f"
+      },
+      "target": {
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
+      }
+    },
+    {
+      "@id": "_:990965a4-6d59-4cbe-9d71-b11de0eed17a",
+      "@type": "ToolConfiguration",
+      "configurationSetting": [
+        {
+          "@id": "_:6470c65e-fe2b-4442-899a-ed413557982a"
+        },
+        {
+          "@id": "_:3bd106ee-b14c-43b9-8b80-ec59be0d1f31"
+        },
+        {
+          "@id": "_:6f8b70cb-62af-4afb-85c0-d0290bb8f4ea"
+        },
+        {
+          "@id": "_:d62a806c-e9fe-4ad3-84f9-0cc6ff9431d3"
+        },
+        {
+          "@id": "_:29fccea9-8abb-48eb-af36-40b2fcd7f8ac"
+        },
+        {
+          "@id": "_:674942be-8df8-4a4a-a334-ef2c9db6341e"
+        },
+        {
+          "@id": "_:ee138b59-c57d-48c2-89bf-72be71133369"
+        },
+        {
+          "@id": "_:f75e6b0c-ecbc-4c24-99e0-ea98fb132466"
+        },
+        {
+          "@id": "_:0aa76130-8360-455a-bbfd-96cc66e74842"
+        }
+      ]
+    },
+    {
+      "@id": "_:53a1d86e-90de-4239-accd-a9269f1ee3cc",
+      "@type": "SimpleName",
+      "familyName": "Doe",
+      "givenName": "John"
+    },
+    {
+      "@id": "_:13bfe589-3a1c-45ad-ad78-fd3edfffc416",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:7188e19e-be6f-4b79-b1bd-efb532373f9c",
+      "@type": "plaso:TSK",
+      "inode": 15
+    },
+    {
+      "@id": "_:24cdcd4b-ff1f-4803-8f0a-ced2212199a1",
+      "@type": "LVMVolume",
+      "volumeIndex": 1
+    },
+    {
+      "@id": "2cdc2ba2-78ae-4e3e-bfce-f5a529e1b4f8",
+      "@type": "Tool",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.879000"
+      },
+      "creator": "Joachim Metz",
+      "name": "plaso",
+      "propertyBundle": {
+        "@id": "_:990965a4-6d59-4cbe-9d71-b11de0eed17a"
+      },
+      "toolType": "parser?",
+      "version": "1.5.2_20161031"
+    },
+    {
+      "@id": "_:ee138b59-c57d-48c2-89bf-72be71133369",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_year",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:d9434f04-fdf6-4d50-bbf8-4019759281a1",
+      "@type": "PathRelation",
+      "path": "/lost+found"
+    },
+    {
+      "@id": "_:4da9061a-8892-4459-816d-04167376d345",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "5e9a7a83-b6d5-4d86-adb9-f5be922cddb6",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.886000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:029311a4-7902-4bbb-b611-14f38bed3136"
+        },
+        {
+          "@id": "_:d338d82c-9586-4425-8302-0d7ad1381c5b"
+        },
+        {
+          "@id": "_:8733e40c-53e8-48c4-97f2-e315bc59ba9a"
+        }
+      ]
+    },
+    {
+      "@id": "_:71f0717a-fac4-4cd3-936e-843e9d6a536f",
+      "@type": "PathRelation",
+      "path": "/a_directory"
+    },
+    {
+      "@id": "_:61433308-8de1-4f90-bc53-db483266aa15",
+      "@type": "File",
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      },
+      "fileName": "lost+found",
+      "filePath": "/lost+found",
+      "fileSize": 12288,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:43+00:00"
+      }
+    },
+    {
+      "@id": "_:d338d82c-9586-4425-8302-0d7ad1381c5b",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "_:3bd106ee-b14c-43b9-8b80-ec59be0d1f31",
+      "@type": "ConfigurationSetting",
+      "itemName": "filter_file",
+      "itemValue": ""
+    },
+    {
+      "@id": "_:5593a7b2-ee54-4e87-89a3-bbfb13f6b8ff",
       "@type": "LVMVolume",
       "volumeIndex": 0
     },
     {
-      "@id": "_:Naeac7ec35de840d1a10353e00bf4826c",
-      "@type": "ContentData",
-      "hash": {
-        "@id": "_:N3edbc603eb2046bcae78311021473bbe"
+      "@id": "_:29fccea9-8abb-48eb-af36-40b2fcd7f8ac",
+      "@type": "ConfigurationSetting",
+      "itemName": "preferred_encoding",
+      "itemValue": "cp1252"
+    },
+    {
+      "@id": "_:cfcd42f4-571d-4650-a195-be3d7e67db51",
+      "@type": "Image",
+      "imageType": {
+        "@id": "case:QCOW"
       }
     },
     {
-      "@id": "_:N2cef9685b831466cbbff7fc83eac539a",
-      "@type": "PathRelation",
-      "path": "/a_directory/a_file"
+      "@id": "543be4b2-83fb-47fb-b204-5a61d29c3cb2",
+      "@type": "Identity",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.880000"
+      },
+      "propertyBundle": {
+        "@id": "_:53a1d86e-90de-4239-accd-a9269f1ee3cc"
+      }
     },
     {
-      "@id": "_:N6cb1677f255c4aabb2e7ac2fb5413d21",
-      "@type": "ContentData"
+      "@id": "_:97eac391-0de6-4420-980f-fa4b7368f571",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:e713391a-390d-4fe9-8bf0-0f5fbef30052"
+      }
     },
     {
-      "@id": "_:N1f16aaff28c44bcdb76ea213f613f275",
+      "@id": "b90debdd-e130-4d08-ad7b-891d35a98fe6",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.882000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:cfcd42f4-571d-4650-a195-be3d7e67db51"
+        },
+        {
+          "@id": "_:0bf0669a-fa5e-4d1e-878a-864424d4bcee"
+        }
+      ]
+    },
+    {
+      "@id": "_:e713391a-390d-4fe9-8bf0-0f5fbef30052",
       "@type": "Hash",
       "hashMethod": {
         "@id": "case:SHA256"
@@ -602,122 +420,142 @@
       "hashValue": "02a2a6af2f1ecf4720d7d49d640f0d0a269a7ec733e41973bdd34f09dad0e252"
     },
     {
-      "@id": "_:Ncbd9ccfa0b1e422595446e8df94640d8",
-      "@type": "ConfigurationSetting",
-      "itemName": "parser_filter_expression",
-      "itemValue": ""
+      "@id": "_:3a8e4e9b-5b6c-4420-8517-0245886a36b7",
+      "@type": "plaso:TSK",
+      "inode": 12
     },
     {
-      "@id": "_:N70c53032a5ea4ab3b141480d8931668c",
-      "@type": "Image",
-      "imageType": {
-        "@id": "case:QCOW"
-      }
-    },
-    {
-      "@id": "_:Ne209d7bdce3a43b6bafce0defea58b40",
-      "@type": "ContentData",
-      "hash": {
-        "@id": "_:Nfffec359e88541e9a73539036106be10"
-      }
-    },
-    {
-      "@id": "_:N2b23c340699f4d78b57a36758989eb61",
-      "@type": "PathRelation",
-      "path": "/a_directory"
-    },
-    {
-      "@id": "_:N658782873fc74a59876913ed0289711d",
+      "@id": "9f11ffc9-086e-4c23-b6b8-cc7477f59366",
       "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.888000"
       },
       "propertyBundle": [
         {
-          "@id": "_:N0f431f93037e4834af0fa0b9c0efca0e"
+          "@id": "_:af87bb78-e975-4f1d-9659-b75d1943fac5"
         },
         {
-          "@id": "_:N8dcc12206ff44a9aa4cbcb0e910299da"
+          "@id": "_:b02d8120-57ba-40cb-93a1-6038f18c496c"
         },
         {
-          "@id": "_:Naeac7ec35de840d1a10353e00bf4826c"
+          "@id": "_:e66c5b4f-12ed-4284-b62a-4e8148c4fd58"
         }
       ]
     },
     {
-      "@id": "_:Nf791271f10f443d699f6f52c0486ac04",
+      "@id": "_:0bf0669a-fa5e-4d1e-878a-864424d4bcee",
+      "@type": "File",
+      "extension": ".qcow2",
+      "fileName": "lvmtest",
+      "filePath": "D:\\dev\\dfvfs\\test_data\\lvmtest.qcow2"
+    },
+    {
+      "@id": "_:029311a4-7902-4bbb-b611-14f38bed3136",
+      "@type": "plaso:TSK",
+      "inode": 12
+    },
+    {
+      "@id": "943def34-1bc3-4c1d-a23d-1ce19b37d9fc",
       "@type": "Relationship",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.885000"
       },
       "isDirectional": true,
       "kindOfRelationship": "contained-within",
       "propertyBundle": [
         {
-          "@id": "_:N9c12af093a1145f69dd44d29b03e7f78"
+          "@id": "_:d9434f04-fdf6-4d50-bbf8-4019759281a1"
         },
         {
-          "@id": "_:N42e2f50b2353415d9ecdf46a3b3d7dd0"
+          "@id": "_:13bfe589-3a1c-45ad-ad78-fd3edfffc416"
         }
       ],
       "source": {
-        "@id": "_:Nfe7495db84644012838bdc370bc75922"
+        "@id": "3d90c58d-d470-4977-adc8-4a4bd4fb236f"
       },
       "target": {
-        "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5"
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
       }
     },
     {
-      "@id": "_:N0aa0331ccb1344ca9c000e1bbbedf76f",
-      "@type": "plaso:TSK",
-      "inode": 12
-    },
-    {
-      "@id": "_:Nedccaa0c2e7a43ab87004bd1e8b0a098",
-      "@type": "ActionReferences",
-      "instrument": {
-        "@id": "_:N3821d20aaab742a39d77dcd1344b092b"
-      },
-      "performer": {
-        "@id": "_:N3de51b4150654b35926005189616b80d"
-      }
-    },
-    {
-      "@id": "_:N3821d20aaab742a39d77dcd1344b092b",
-      "@type": "Tool",
+      "@id": "b69379ed-b877-4278-9bb8-416b30294ec4",
+      "@type": "Trace",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.882000"
       },
-      "creator": "Joachim Metz",
-      "name": "plaso",
-      "propertyBundle": {
-        "@id": "_:N8330c4ffb73c48b882cf74e9309c1bcd"
-      },
-      "toolType": "parser?",
-      "version": "1.5.2_20161031"
+      "propertyBundle": [
+        {
+          "@id": "_:813e7695-6895-4f27-b303-98da7ebe1e5f"
+        },
+        {
+          "@id": "_:758871bd-30d5-43cc-b1aa-ed652fe5361f"
+        },
+        {
+          "@id": "_:e4d19bb4-b714-434d-a783-60cd56022b9c"
+        }
+      ]
     },
     {
-      "@id": "_:N770a27522fa04e3284c84fa392b82161",
-      "@type": "ConfigurationSetting",
-      "itemName": "enabled_parser_names",
-      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
+      "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.884000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:9c2481ae-cbae-45bc-a29b-3859f894aeda"
+        },
+        {
+          "@id": "_:5593a7b2-ee54-4e87-89a3-bbfb13f6b8ff"
+        }
+      ]
     },
     {
-      "@id": "_:N6ca973117f9e4ce090aae413503ca4f2",
+      "@id": "_:ef486610-ddff-4a9a-8a4d-943f1014e3c8",
+      "@type": "plaso:TSK",
+      "inode": 11
+    },
+    {
+      "@id": "_:361f862d-2a17-4639-b5a8-f87c0ef019e7",
+      "@type": "plaso:TSK",
+      "inode": 13
+    },
+    {
+      "@id": "b3058adf-efc9-46b2-ac1d-13f9da16fe1b",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.889000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:2c3db311-4289-46cf-ba0a-1695209b321c"
+        },
+        {
+          "@id": "_:0b3a5ccd-1bc9-4c47-89ab-ed1b500e0a7f"
+        },
+        {
+          "@id": "_:47d16c0b-250a-446e-b08e-e175cec57cdc"
+        }
+      ]
+    },
+    {
+      "@id": "3a31cf30-c84c-4188-8af0-accae615fedd",
       "@type": "ForensicAction",
       "createdTime": {
         "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+        "@value": "2017-03-16T15:10:27.881000"
       },
       "endTime": {
         "@type": "xsd:dateTime",
         "@value": "2017-01-30T16:33:04.542000+00:00"
       },
       "propertyBundle": {
-        "@id": "_:Nedccaa0c2e7a43ab87004bd1e8b0a098"
+        "@id": "_:c25ba9d4-d19c-4018-9980-4ac758bc4494"
       },
       "startTime": {
         "@type": "xsd:dateTime",
@@ -725,57 +563,130 @@
       }
     },
     {
-      "@id": "_:Nd84521b2441c43cc8b0d2e940a194c37",
+      "@id": "_:813e7695-6895-4f27-b303-98da7ebe1e5f",
       "@type": "File",
-      "fileName": "lvm2",
-      "filePath": "/lvm2",
-      "fileSystemType": {
-        "@id": "case:LVM"
+      "accessedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
+      },
+      "fileName": "lost+found",
+      "filePath": "/lost+found",
+      "fileSize": 12288,
+      "isAllocated": true,
+      "isDirectory": true,
+      "metadataChangedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
+      },
+      "modifiedTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2016-01-09T22:50:47+00:00"
       }
     },
     {
-      "@id": "_:Nccb941f14b534dac8ca89ef7e788e42b",
-      "@type": "ContentData"
-    },
-    {
-      "@id": "_:Ne6cd0fa4186a40da8b67ef337811a8a5",
-      "@type": "Trace",
-      "createdTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2017-01-30T11:33:32.188000"
+      "@id": "_:764cea31-f192-49e5-9e4b-f977075220ac",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
       },
-      "propertyBundle": [
-        {
-          "@id": "_:N27a0bb0efeb24f3b84f99f6aa2b4b1f4"
-        },
-        {
-          "@id": "_:Nd0603fa8d4c544ae82c7e65dafc36743"
-        }
-      ]
+      "hashValue": "4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d"
     },
     {
-      "@id": "_:Ndce99591e69e4451b3d6830b200d83e8",
+      "@id": "_:eabdaf91-f3d6-4741-ba00-20e27c745b36",
       "@type": "plaso:TSK",
       "inode": 11
     },
     {
-      "@id": "_:Nf4db2344350d491a8c92ae65fa06a31a",
-      "@type": "ConfigurationSetting",
-      "itemName": "debug_mode",
-      "itemValue": "False"
+      "@id": "062cee08-74a4-4a19-9bf7-80bcd01ffadb",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.889000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:d708dac5-95f2-4605-b92d-af36d59ff6d2"
+        },
+        {
+          "@id": "_:3863f201-6275-4aee-89f3-543da38afb3a"
+        }
+      ],
+      "source": {
+        "@id": "b3058adf-efc9-46b2-ac1d-13f9da16fe1b"
+      },
+      "target": {
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
+      }
     },
     {
-      "@id": "_:N8dcc12206ff44a9aa4cbcb0e910299da",
-      "@type": "plaso:TSK",
-      "inode": 14
+      "@id": "_:de6c595a-a8e5-4fe9-9c65-e4d62ccae2f6",
+      "@type": "PathRelation",
+      "path": "/passwords.txt"
     },
     {
-      "@id": "_:Nbc68798e3bd64f07ae9fd6e37fc5cdd3",
+      "@id": "_:c25ba9d4-d19c-4018-9980-4ac758bc4494",
+      "@type": "ActionReferences",
+      "instrument": {
+        "@id": "2cdc2ba2-78ae-4e3e-bfce-f5a529e1b4f8"
+      },
+      "performer": {
+        "@id": "543be4b2-83fb-47fb-b204-5a61d29c3cb2"
+      }
+    },
+    {
+      "@id": "9310a130-9af8-405c-ba7f-87c9658e2c46",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.883000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": {
+        "@id": "_:8f59ec46-3416-422b-a625-99b77e07f81e"
+      },
+      "source": {
+        "@id": "964d2c90-43b4-4a59-840f-be43ac0ea124"
+      },
+      "target": {
+        "@id": "b90debdd-e130-4d08-ad7b-891d35a98fe6"
+      }
+    },
+    {
+      "@id": "_:8d91b463-6e3c-4fae-953a-991324ea6aec",
       "@type": "plaso:TSK",
       "inode": 15
     },
     {
-      "@id": "_:Nb8f05185a8f940b1aeb58c44d3a09435",
+      "@id": "_:af87bb78-e975-4f1d-9659-b75d1943fac5",
+      "@type": "ContentData",
+      "hash": {
+        "@id": "_:764cea31-f192-49e5-9e4b-f977075220ac"
+      }
+    },
+    {
+      "@id": "ee6a27c0-acc0-4358-993b-867a90cd9047",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.885000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": {
+        "@id": "_:d74c3c7b-8d87-49d5-82b0-55fd0cddc8e8"
+      },
+      "source": {
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
+      },
+      "target": {
+        "@id": "b90debdd-e130-4d08-ad7b-891d35a98fe6"
+      }
+    },
+    {
+      "@id": "_:e66c5b4f-12ed-4284-b62a-4e8148c4fd58",
       "@type": "File",
       "accessedTime": {
         "@type": "xsd:dateTime",
@@ -796,35 +707,124 @@
       }
     },
     {
-      "@id": "_:N603d064e7e724fdb8b7f9eb5dadb74bb",
+      "@id": "_:758871bd-30d5-43cc-b1aa-ed652fe5361f",
+      "@type": "ContentData"
+    },
+    {
+      "@id": "c20617f7-54db-4ed7-b93a-c27765be7e73",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.883000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:fdff5132-1932-414f-84e2-ad2dfb1dcd9e"
+        },
+        {
+          "@id": "_:eabdaf91-f3d6-4741-ba00-20e27c745b36"
+        }
+      ],
+      "source": {
+        "@id": "b69379ed-b877-4278-9bb8-416b30294ec4"
+      },
+      "target": {
+        "@id": "964d2c90-43b4-4a59-840f-be43ac0ea124"
+      }
+    },
+    {
+      "@id": "_:8f59ec46-3416-422b-a625-99b77e07f81e",
+      "@type": "LVMVolume",
+      "volumeIndex": 1
+    },
+    {
+      "@id": "_:74e0e765-74cf-4a96-b0db-5a00582dffca",
+      "@type": "Hash",
+      "hashMethod": {
+        "@id": "case:SHA256"
+      },
+      "hashValue": "c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16"
+    },
+    {
+      "@id": "82c2b86c-9728-42c1-b85f-a29f5d94a26f",
+      "@type": "Trace",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.887000"
+      },
+      "propertyBundle": [
+        {
+          "@id": "_:7188e19e-be6f-4b79-b1bd-efb532373f9c"
+        },
+        {
+          "@id": "_:0f87b839-197c-43fb-b718-c40162343126"
+        },
+        {
+          "@id": "_:97eac391-0de6-4420-980f-fa4b7368f571"
+        }
+      ]
+    },
+    {
+      "@id": "_:d708dac5-95f2-4605-b92d-af36d59ff6d2",
       "@type": "PathRelation",
       "path": "/a_directory/another_file"
     },
     {
-      "@id": "_:N9c12af093a1145f69dd44d29b03e7f78",
-      "@type": "plaso:TSK",
-      "inode": 11
+      "@id": "_:d62a806c-e9fe-4ad3-84f9-0cc6ff9431d3",
+      "@type": "ConfigurationSetting",
+      "itemName": "enabled_parser_names",
+      "itemValue": "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']"
     },
     {
-      "@id": "_:N27ec2f13428d45ef852290de8bc2014e",
+      "@id": "_:9c2481ae-cbae-45bc-a29b-3859f894aeda",
       "@type": "File",
-      "accessedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:43+00:00"
-      },
-      "fileName": "lost+found",
-      "filePath": "/lost+found",
-      "fileSize": 12288,
-      "isAllocated": true,
-      "isDirectory": true,
-      "metadataChangedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:43+00:00"
-      },
-      "modifiedTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2016-01-09T22:50:43+00:00"
+      "fileName": "lvm1",
+      "filePath": "/lvm1",
+      "fileSystemType": {
+        "@id": "case:LVM"
       }
+    },
+    {
+      "@id": "_:6470c65e-fe2b-4442-899a-ed413557982a",
+      "@type": "ConfigurationSetting",
+      "itemName": "command_line_arguments",
+      "itemValue": "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2"
+    },
+    {
+      "@id": "_:d74c3c7b-8d87-49d5-82b0-55fd0cddc8e8",
+      "@type": "LVMVolume",
+      "volumeIndex": 0
+    },
+    {
+      "@id": "7b1c4cb4-3111-42b8-a162-0a3eeae7fe54",
+      "@type": "Relationship",
+      "createdTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2017-03-16T15:10:27.886000"
+      },
+      "isDirectional": true,
+      "kindOfRelationship": "contained-within",
+      "propertyBundle": [
+        {
+          "@id": "_:71f0717a-fac4-4cd3-936e-843e9d6a536f"
+        },
+        {
+          "@id": "_:3a8e4e9b-5b6c-4420-8517-0245886a36b7"
+        }
+      ],
+      "source": {
+        "@id": "5e9a7a83-b6d5-4d86-adb9-f5be922cddb6"
+      },
+      "target": {
+        "@id": "ed4c2c9d-7356-484a-a8ee-021c83ea2c28"
+      }
+    },
+    {
+      "@id": "_:a5721674-227b-481c-80dc-cf05d579c794",
+      "@type": "PathRelation",
+      "path": "/a_directory/a_file"
     }
   ]
 }

@@ -1,434 +1,445 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-  xmlns:case="http://case.example.org/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:plaso="http://plaso.example.org/core#"
+   xmlns:case="http://case.example.org/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <case:Relationship rdf:nodeID="N57cc5b1161504c3d9e181bfd65cf1973">
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:target>
-      <case:Trace rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07">
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:LVMVolume rdf:nodeID="Nd4605490bdce4239b7f239ef086c975e">
-            <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</case:volumeIndex>
-          </case:LVMVolume>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Nc523669f2b8e4512b07000d380386f9b">
-            <case:fileName>lvm1</case:fileName>
-            <case:filePath>/lvm1</case:filePath>
-            <case:fileSystemType rdf:resource="http://case.example.org/core#LVM"/>
-          </case:File>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:target>
+  <rdf:Description rdf:nodeID="224abdb6-e318-43a9-89bd-5fa3842d2978">
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+    <case:path>/lost+found</case:path>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="fb3fd7dd-3a08-456f-b190-88b07a4387f5">
+    <case:path>/a_directory/another_file</case:path>
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="4a5e595f-d11c-4c4d-bf7a-60b2a0344430">
+    <case:configurationSetting rdf:nodeID="08ae04ee-2450-41b2-9ed4-2cb794ff9522"/>
+    <case:configurationSetting rdf:nodeID="c0dbca7b-8e9e-426e-bf28-7329a095f7fd"/>
+    <case:configurationSetting rdf:nodeID="dd76c376-c795-4880-9446-d8ffde2e45cb"/>
+    <case:configurationSetting rdf:nodeID="f5c4f2fc-b1c9-4116-8dc7-79b348a52eea"/>
+    <rdf:type rdf:resource="http://case.example.org/core#ToolConfiguration"/>
+    <case:configurationSetting rdf:nodeID="06391e79-c0ac-43bc-94af-760766850352"/>
+    <case:configurationSetting rdf:nodeID="ef947358-f91d-4f54-938b-82937725dc87"/>
+    <case:configurationSetting rdf:nodeID="8b13bc53-d367-4917-ad00-aa7496497d78"/>
+    <case:configurationSetting rdf:nodeID="6ca08d49-6994-4e13-b7b5-508cacb375d5"/>
+    <case:configurationSetting rdf:nodeID="96c77a61-15d4-4b32-b7e0-c9bf40eeda05"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4533931-2204-4246-97e7-2a44d497dbbc">
+    <case:filePath>/a_directory</case:filePath>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</case:fileSize>
+    <case:fileName>a_directory</case:fileName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="19de0c59-ebd4-45e8-b72d-33eede8c2dd7">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="02af194a-adb1-415e-abba-df789726f8d1">
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:metadataChangedTime>
+    <case:fileName>lost+found</case:fileName>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:accessedTime>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:modifiedTime>
+    <case:filePath>/lost+found</case:filePath>
+  </rdf:Description>
+  <rdf:Description rdf:about="dcd2cd33-0208-49cb-adf9-408fbf0ec363">
+    <case:propertyBundle rdf:nodeID="e7d94385-daca-4785-8b85-ce75484abae9"/>
+    <case:propertyBundle rdf:nodeID="a239c115-c9b0-4a6d-b14c-c5b5d18c78da"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.291000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="02af194a-adb1-415e-abba-df789726f8d1"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="73c0e9c9-2226-450a-af62-5b2b0d75cf8d">
     <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="N7ed85924623c42118e11d0c4b694e7da">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N84041fe2ee1d4936aa8f2abe6c8a9d0b">
-        <case:path>/lost+found</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-    <case:source>
-      <case:Trace rdf:nodeID="N31c384a8d47f41b9b93cf29589d85b47">
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="Na3fecf850e944b1fa875e0a99db240d1">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N78dffca5548143bf8e6d1c0d5b723a8e"/>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Nf47281b2baac448098f168e353b114fd">
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
-            <case:fileName>lost+found</case:fileName>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:accessedTime>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:modifiedTime>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:metadataChangedTime>
-            <case:filePath>/lost+found</case:filePath>
-          </case:File>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:source>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="Nc82a5b4d8d33421b8f7f63a99694d3aa">
-    <case:target>
-      <case:Trace rdf:nodeID="N17a69863841047da8b5d851768eaf0b9">
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Ndc2c294497bb453c82f261ecbe92b407">
-            <case:fileSystemType rdf:resource="http://case.example.org/core#LVM"/>
-            <case:filePath>/lvm2</case:filePath>
-            <case:fileName>lvm2</case:fileName>
-          </case:File>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:LVMVolume rdf:nodeID="N6697987b3099499b9984b3a1a43a3dfb">
-            <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</case:volumeIndex>
-          </case:LVMVolume>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:target>
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N386a8add870a4224a4c34e8031017e06">
-        <case:path>/lost+found</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-    <case:source>
-      <case:Trace rdf:nodeID="N690fc601aa9a4d79a69207ea4f641d24">
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N50c6f2db58914c30a81e85afefe6cb1c">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N7c775d6b3a0649479f63c970ea448d0d"/>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Nfa61b89ea1a94304bcf307b9fc9e4c92">
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
-            <case:fileName>lost+found</case:fileName>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:metadataChangedTime>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:modifiedTime>
-            <case:filePath>/lost+found</case:filePath>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:47+00:00</case:accessedTime>
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
-          </case:File>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:source>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="Naae570543b59440ea6e3a5abb382d6f6">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
     <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="N2cf83a0a13ea4c87ac2672f65d4802ae">
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-    <case:target rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07"/>
-    <case:source>
-      <case:Trace rdf:nodeID="N8a6df58ab1e34c7ea84a34774ebea0a1">
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N2b197eae322247d198cbae0dae6ddd93">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="N9739b1764ce4418e92202f86eb774268">
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</case:fileSize>
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
-            <case:fileName>a_directory</case:fileName>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:filePath>/a_directory</case:filePath>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
-          </case:File>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N443b5129c8ef4d719b7687f90ecda6e1"/>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:source>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="Ncdaa6a6c0e3b4f42abd31d2b47ffa5bc">
-        <case:path>/a_directory</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
+    <case:propertyBundle rdf:nodeID="1a0da807-f917-4b14-b7c9-6da43ec8a44b"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:target rdf:resource="9ea518fb-0332-4ba8-969d-11b2cdb68857"/>
+    <case:source rdf:resource="dcd2cd33-0208-49cb-adf9-408fbf0ec363"/>
+    <case:propertyBundle rdf:nodeID="19de0c59-ebd4-45e8-b72d-33eede8c2dd7"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.293000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3fae3e1-9d93-4f6c-9b32-237907400362">
+    <case:filePath>D:\dev\dfvfs\test_data\lvmtest.qcow2</case:filePath>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:extension>.qcow2</case:extension>
+    <case:fileName>lvmtest</case:fileName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="8a4295dc-ce09-4c04-b0ad-3060e9cf2928">
+    <case:fileSystemType rdf:resource="http://case.example.org/core#LVM"/>
+    <case:fileName>lvm2</case:fileName>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:filePath>/lvm2</case:filePath>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="218daa53-00c9-4f68-bb5e-9ddd5811455d">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="50cf78bc-65ce-423f-b80e-78ca269124a2">
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:propertyBundle rdf:nodeID="3e0ce255-925d-4766-a4a9-9a765b127e85"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.297000</case:createdTime>
+    <case:target rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
     <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="N3df67e697a7446ca8df642c50de5941d">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="Ncb70f8031d2d4460955ba720d2f4e28c">
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="N2d2e415b1ce94ffa8c8507336a334261">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-    <case:source>
-      <case:Trace rdf:nodeID="N6fcd658cacef4bb88497140e46af4713">
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Nbdad795abc6b4d7286f153c0783fa0fa">
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
-            <case:fileName>a_file</case:fileName>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</case:fileSize>
-            <case:filePath>/a_directory/a_file</case:filePath>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
-          </case:File>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N9ba6bc4bda8043e49e5e9b3f0079cd1f">
-            <case:hash>
-              <case:Hash rdf:nodeID="Nd29315272fe045ad8ad5df8c647a3838">
-                <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
-                <case:hashValue>4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d</case:hashValue>
-              </case:Hash>
-            </case:hash>
-          </case:ContentData>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N89a659b02c374ad3b9ccea604bc7f07e">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
-      </case:Trace>
-    </case:source>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
     <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:target rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07"/>
+    <case:source rdf:resource="c2025550-0ef5-429e-a1ec-73b28fe4b7ec"/>
+    <case:propertyBundle rdf:nodeID="a1e72bf3-8e1b-4d6d-b942-44dfc768f7c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="1ae061ec-2de5-4858-a6ee-2dd84f675e4a">
+    <rdf:type rdf:resource="http://case.example.org/core#Identity"/>
+    <case:propertyBundle rdf:nodeID="63579303-b08a-4f14-9ef8-54a06d793c7d"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.290000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="0d3658f6-3681-43bc-8794-383e365cf34f">
+    <case:fileSystemType rdf:resource="http://case.example.org/core#LVM"/>
+    <case:fileName>lvm1</case:fileName>
+    <case:filePath>/lvm1</case:filePath>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ddd5c326-5973-4738-a368-587792f20512">
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:metadataChangedTime>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:accessedTime>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
+    <case:fileName>passwords</case:fileName>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:modifiedTime>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</case:fileSize>
+    <case:filePath>/passwords.txt</case:filePath>
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <case:extension>.txt</case:extension>
+  </rdf:Description>
+  <rdf:Description rdf:about="9ea518fb-0332-4ba8-969d-11b2cdb68857">
+    <case:propertyBundle rdf:nodeID="8a4295dc-ce09-4c04-b0ad-3060e9cf2928"/>
+    <case:propertyBundle rdf:nodeID="d5f1079b-0c7f-4029-96df-62e6fd1eda36"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.291000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e43dfe4d-e1f0-49a5-9287-78b47a7e1412">
+    <case:filePath>/a_directory/a_file</case:filePath>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
+    <case:fileName>a_file</case:fileName>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</case:fileSize>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="47544720-15b7-4bf0-950f-3458de4b9c2b">
+    <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</case:volumeIndex>
+    <rdf:type rdf:resource="http://case.example.org/core#LVMVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dbc990bd-2e1b-407f-bb4f-74a0d0f72442">
+    <case:source rdf:resource="9ea518fb-0332-4ba8-969d-11b2cdb68857"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.292000</case:createdTime>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:target rdf:resource="3caf63ea-01a0-46ce-8ff8-ea059c66ff6a"/>
+    <case:propertyBundle rdf:nodeID="47544720-15b7-4bf0-950f-3458de4b9c2b"/>
     <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N7c9b9cdde9084f15af04ea643960cdfb">
-        <case:path>/a_directory/a_file</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-  </case:Relationship>
-  <case:ForensicAction rdf:nodeID="N1b4e590a5fc54837aa5de823f9e745c1">
-    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T16:32:57.288000+00:00</case:startTime>
-    <case:propertyBundle>
-      <case:ActionReferences rdf:nodeID="Ned4f4831ed3048f7beb4c4baccb00297">
-        <case:instrument>
-          <case:Tool rdf:nodeID="N4365017c96a14730899ab8a42d3fc8ca">
-            <case:toolType>parser?</case:toolType>
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-            <case:creator>Joachim Metz</case:creator>
-            <case:name>plaso</case:name>
-            <case:propertyBundle>
-              <case:ToolConfiguration rdf:nodeID="N2b98d1445ed546f9978ca97a55061ad8">
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Ne782e41d5b0643b4b53c28cd75c74fa5">
-                    <case:itemName>preferred_year</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N17675a753449491bba36cd9e66796c78">
-                    <case:itemValue>8849afcdba3745e5b6103ba8038c9262</case:itemValue>
-                    <case:itemName>identifier</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N90665df3c6d74009a00a48525203d7e2">
-                    <case:itemName>debug_mode</case:itemName>
-                    <case:itemValue>False</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N97bfc8595f234c0485ef5ca39c8667fa">
-                    <case:itemValue></case:itemValue>
-                    <case:itemName>filter_expression</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N390c2ebd51da4c61a715519d64579fd6">
-                    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
-                    <case:itemName>enabled_parser_names</case:itemName>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Nc93ef575310d46d38edbcf1b193ee3a7">
-                    <case:itemName>preferred_encoding</case:itemName>
-                    <case:itemValue>cp1252</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N25c4da1b82a04619a7fc02f54dd39424">
-                    <case:itemName>parser_filter_expression</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="Ndb0b101bfdbe4994a0de167dce1bd741">
-                    <case:itemName>command_line_arguments</case:itemName>
-                    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2</case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-                <case:configurationSetting>
-                  <case:ConfigurationSetting rdf:nodeID="N62a613d4bca4434d8ae5c209549af02e">
-                    <case:itemName>filter_file</case:itemName>
-                    <case:itemValue></case:itemValue>
-                  </case:ConfigurationSetting>
-                </case:configurationSetting>
-              </case:ToolConfiguration>
-            </case:propertyBundle>
-            <case:version>1.5.2_20161031</case:version>
-          </case:Tool>
-        </case:instrument>
-        <case:performer>
-          <case:Identity rdf:nodeID="N30c5a39060064aed96c3d925602c9ab1">
-            <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-            <case:propertyBundle>
-              <case:SimpleName rdf:nodeID="N8bd973ea96d94681967b7157c0e9f516">
-                <case:givenName>John</case:givenName>
-                <case:familyName>Doe</case:familyName>
-              </case:SimpleName>
-            </case:propertyBundle>
-          </case:Identity>
-        </case:performer>
-      </case:ActionReferences>
-    </case:propertyBundle>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6640019-c3cc-435e-9492-5cb393a112b0">
+    <case:instrument rdf:resource="6066e039-b194-45a5-b3a8-4e3927e256a6"/>
+    <case:performer rdf:resource="1ae061ec-2de5-4858-a6ee-2dd84f675e4a"/>
+    <rdf:type rdf:resource="http://case.example.org/core#ActionReferences"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="b362eaca-d2de-4258-ad63-e1c630942415">
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:target rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:propertyBundle rdf:nodeID="94164b73-9ca1-4d26-8c1a-2154fd79b682"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.295000</case:createdTime>
+    <case:source rdf:resource="e78d615a-35a8-455c-9da6-02fccc9f3211"/>
+    <case:propertyBundle rdf:nodeID="224abdb6-e318-43a9-89bd-5fa3842d2978"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="70e0f671-dcba-4f4b-8958-02c92a6a8109">
+    <rdf:type rdf:resource="http://case.example.org/core#LVMVolume"/>
+    <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</case:volumeIndex>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="1a0da807-f917-4b14-b7c9-6da43ec8a44b">
+    <case:path>/lost+found</case:path>
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ae8f4f10-3960-4b88-9b5b-5b860c796e6b">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="6ca08d49-6994-4e13-b7b5-508cacb375d5">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>parser_filter_expression</case:itemName>
+    <case:itemValue></case:itemValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="5626e3d7-c409-46ac-9386-7ecc6964cc07">
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="daa63c2e-cf3a-440f-b8fa-ae518f969939">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5ee0525-8a0a-4ff5-b10d-3a9058cf8451">
+    <rdf:type rdf:resource="http://case.example.org/core#LVMVolume"/>
+    <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</case:volumeIndex>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="003d1b72-174b-4843-8c71-2d3b3e5927eb">
+    <rdf:type rdf:resource="http://case.example.org/core#Hash"/>
+    <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+    <case:hashValue>02a2a6af2f1ecf4720d7d49d640f0d0a269a7ec733e41973bdd34f09dad0e252</case:hashValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="8b13bc53-d367-4917-ad00-aa7496497d78">
+    <case:itemValue>cp1252</case:itemValue>
+    <case:itemName>preferred_encoding</case:itemName>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5c4f2fc-b1c9-4116-8dc7-79b348a52eea">
+    <case:itemValue>[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']</case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>enabled_parser_names</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:about="447da7e3-38b8-48b2-9a13-e0f97f683c21">
+    <case:propertyBundle rdf:nodeID="70e0f671-dcba-4f4b-8958-02c92a6a8109"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.294000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="0d3658f6-3681-43bc-8794-383e365cf34f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="46df9c17-85f4-4b5d-a3f1-0b341f0d32d6">
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:target rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.296000</case:createdTime>
+    <case:source rdf:resource="8f3703e9-ae4a-4b6e-88f4-21a4ec0acdf1"/>
+    <case:propertyBundle rdf:nodeID="daa63c2e-cf3a-440f-b8fa-ae518f969939"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:propertyBundle rdf:nodeID="32dd50a2-4442-45d4-b649-29a7936ce031"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="96c77a61-15d4-4b32-b7e0-c9bf40eeda05">
+    <case:itemName>filter_expression</case:itemName>
+    <case:itemValue></case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="11c29739-4371-446f-97ed-631ee791dbcd">
+    <case:propertyBundle rdf:nodeID="fb3fd7dd-3a08-456f-b190-88b07a4387f5"/>
+    <case:propertyBundle rdf:nodeID="ede707fe-3a35-4b44-9c9f-2b9681c39424"/>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:target rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.299000</case:createdTime>
+    <case:source rdf:resource="fa1537d4-dc7a-41c0-9b35-20b0d787003f"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="e78d615a-35a8-455c-9da6-02fccc9f3211">
+    <case:propertyBundle rdf:nodeID="63642e46-d120-4870-b0ae-e709682e21d3"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.293000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="5626e3d7-c409-46ac-9386-7ecc6964cc07"/>
+    <case:propertyBundle rdf:nodeID="ae8f4f10-3960-4b88-9b5b-5b860c796e6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="89c0a91b-f9bb-44de-b595-a9f8983a31fa">
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+    <case:path>/a_directory/a_file</case:path>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ef947358-f91d-4f54-938b-82937725dc87">
+    <case:itemName>command_line_arguments</case:itemName>
+    <case:itemValue>C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py lvm.plaso ../dfvfs/test_data/lvmtest.qcow2</case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="745d6ec0-a30d-405f-ba68-ecab9b690d1f">
+    <case:source rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
+    <case:target rdf:resource="3caf63ea-01a0-46ce-8ff8-ea059c66ff6a"/>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.294000</case:createdTime>
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:propertyBundle rdf:nodeID="a5ee0525-8a0a-4ff5-b10d-3a9058cf8451"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c41dfd5e-0413-4b28-ab7c-627c5e767f9b">
+    <case:hash rdf:nodeID="7539a478-723a-4c68-8de6-a21dfbb5f182"/>
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7d94385-daca-4785-8b85-ce75484abae9">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1e72bf3-8e1b-4d6d-b942-44dfc768f7c7">
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</case:inode>
+  </rdf:Description>
+  <rdf:Description rdf:about="6066e039-b194-45a5-b3a8-4e3927e256a6">
+    <case:toolType>parser?</case:toolType>
+    <case:version>1.5.2_20161031</case:version>
+    <case:name>plaso</case:name>
+    <rdf:type rdf:resource="http://case.example.org/core#Tool"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.289000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="4a5e595f-d11c-4c4d-bf7a-60b2a0344430"/>
+    <case:creator>Joachim Metz</case:creator>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="01dc284c-55e9-4b0c-8c0f-3b78b3004198">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="63642e46-d120-4870-b0ae-e709682e21d3">
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12288</case:fileSize>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectory>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:modifiedTime>
+    <case:fileName>lost+found</case:fileName>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:accessedTime>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:50:43+00:00</case:metadataChangedTime>
+    <case:filePath>/lost+found</case:filePath>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ba1ac3be-080a-4a2f-8bd5-a2dd53d128f7">
+    <case:filePath>/a_directory/another_file</case:filePath>
+    <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
+    <case:fileName>another_file</case:fileName>
+    <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</case:fileSize>
+    <rdf:type rdf:resource="http://case.example.org/core#File"/>
+    <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
+    <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
+    <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
+    <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="dd76c376-c795-4880-9446-d8ffde2e45cb">
+    <case:itemName>identifier</case:itemName>
+    <case:itemValue>8849afcdba3745e5b6103ba8038c9262</case:itemValue>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="c2025550-0ef5-429e-a1ec-73b28fe4b7ec">
+    <case:propertyBundle rdf:nodeID="39ddd556-ea08-4f96-8fee-44fbb1af18cd"/>
+    <case:propertyBundle rdf:nodeID="ddd5c326-5973-4738-a368-587792f20512"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.296000</case:createdTime>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:propertyBundle rdf:nodeID="1fd124e0-bee5-4d1b-90ba-5830a0945b49"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="fa1537d4-dc7a-41c0-9b35-20b0d787003f">
+    <case:propertyBundle rdf:nodeID="ba1ac3be-080a-4a2f-8bd5-a2dd53d128f7"/>
+    <case:propertyBundle rdf:nodeID="749528d2-e6cc-4a9f-aa67-9e315ec0582e"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.298000</case:createdTime>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:propertyBundle rdf:nodeID="9a99216e-0261-4e54-9f37-aff8797808a7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="9ac90474-5d3f-46f8-9398-b057f31205d4">
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="c59ef3e1-119f-48a4-a7fc-bf5b47b44842">
+    <rdf:type rdf:resource="http://case.example.org/core#Relationship"/>
+    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
+    <case:target rdf:resource="447da7e3-38b8-48b2-9a13-e0f97f683c21"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.298000</case:createdTime>
+    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
+    <case:source rdf:resource="e35f0a50-d530-48d9-9cb5-a1f782b9817a"/>
+    <case:propertyBundle rdf:nodeID="89c0a91b-f9bb-44de-b595-a9f8983a31fa"/>
+    <case:propertyBundle rdf:nodeID="01dc284c-55e9-4b0c-8c0f-3b78b3004198"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="94164b73-9ca1-4d26-8c1a-2154fd79b682">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="39ddd556-ea08-4f96-8fee-44fbb1af18cd">
+    <case:hash rdf:nodeID="003d1b72-174b-4843-8c71-2d3b3e5927eb"/>
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="749528d2-e6cc-4a9f-aa67-9e315ec0582e">
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+    <case:hash rdf:nodeID="7c327bb5-1f84-4487-a659-265005d69373"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c0dbca7b-8e9e-426e-bf28-7329a095f7fd">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemValue>False</case:itemValue>
+    <case:itemName>debug_mode</case:itemName>
+  </rdf:Description>
+  <rdf:Description rdf:about="8f3703e9-ae4a-4b6e-88f4-21a4ec0acdf1">
+    <case:propertyBundle rdf:nodeID="c4533931-2204-4246-97e7-2a44d497dbbc"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.295000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="9ac90474-5d3f-46f8-9398-b057f31205d4"/>
+    <case:propertyBundle rdf:nodeID="218daa53-00c9-4f68-bb5e-9ddd5811455d"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="63579303-b08a-4f14-9ef8-54a06d793c7d">
+    <case:givenName>John</case:givenName>
+    <case:familyName>Doe</case:familyName>
+    <rdf:type rdf:resource="http://case.example.org/core#SimpleName"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a239c115-c9b0-4a6d-b14c-c5b5d18c78da">
+    <rdf:type rdf:resource="http://case.example.org/core#ContentData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="0edfa4d2-0b03-4966-8d66-7700d7f58a7c">
     <case:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T16:33:04.542000+00:00</case:endTime>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-  </case:ForensicAction>
-  <case:Relationship rdf:nodeID="Nb83042bfbf544a63898e23ec055ddb6b">
-    <case:target rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07"/>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N30d059489f774028919f37a9787c6b80">
-        <case:path>/passwords.txt</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:source>
-      <case:Trace rdf:nodeID="N0e12fc8c3e7446efbdbf13a12aba6f91">
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N7673185a7afa4cd886bd6313df36d274">
-            <case:hash>
-              <case:Hash rdf:nodeID="N55a9cbc6821f4b9f8f99879f42b825f4">
-                <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
-                <case:hashValue>02a2a6af2f1ecf4720d7d49d640f0d0a269a7ec733e41973bdd34f09dad0e252</case:hashValue>
-              </case:Hash>
-            </case:hash>
-          </case:ContentData>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="N040530b238ff4e418219684079db918c">
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:extension>.txt</case:extension>
-            <case:fileName>passwords</case:fileName>
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:accessedTime>
-            <case:filePath>/passwords.txt</case:filePath>
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</case:fileSize>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:metadataChangedTime>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:20+00:00</case:modifiedTime>
-          </case:File>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N5c54614f1a464108a0e16a8fd2c2338f">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
-      </case:Trace>
-    </case:source>
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="N2afbc6c55eb840219f64b9a62efd3735">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="N0aa32f0318934c4e97d0e2984fb1f378">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-    <case:target>
-      <case:Trace rdf:nodeID="N7a8a8de1781b4e908c6cf4f6947ed280">
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="Ne7efd6acfad340069307118f41478dec">
-            <case:fileName>lvmtest</case:fileName>
-            <case:filePath>D:\dev\dfvfs\test_data\lvmtest.qcow2</case:filePath>
-            <case:extension>.qcow2</case:extension>
-          </case:File>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:Image rdf:nodeID="N4e62506dc5204c0d8e304fa73a04af37">
-            <case:imageType rdf:resource="http://case.example.org/core#QCOW"/>
-          </case:Image>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:target>
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:propertyBundle>
-      <case:LVMVolume rdf:nodeID="N21ebf7da71994df3ac57345ea24b07b6">
-        <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</case:volumeIndex>
-      </case:LVMVolume>
-    </case:propertyBundle>
-    <case:source rdf:nodeID="N17a69863841047da8b5d851768eaf0b9"/>
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="Nc92cf014c2c647ada284823e1ed9cf9d">
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.738000</case:createdTime>
-    <case:propertyBundle>
-      <case:LVMVolume rdf:nodeID="N61a98e7901994023a470ba34f2e8f9cf">
-        <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</case:volumeIndex>
-      </case:LVMVolume>
-    </case:propertyBundle>
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:source rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07"/>
-    <case:target rdf:nodeID="N7a8a8de1781b4e908c6cf4f6947ed280"/>
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-  </case:Relationship>
-  <case:Relationship rdf:nodeID="N7fed0167d93541faae5e6e7159fd1950">
-    <case:kindOfRelationship>contained-within</case:kindOfRelationship>
-    <case:source>
-      <case:Trace rdf:nodeID="Nb3383c0445bb4c6c85f27739023854d4">
-        <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
-        <case:propertyBundle>
-          <case:ContentData rdf:nodeID="N1fdae7ece0d44fda89015f60badc087d">
-            <case:hash>
-              <case:Hash rdf:nodeID="N0b977840205943bfa6cb480ae391e126">
-                <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
-                <case:hashValue>c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16</case:hashValue>
-              </case:Hash>
-            </case:hash>
-          </case:ContentData>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <plaso:TSK rdf:nodeID="N33ac150d05154b8d809a61f93cf203fd">
-            <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</case:inode>
-          </plaso:TSK>
-        </case:propertyBundle>
-        <case:propertyBundle>
-          <case:File rdf:nodeID="N85e91e47d6a54317ad5289e337dd96c2">
-            <case:accessedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:accessedTime>
-            <case:filePath>/a_directory/another_file</case:filePath>
-            <case:isAllocated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isAllocated>
-            <case:metadataChangedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:metadataChangedTime>
-            <case:modifiedTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-09T22:53:14+00:00</case:modifiedTime>
-            <case:isDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</case:isDirectory>
-            <case:fileName>another_file</case:fileName>
-            <case:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</case:fileSize>
-          </case:File>
-        </case:propertyBundle>
-      </case:Trace>
-    </case:source>
-    <case:isDirectional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</case:isDirectional>
-    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T11:33:39.754000</case:createdTime>
-    <case:target rdf:nodeID="N0b5b98eacf4a435580a385a4a7fbbd07"/>
-    <case:propertyBundle>
-      <plaso:TSK rdf:nodeID="N4a086a76c8f34e608272d7aa695b2b9a">
-        <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</case:inode>
-      </plaso:TSK>
-    </case:propertyBundle>
-    <case:propertyBundle>
-      <case:PathRelation rdf:nodeID="N1ed20bc9991845eaa4fe30132e6009c5">
-        <case:path>/a_directory/another_file</case:path>
-      </case:PathRelation>
-    </case:propertyBundle>
-  </case:Relationship>
+    <case:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T16:32:57.288000+00:00</case:startTime>
+    <rdf:type rdf:resource="http://case.example.org/core#ForensicAction"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.290000</case:createdTime>
+    <case:propertyBundle rdf:nodeID="b6640019-c3cc-435e-9492-5cb393a112b0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="e35f0a50-d530-48d9-9cb5-a1f782b9817a">
+    <case:propertyBundle rdf:nodeID="e43dfe4d-e1f0-49a5-9287-78b47a7e1412"/>
+    <case:propertyBundle rdf:nodeID="85633144-211f-45b6-9834-4505d92bedf4"/>
+    <case:propertyBundle rdf:nodeID="c41dfd5e-0413-4b28-ab7c-627c5e767f9b"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.297000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="06391e79-c0ac-43bc-94af-760766850352">
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+    <case:itemName>preferred_year</case:itemName>
+    <case:itemValue></case:itemValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="7c327bb5-1f84-4487-a659-265005d69373">
+    <case:hashValue>c7fbc0e821c0871805a99584c6a384533909f68a6bbe9a2a687d28d9f3b10c16</case:hashValue>
+    <rdf:type rdf:resource="http://case.example.org/core#Hash"/>
+    <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="3e0ce255-925d-4766-a4a9-9a765b127e85">
+    <case:path>/passwords.txt</case:path>
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="00a12b7c-be5d-4213-93e8-56204eeee1ee">
+    <case:imageType rdf:resource="http://case.example.org/core#QCOW"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Image"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="3caf63ea-01a0-46ce-8ff8-ea059c66ff6a">
+    <case:propertyBundle rdf:nodeID="d3fae3e1-9d93-4f6c-9b32-237907400362"/>
+    <case:propertyBundle rdf:nodeID="00a12b7c-be5d-4213-93e8-56204eeee1ee"/>
+    <rdf:type rdf:resource="http://case.example.org/core#Trace"/>
+    <case:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-16T15:09:42.292000</case:createdTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ede707fe-3a35-4b44-9c9f-2b9681c39424">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5f1079b-0c7f-4029-96df-62e6fd1eda36">
+    <rdf:type rdf:resource="http://case.example.org/core#LVMVolume"/>
+    <case:volumeIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</case:volumeIndex>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="7539a478-723a-4c68-8de6-a21dfbb5f182">
+    <rdf:type rdf:resource="http://case.example.org/core#Hash"/>
+    <case:hashValue>4a49638d0e1055fd9e4c17fef7fdf4d6ccf892b6d9c2f64164203c4bfb0ec92d</case:hashValue>
+    <case:hashMethod rdf:resource="http://case.example.org/core#SHA256"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="1fd124e0-bee5-4d1b-90ba-5830a0945b49">
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</case:inode>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="08ae04ee-2450-41b2-9ed4-2cb794ff9522">
+    <case:itemValue></case:itemValue>
+    <case:itemName>filter_file</case:itemName>
+    <rdf:type rdf:resource="http://case.example.org/core#ConfigurationSetting"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="9a99216e-0261-4e54-9f37-aff8797808a7">
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</case:inode>
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="85633144-211f-45b6-9834-4505d92bedf4">
+    <rdf:type rdf:resource="http://plaso.example.org/core#TSK"/>
+    <case:inode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</case:inode>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="32dd50a2-4442-45d4-b649-29a7936ce031">
+    <case:path>/a_directory</case:path>
+    <rdf:type rdf:resource="http://case.example.org/core#PathRelation"/>
+  </rdf:Description>
 </rdf:RDF>

@@ -5,76 +5,120 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a case:Relationship ;
-    case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
+<a187ce67-af89-4741-890f-657a221e94e9> a case:ForensicAction ;
+    case:createdTime "2017-03-16T14:26:45.280000"^^xsd:dateTime ;
+    case:endTime "2017-01-30T16:31:58.539000+00:00"^^xsd:dateTime ;
+    case:propertyBundle <8d61ebc7-2c91-4dd6-9814-92b974054424> ;
+    case:startTime "2017-01-30T16:31:58.259000+00:00"^^xsd:dateTime .
+
+<b1e2b432-75b1-4577-a336-1f55b1d0255c> a case:Relationship ;
+    case:createdTime "2017-03-16T14:26:45.281000"^^xsd:dateTime ;
     case:isDirectional true ;
     case:kindOfRelationship "decompressed-from" ;
-    case:propertyBundle [ a case:Compression ;
-            case:compressionMethod case:BZIP2 ] ;
-    case:source [ a case:Trace ;
-            case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
-            case:propertyBundle [ a case:File ;
-                    case:isDirectory false ],
-                [ a case:Compression ;
-                    case:compressionMethod case:BZIP2 ] ] ;
-    case:target [ a case:Trace ;
-            case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
-            case:propertyBundle [ a case:File ;
-                    case:accessedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime ;
-                    case:extension ".bz2" ;
-                    case:fileName "syslog" ;
-                    case:filePath "D:\\dev\\dfvfs\\test_data\\syslog.bz2" ;
-                    case:fileSize 608 ;
-                    case:isAllocated true ;
-                    case:metadataChangedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime ;
-                    case:modifiedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime ],
-                [ a case:ContentData ;
-                    case:hash [ a case:Hash ;
-                            case:hashMethod case:SHA256 ;
-                            case:hashValue "c7cb2f5db54bb701ae00f34bc5f9db72955ebea347c872cd4a4fea7e3627a3d5" ] ] ] .
+    case:propertyBundle <62b743c5-c94e-49e1-a995-8d5ce1c58d5a> ;
+    case:source <92508c5c-6e2b-4a9a-a1c4-e21ddf8a1db6> ;
+    case:target <071753dd-cc95-46ce-82db-2560a9e8877b> .
 
-[] a case:ForensicAction ;
-    case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
-    case:endTime "2017-01-30T16:07:13.694000+00:00"^^xsd:dateTime ;
-    case:propertyBundle [ a case:ActionReferences ;
-            case:instrument [ a case:Tool ;
-                    case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
-                    case:creator "Joachim Metz" ;
-                    case:name "plaso" ;
-                    case:propertyBundle [ a case:ToolConfiguration ;
-                            case:configurationSetting [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_encoding" ;
-                                    case:itemValue "cp1252" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_file" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "parser_filter_expression" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_year" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "debug_mode" ;
-                                    case:itemValue "False" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "identifier" ;
-                                    case:itemValue "28e7612dc90547509856051e028b74fb" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_expression" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "command_line_arguments" ;
-                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py bz2.plaso ../dfvfs/test_data/syslog.bz2" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "enabled_parser_names" ;
-                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ] ] ;
-                    case:toolType "parser?" ;
-                    case:version "1.5.2_20161031" ] ;
-            case:performer [ a case:Identity ;
-                    case:createdTime "2017-01-30T11:07:37.326000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:SimpleName ;
-                            case:familyName "Doe" ;
-                            case:givenName "John" ] ] ] ;
-    case:startTime "2017-01-30T16:07:13.397000+00:00"^^xsd:dateTime .
+<00a4fec1-8b79-45e5-9108-1ae3d0217e0d> a case:ConfigurationSetting ;
+    case:itemName "identifier" ;
+    case:itemValue "bd849fd0ba7e4212adac2aedd10d89f7" .
+
+<071753dd-cc95-46ce-82db-2560a9e8877b> a case:Trace ;
+    case:createdTime "2017-03-16T14:26:45.281000"^^xsd:dateTime ;
+    case:propertyBundle <c6081dc7-1bd5-455b-a363-f45540cfaadc>,
+        <e5139634-1ac0-4391-bdb9-e2edd0afb349> .
+
+<0e725322-8aa0-47e2-a1f9-8c39796ae85a> a case:ConfigurationSetting ;
+    case:itemName "command_line_arguments" ;
+    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py bz2.plaso ../dfvfs/test_data/syslog.bz2" .
+
+<201d92c9-b774-49b8-a9e2-24d6a4a572e5> a case:ConfigurationSetting ;
+    case:itemName "debug_mode" ;
+    case:itemValue "False" .
+
+<20809e0d-0a9d-4f76-a193-d2ee9276deb5> a case:SimpleName ;
+    case:familyName "Doe" ;
+    case:givenName "John" .
+
+<22658131-2f43-4840-97f3-a803fb16355c> a case:File ;
+    case:isDirectory false .
+
+<350e5f34-6992-4a37-a2e5-576201b2b80e> a case:ToolConfiguration ;
+    case:configurationSetting <00a4fec1-8b79-45e5-9108-1ae3d0217e0d>,
+        <0e725322-8aa0-47e2-a1f9-8c39796ae85a>,
+        <201d92c9-b774-49b8-a9e2-24d6a4a572e5>,
+        <45888bbf-f0ab-4b84-aae5-e3310d43767c>,
+        <5625f240-0d09-4088-8fd8-4f914c841f9d>,
+        <9a655e6b-9ab0-44c7-9fcd-1da371b76164>,
+        <9b11bfd4-c0d3-420f-ac0a-9a9cf14923be>,
+        <9f302e2b-edbe-442b-b4ab-2a6b4da93ef2>,
+        <ebb50542-2e8c-4be1-8104-3161ab9a8779> .
+
+<45888bbf-f0ab-4b84-aae5-e3310d43767c> a case:ConfigurationSetting ;
+    case:itemName "filter_expression" ;
+    case:itemValue "" .
+
+<5625f240-0d09-4088-8fd8-4f914c841f9d> a case:ConfigurationSetting ;
+    case:itemName "preferred_year" ;
+    case:itemValue "" .
+
+<62b743c5-c94e-49e1-a995-8d5ce1c58d5a> a case:Compression ;
+    case:compressionMethod case:BZIP2 .
+
+<8d61ebc7-2c91-4dd6-9814-92b974054424> a case:ActionReferences ;
+    case:instrument <ac06ac98-9b81-4e93-b063-9d88bf13871d> ;
+    case:performer <ef80352a-dafb-453b-88e1-4a56bbc8fd76> .
+
+<92508c5c-6e2b-4a9a-a1c4-e21ddf8a1db6> a case:Trace ;
+    case:createdTime "2017-03-16T14:26:45.280000"^^xsd:dateTime ;
+    case:propertyBundle <22658131-2f43-4840-97f3-a803fb16355c>,
+        <b056721d-7d57-4bff-b55d-aea456c4d43b> .
+
+<9a655e6b-9ab0-44c7-9fcd-1da371b76164> a case:ConfigurationSetting ;
+    case:itemName "enabled_parser_names" ;
+    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" .
+
+<9b11bfd4-c0d3-420f-ac0a-9a9cf14923be> a case:ConfigurationSetting ;
+    case:itemName "filter_file" ;
+    case:itemValue "" .
+
+<9b8f912e-a8ba-456f-a33e-97542b670a91> a case:Hash ;
+    case:hashMethod case:SHA256 ;
+    case:hashValue "c7cb2f5db54bb701ae00f34bc5f9db72955ebea347c872cd4a4fea7e3627a3d5" .
+
+<9f302e2b-edbe-442b-b4ab-2a6b4da93ef2> a case:ConfigurationSetting ;
+    case:itemName "parser_filter_expression" ;
+    case:itemValue "" .
+
+<ac06ac98-9b81-4e93-b063-9d88bf13871d> a case:Tool ;
+    case:createdTime "2017-03-16T14:26:45.278000"^^xsd:dateTime ;
+    case:creator "Joachim Metz" ;
+    case:name "plaso" ;
+    case:propertyBundle <350e5f34-6992-4a37-a2e5-576201b2b80e> ;
+    case:toolType "parser?" ;
+    case:version "1.5.2_20161031" .
+
+<b056721d-7d57-4bff-b55d-aea456c4d43b> a case:Compression ;
+    case:compressionMethod case:BZIP2 .
+
+<c6081dc7-1bd5-455b-a363-f45540cfaadc> a case:File ;
+    case:accessedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime ;
+    case:extension ".bz2" ;
+    case:fileName "syslog" ;
+    case:filePath "D:\\dev\\dfvfs\\test_data\\syslog.bz2" ;
+    case:fileSize 608 ;
+    case:isAllocated true ;
+    case:metadataChangedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime ;
+    case:modifiedTime "2016-09-08T19:35:28+00:00"^^xsd:dateTime .
+
+<e5139634-1ac0-4391-bdb9-e2edd0afb349> a case:ContentData ;
+    case:hash <9b8f912e-a8ba-456f-a33e-97542b670a91> .
+
+<ebb50542-2e8c-4be1-8104-3161ab9a8779> a case:ConfigurationSetting ;
+    case:itemName "preferred_encoding" ;
+    case:itemValue "cp1252" .
+
+<ef80352a-dafb-453b-88e1-4a56bbc8fd76> a case:Identity ;
+    case:createdTime "2017-03-16T14:26:45.279000"^^xsd:dateTime ;
+    case:propertyBundle <20809e0d-0a9d-4f76-a193-d2ee9276deb5> .
 

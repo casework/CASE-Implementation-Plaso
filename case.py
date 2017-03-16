@@ -1,6 +1,8 @@
 """An API to the CASE ontology."""
 
 import datetime
+import uuid
+
 import rdflib
 from rdflib import RDF, XSD
 import rdflib.term
@@ -70,10 +72,11 @@ class Document(object):
 
     # Manually specify properties to help inforce both properties are supplied.
     def create_hash(self, hashMethod, hashValue):
-        return self.create_node(CASE.Hash, hashMethod=hashMethod, hashValue=hashValue)
+        return self.create_node(
+                CASE.Hash, bnode=True, hashMethod=hashMethod, hashValue=hashValue)
 
-    def create_node(self, type=None, **properties):
-        return Node(self.graph, rdf_type=type, **properties)
+    def create_node(self, rdf_type=None, uri=None, bnode=False, **properties):
+        return Node(self.graph, rdf_type=rdf_type, uri=uri, bnode=bnode,  **properties)
 
     # We are going to default to json-ld instead of rdflib's default of xml.
     def serialize(self, format='json-ld', **kwargs):
@@ -100,19 +103,28 @@ class Node(object):
     # Namespace to use when adding properties that are not of type rdflib.URIRef.
     NAMESPACE = CASE
 
-    def __init__(self, graph, rdf_type=None, **properties):
+    def __init__(self, graph, uri=None, bnode=False, rdf_type=None, **properties):
         """Initializes and adds a node to the graph.
         NOTE: At least the type or a property must be supplied for the Node
         to exist in the graph.
 
         Args:
             graph: The graph to add this node to. (instance of rdflib.Graph)
+            uri: Optional string to set th URI to. (If not provided a UUID will be generated.)
+            bnode: Whether to create a blank node or a uri reference.
             rdf_type: The RDF type to set this node to.
             properties: Extra properties to add to this node.
             (More properties can be set after initialization by using the add() function.)
         """
         super(Node, self).__init__()
-        self._node = rdflib.BNode()
+        if uri:
+            self.uri = uri
+        else:
+            self.uri = str(uuid.uuid4())
+        if bnode:
+            self._node = rdflib.BNode(self.uri)
+        else:
+            self._node = rdflib.URIRef(self.uri)
         self._graph = graph
         if not rdf_type:
             rdf_type = self.RDF_TYPE
@@ -194,3 +206,19 @@ class Trace(UcoObject):
 
 class PropertyBundle(Node):
     RDF_TYPE = CASE.PropertyBundle
+
+    def __init__(self, graph, rdf_type=None, **properties):
+        """Initializes and adds a node to the graph.
+        NOTE: At least the type or a property must be supplied for the Node
+        to exist in the graph.
+
+        Args:
+            graph: The graph to add this node to. (instance of rdflib.Graph)
+            rdf_type: The RDF type to set this node to.
+            properties: Extra properties to add to this node.
+            (More properties can be set after initialization by using the add() function.)
+        """
+        # Property bundles should be blank nodes because we should be referencing them
+        # through UcoObjects.
+        super(PropertyBundle, self).__init__(
+                graph, bnode=True, rdf_type=rdf_type, **properties)

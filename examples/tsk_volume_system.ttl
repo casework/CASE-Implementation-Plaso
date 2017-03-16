@@ -5,102 +5,106 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a case:ForensicAction ;
-    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-    case:endTime "2017-01-30T15:55:34.984000+00:00"^^xsd:dateTime ;
-    case:propertyBundle [ a case:ActionReferences ;
-            case:instrument [ a case:Tool ;
-                    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-                    case:creator "Joachim Metz" ;
-                    case:name "plaso" ;
-                    case:propertyBundle [ a case:ToolConfiguration ;
-                            case:configurationSetting [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_year" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "enabled_parser_names" ;
-                                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "identifier" ;
-                                    case:itemValue "a08d7668b3dd409dba8a4fecfc0948ad" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "debug_mode" ;
-                                    case:itemValue "False" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "command_line_arguments" ;
-                                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/case_plaso/Scripts/log2timeline.py tsk_volume_system.plaso ../dfvfs/test_data/tsk_volume_system.raw" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_file" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "preferred_encoding" ;
-                                    case:itemValue "cp1252" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "filter_expression" ;
-                                    case:itemValue "" ],
-                                [ a case:ConfigurationSetting ;
-                                    case:itemName "parser_filter_expression" ;
-                                    case:itemValue "" ] ] ;
-                    case:toolType "parser?" ;
-                    case:version "1.5.2_20161031" ] ;
-            case:performer [ a case:Identity ;
-                    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-                    case:propertyBundle [ a case:SimpleName ;
-                            case:familyName "Doe" ;
-                            case:givenName "John" ] ] ] ;
-    case:startTime "2017-01-30T15:55:27.761000+00:00"^^xsd:dateTime .
-
-[] a case:Relationship ;
-    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
+<143b830a-fc19-43c8-b703-84dfbdb3153f> a case:Relationship ;
+    case:createdTime "2017-03-16T15:13:25.406000"^^xsd:dateTime ;
     case:isDirectional true ;
     case:kindOfRelationship "contained-within" ;
     case:propertyBundle [ a case:DiskPartition ;
             case:paritionOffset 180224 ;
             case:partitionID 6 ] ;
-    case:source _:N18938e30d81d4c6ebf8e25e09e1e2828 ;
-    case:target [ a case:Trace ;
-            case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-            case:propertyBundle [ a case:Image ;
-                    case:imageType case:RAW ],
-                [ a case:File ;
-                    case:extension ".raw" ;
-                    case:fileName "tsk_volume_system" ;
-                    case:filePath "D:\\dev\\dfvfs\\test_data\\tsk_volume_system.raw" ] ] .
+    case:source <7e652c66-4964-49ab-b7c1-282e539f8c67> ;
+    case:target <e72c87e4-8d9e-4137-bb1b-001969984793> .
 
-[] a case:Relationship ;
-    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
+<367aeec0-fb1b-49c1-acbc-b8c6644c4ff8> a case:ForensicAction ;
+    case:createdTime "2017-03-16T15:13:25.404000"^^xsd:dateTime ;
+    case:endTime "2017-03-16T19:12:39.611000+00:00"^^xsd:dateTime ;
+    case:propertyBundle [ a case:ActionReferences ;
+            case:instrument <ffad3b92-4aae-4ecd-a159-880fff0cf6de> ;
+            case:performer <833ea5be-24a5-4d5d-9dae-ff672a2b6fb2> ] ;
+    case:startTime "2017-03-16T19:12:30.839000+00:00"^^xsd:dateTime .
+
+<61697284-4f99-479c-93b5-6c03ded22c7d> a case:Relationship ;
+    case:createdTime "2017-03-16T15:13:25.407000"^^xsd:dateTime ;
     case:isDirectional true ;
     case:kindOfRelationship "contained-within" ;
     case:propertyBundle [ a plaso:TSK ;
             case:inode 11 ],
         [ a case:PathRelation ;
             case:path "/lost+found" ] ;
-    case:source [ a case:Trace ;
-            case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-            case:propertyBundle [ a case:File ;
-                    case:accessedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ;
-                    case:fileName "lost+found" ;
-                    case:filePath "/lost+found" ;
-                    case:fileSize 12288 ;
-                    case:isAllocated true ;
-                    case:isDirectory true ;
-                    case:metadataChangedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ;
-                    case:modifiedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ],
-                [ a plaso:TSK ;
-                    case:inode 11 ],
-                [ a case:ContentData ] ] ;
-    case:target _:N18938e30d81d4c6ebf8e25e09e1e2828 .
+    case:source <3d74089e-c46c-4a58-a8f6-f183ba140bd6> ;
+    case:target <7e652c66-4964-49ab-b7c1-282e539f8c67> .
 
-_:Nbc9ea1d4bd974b11b8425c3be7870868 a case:DiskPartition ;
-    case:paritionOffset 180224 ;
-    case:partitionID 6 .
+<3d74089e-c46c-4a58-a8f6-f183ba140bd6> a case:Trace ;
+    case:createdTime "2017-03-16T15:13:25.405000"^^xsd:dateTime ;
+    case:propertyBundle [ a plaso:TSK ;
+            case:inode 11 ],
+        [ a case:ContentData ],
+        [ a case:File ;
+            case:accessedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ;
+            case:fileName "lost+found" ;
+            case:filePath "/lost+found" ;
+            case:fileSize 12288 ;
+            case:isAllocated true ;
+            case:isDirectory true ;
+            case:metadataChangedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ;
+            case:modifiedTime "2013-12-24T13:31:52+00:00"^^xsd:dateTime ] .
 
-_:Nf54355fc6cae412eb83024465cab4fea a case:File ;
-    case:fileName "p2" ;
-    case:filePath "/p2" .
+<833ea5be-24a5-4d5d-9dae-ff672a2b6fb2> a case:Identity ;
+    case:createdTime "2017-03-16T15:13:25.404000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:SimpleName ;
+            case:familyName "Doe" ;
+            case:givenName "John" ] .
 
-_:N18938e30d81d4c6ebf8e25e09e1e2828 a case:Trace ;
-    case:createdTime "2017-01-30T10:58:18.595000"^^xsd:dateTime ;
-    case:propertyBundle _:Nbc9ea1d4bd974b11b8425c3be7870868,
-        _:Nf54355fc6cae412eb83024465cab4fea .
+<e72c87e4-8d9e-4137-bb1b-001969984793> a case:Trace ;
+    case:createdTime "2017-03-16T15:13:25.406000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:Image ;
+            case:imageType case:RAW ],
+        [ a case:File ;
+            case:extension ".raw" ;
+            case:fileName "tsk_volume_system" ;
+            case:filePath "D:\\dev\\plaso\\test_data\\tsk_volume_system.raw" ] .
+
+<ffad3b92-4aae-4ecd-a159-880fff0cf6de> a case:Tool ;
+    case:createdTime "2017-03-16T15:13:25.402000"^^xsd:dateTime ;
+    case:creator "Joachim Metz" ;
+    case:name "plaso" ;
+    case:propertyBundle [ a case:ToolConfiguration ;
+            case:configurationSetting [ a case:ConfigurationSetting ;
+                    case:itemName "filter_file" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "parser_filter_expression" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "identifier" ;
+                    case:itemValue "33443a930a814fe1a3a287bcc3c2c7b4" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "enabled_parser_names" ;
+                    case:itemValue "[u'esedb', u'esedb/msie_webcache', u'esedb/esedb_file_history', u'chrome_preferences', u'syslog', u'syslog/cron', u'syslog/ssh', u'android_app_usage', u'selinux', u'recycle_bin', u'pls_recall', u'filestat', u'sqlite', u'sqlite/twitter_ios', u'sqlite/kik_messenger', u'sqlite/mackeeper_cache', u'sqlite/skype', u'sqlite/chrome_history', u'sqlite/appusage', u'sqlite/zeitgeist', u'sqlite/android_sms', u'sqlite/ls_quarantine', u'sqlite/chrome_extension_activity', u'sqlite/imessage', u'sqlite/firefox_downloads', u'sqlite/firefox_cookies', u'sqlite/google_drive', u'sqlite/android_calls', u'sqlite/firefox_history', u'sqlite/mac_document_versions', u'sqlite/chrome_cookies', u'sccm', u'cups_ipp', u'winiis', u'mft', u'lnk', u'xchatscrollback', u'dockerjson', u'symantec_scanlog', u'recycle_bin_info2', u'winevtx', u'plist', u'plist/spotlight_volume', u'plist/macosx_install_history', u'plist/time_machine', u'plist/macuser', u'plist/maxos_software_update', u'plist/plist_default', u'plist/apple_id', u'plist/airport', u'plist/safari_history', u'plist/ipod_device', u'plist/spotlight', u'plist/macosx_bluetooth', u'bsm_log', u'winfirewall', u'mac_keychain', u'binary_cookies', u'mac_securityd', u'utmp', u'pe', u'asl_log', u'opera_global', u'custom_destinations', u'chrome_cache', u'popularity_contest', u'prefetch', u'zsh_extended_history', u'winreg', u'winreg/mrulistex_string_and_shell_item', u'winreg/windows_task_cache', u'winreg/userassist', u'winreg/windows_sam_users', u'winreg/mstsc_rdp', u'winreg/windows_shutdown', u'winreg/msie_zone', u'winreg/ccleaner', u'winreg/appcompatcache', u'winreg/mrulist_string', u'winreg/bagmru', u'winreg/mstsc_rdp_mru', u'winreg/microsoft_office_mru', u'winreg/windows_version', u'winreg/mrulistex_string', u'winreg/winlogon', u'winreg/windows_boot_execute', u'winreg/windows_run', u'winreg/windows_timezone', u'winreg/explorer_programscache', u'winreg/microsoft_outlook_mru', u'winreg/windows_usbstor_devices', u'winreg/mrulistex_shell_item_list', u'winreg/windows_typed_urls', u'winreg/winreg_default', u'winreg/explorer_mountpoints2', u'winreg/mrulist_shell_item_list', u'winreg/network_drives', u'winreg/windows_usb_devices', u'winreg/mrulistex_string_and_shell_item_list', u'winreg/winrar_mru', u'winreg/windows_boot_verify', u'winreg/windows_services', u'msiecf', u'bencode', u'bencode/bencode_utorrent', u'bencode/bencode_transmission', u'skydrive_log_old', u'skydrive_log', u'openxml', u'dpkg', u'utmpx', u'rplog', u'usnjrnl', u'hachoir', u'opera_typed_history', u'winevt', u'firefox_cache2', u'mac_appfirewall_log', u'winjob', u'olecf', u'olecf/olecf_default', u'olecf/olecf_document_summary', u'olecf/olecf_summary', u'olecf/olecf_automatic_destinations', u'xchatlog', u'macwifi', u'mactime', u'java_idx', u'firefox_cache', u'mcafee_protection']" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "preferred_year" ;
+                    case:itemValue "" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "debug_mode" ;
+                    case:itemValue "False" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "preferred_encoding" ;
+                    case:itemValue "cp1252" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "command_line_arguments" ;
+                    case:itemValue "C:/Users/jonathan.snyder/.virtualenvs/plaso/Scripts/log2timeline.py --no-dependencies-check tsk_volume_system.plaso ../plaso/test_data/tsk_volume_system.raw" ],
+                [ a case:ConfigurationSetting ;
+                    case:itemName "filter_expression" ;
+                    case:itemValue "" ] ] ;
+    case:toolType "parser?" ;
+    case:version "1.5.2_20170103-json-patch" .
+
+<7e652c66-4964-49ab-b7c1-282e539f8c67> a case:Trace ;
+    case:createdTime "2017-03-16T15:13:25.405000"^^xsd:dateTime ;
+    case:propertyBundle [ a case:File ;
+            case:fileName "p2" ;
+            case:filePath "/p2" ],
+        [ a case:DiskPartition ;
+            case:paritionOffset 180224 ;
+            case:partitionID 6 ] .
 
