@@ -11,7 +11,7 @@ import case
 from case_plaso import plaso_exporter
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(
         'Plaso-CASE',
         description='Extracts plaso events from a plaso storage file and '
@@ -41,3 +41,7 @@ if __name__ == '__main__':
     exporter.export_storage_file(options.storage_file)
     print 'Serializing graph...'
     document.serialize(format=options.format, destination=options.output_file)
+
+
+if __name__ == '__main__':
+    main()

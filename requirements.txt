@@ -1,10 +1,3 @@
 plaso >= 1.5
 dfvfs >= 20160803
-rdflib
-rdflib-jsonld
-pypiwin32
-
-# TODO: Since we are not actually running plaso's tools, not all of plaso's
-# dependencies may be necessary.
--r plaso_requirements.txt
--r dfvfs_requirements.txt
+case
