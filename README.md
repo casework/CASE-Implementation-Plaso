@@ -9,9 +9,7 @@ RDF graph following the [CASE/UCO](https://casework.github.io/case) ontology.
 Install the case API
 ```
 git clone https://github.com/casework/case-api-python.git
-cd case-api-python
-python setup.py install
-
+pip install case-api-python
 ```
 
 Then clone and install requirements.txt
