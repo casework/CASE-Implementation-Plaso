@@ -128,7 +128,7 @@
     {
       "@id": "_:542dd09e-3729-4eee-8601-c24e91348947",
       "@type": "DiskPartition",
-      "paritionOffset": 180224,
+      "partitionOffset": 180224,
       "partitionID": 6
     },
     {
@@ -271,7 +271,7 @@
     {
       "@id": "_:fe69a8ac-8eb6-47fe-b88c-92d9a9084d60",
       "@type": "DiskPartition",
-      "paritionOffset": 180224,
+      "partitionOffset": 180224,
       "partitionID": 6
     },
     {

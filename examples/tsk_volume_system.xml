@@ -110,7 +110,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="5bc0a879-9ede-4ba9-9242-a03be5f0aafa">
     <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
-    <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
+    <case:partitionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:partitionOffset>
     <rdf:type rdf:resource="http://case.example.org/core#DiskPartition"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="7954a3a0-41b8-43f5-9e44-b867662c7caa">
@@ -147,7 +147,7 @@
   <rdf:Description rdf:nodeID="cbcc5864-d971-49da-827b-eb6743ff32d0">
     <case:partitionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</case:partitionID>
     <rdf:type rdf:resource="http://case.example.org/core#DiskPartition"/>
-    <case:paritionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:paritionOffset>
+    <case:partitionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180224</case:partitionOffset>
   </rdf:Description>
   <rdf:Description rdf:about="ff908cca-8a98-4410-8e6d-d06aea6783a4">
     <case:propertyBundle rdf:nodeID="eedcdc0d-5064-4949-b6e9-1b3e2dc34d83"/>

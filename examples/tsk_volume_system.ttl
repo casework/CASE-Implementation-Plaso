@@ -10,7 +10,7 @@
     case:isDirectional true ;
     case:kindOfRelationship "contained-within" ;
     case:propertyBundle [ a case:DiskPartition ;
-            case:paritionOffset 180224 ;
+            case:partitionOffset 180224 ;
             case:partitionID 6 ] ;
     case:source <7e652c66-4964-49ab-b7c1-282e539f8c67> ;
     case:target <e72c87e4-8d9e-4137-bb1b-001969984793> .
@@ -105,6 +105,6 @@
             case:fileName "p2" ;
             case:filePath "/p2" ],
         [ a case:DiskPartition ;
-            case:paritionOffset 180224 ;
+            case:partitionOffset 180224 ;
             case:partitionID 6 ] .
 
