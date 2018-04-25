@@ -8,14 +8,14 @@ RDF graph following the [CASE/UCO](https://github.com/ucoProject/CASE) ontology.
 
 Install the case API
 ```
-git clone https://github.com/casework/case-api-python.git
-pip install case-api-python
+git clone https://github.com/ucoProject/CASE-Python-API.git
+pip install CASE-Python-API
 ```
 
 Then clone and install requirements.txt
 ```
-git clone https://github.com/casework/case-implementation-plaso.git
-cd case-implementation-plaso
+git clone https://github.com/ucoProject/CASE-Plaso-Implementation.git
+cd CASE-Plaso-Implementation
 pip install -r requirements.txt
 ```
 
