@@ -1,6 +1,6 @@
 # CASE/UCO Plaso implementation
 
-*Note: This POC is not ontology-correct! The Volatility example is more up to date.*
+*Note: This POC is not ontology-correct! The [Volatility example](https://github.com/ucoProject/CASE-Volatility-Implementation) is more up to date.*
 
 This is an implementation of exporting [plaso](https://github.com/log2timeline/plaso) storage files into an
 RDF graph following the [CASE/UCO](https://github.com/ucoProject/CASE) ontology.
