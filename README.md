@@ -1,3 +1,8 @@
+# Cyber-investigation Analysis Standard Expression (CASE)
+
+_Read the [CASE Wiki tab](https://github.com/ucoProject/CASE/wiki) to learn **everything** you need to know about the Cyber-investigation Analysis Standard Expression (CASE) ontology._
+_For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https://github.com/ucoProject/UCO)._
+
 # CASE/UCO Plaso implementation
 
 *Note: This POC is not ontology-correct!*
@@ -6,7 +11,7 @@ This is an implementation of exporting [plaso](https://github.com/log2timeline/p
 RDF graph following the [CASE/UCO](https://github.com/ucoProject/CASE) ontology.
 
 
-## Install
+### Install
 
 Install the case API
 ```
@@ -22,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 
-## Usage
+### Usage
 Pass the storage file created by the log2timeline tool into the "case_plaso" tool:
 ```
 python case_plaso_export.py myimage.bin.plaso output.json --format json-ld
