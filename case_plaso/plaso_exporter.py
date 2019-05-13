@@ -75,7 +75,7 @@ class PlasoExporter(object):
 
     def export_session(self, session):
         """Exports the given plaso storage Session into the graph."""
-        instrument = self.document.create_uco_object(
+        instrument = self.document.create_CoreObject(
             'Tool',
             name=session.product_name,
             version=session.product_version,
@@ -95,13 +95,13 @@ class PlasoExporter(object):
 
         # TODO: How do we know who performed the Plaso action? That information
         # is not in the plaso storage file...
-        performer = self.document.create_uco_object('Identity')
+        performer = self.document.create_CoreObject('Identity')
         performer.create_property_bundle(
             'SimpleName',
             givenName='John',
             familyName='Doe')
 
-        action = self.document.create_uco_object(
+        action = self.document.create_CoreObject(
             'ForensicAction',
             startTime=lib.convert_timestamp(session.start_time),
             endTime=lib.convert_timestamp(session.completion_time))
