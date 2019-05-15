@@ -5,7 +5,7 @@ _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https:/
 
 # CASE Plaso implementation
 
-*Note: This POC is not ontology-correct!*
+_**Note: This POC is not ontology-correct!**_
 
 This is an implementation of exporting [plaso](https://github.com/log2timeline/plaso) storage files into an
 RDF graph following the [CASE](https://github.com/casework/CASE) ontology.
